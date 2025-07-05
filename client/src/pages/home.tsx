@@ -9,19 +9,17 @@ import { Network, Zap, Crosshair, Calendar, Building2, DollarSign, Cloud, Shield
 export default function Home() {
   const [typewriterText, setTypewriterText] = useState("");
   const [typewriterComplete, setTypewriterComplete] = useState(false);
-  const [hasStarted, setHasStarted] = useState(false);
 
   const fullText = "eazyrev leverages advanced AI and the world's largest and most accurate technology intelligence data available to analyze your prospect tech stacks and uncover sales insights.";
 
   useEffect(() => {
-    // Only start typewriter effect once per component mount
-    if (hasStarted) return;
-    
-    setHasStarted(true);
     let currentIndex = 0;
     const typeSpeed = 30; // milliseconds per character
+    let isActive = true;
 
     const typeInterval = setInterval(() => {
+      if (!isActive) return;
+      
       if (currentIndex < fullText.length) {
         setTypewriterText(fullText.slice(0, currentIndex + 1));
         currentIndex++;
@@ -31,8 +29,11 @@ export default function Home() {
       }
     }, typeSpeed);
 
-    return () => clearInterval(typeInterval);
-  }, [hasStarted, fullText]);
+    return () => {
+      isActive = false;
+      clearInterval(typeInterval);
+    };
+  }, []); // Empty dependency array - only runs once on mount
 
   return (
     <div className="landing-backdrop">
