@@ -18,7 +18,7 @@ export default function Sidebar() {
       <div className="p-6">
         {/* Logo */}
         <div className="flex items-center mb-8">
-          <span className="font-bold text-2xl text-slate-900 tracking-wide brand-font">eazyrev</span>
+          <span className="font-bold text-2xl text-slate-900 tracking-wide brand-font">eazyrev.ai</span>
         </div>
 
         {/* Navigation Links */}
