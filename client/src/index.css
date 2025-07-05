@@ -121,19 +121,29 @@
     /* Prevent horizontal scrolling */
     body {
       overflow-x: hidden;
+      max-width: 100vw;
     }
     
     /* Ensure all containers respect viewport width */
     .landing-content {
       max-width: 100vw;
       overflow-x: hidden;
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
     
     /* Prevent text overflow */
-    h1, h2, h3, h4, h5, h6 {
+    h1, h2, h3, h4, h5, h6, p, span, div {
       word-wrap: break-word;
       overflow-wrap: break-word;
       hyphens: auto;
+      max-width: 100%;
+    }
+    
+    /* Force all text containers to respect boundaries */
+    * {
+      max-width: 100%;
+      box-sizing: border-box;
     }
     
     /* Improve touch targets */
@@ -144,10 +154,21 @@
     
     /* Optimize card layouts */
     .metric-card {
-      margin-left: -8px;
-      margin-right: -8px;
-      width: calc(100% + 16px);
-      max-width: 100vw;
+      margin-left: -4px;
+      margin-right: -4px;
+      width: calc(100% + 8px);
+      max-width: calc(100vw - 8px);
+    }
+    
+    /* Force flex items to wrap properly */
+    .flex {
+      flex-wrap: wrap;
+    }
+    
+    /* Prevent grid overflow */
+    .grid {
+      max-width: 100%;
+      overflow: hidden;
     }
   }
   

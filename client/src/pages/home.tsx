@@ -37,7 +37,7 @@ export default function Home() {
 
   return (
     <div className="landing-backdrop">
-      <div className="landing-content max-w-5xl mx-auto px-6 pt-20 pb-16 page-transition">
+      <div className="landing-content max-w-5xl mx-auto px-4 sm:px-6 pt-20 pb-16 page-transition overflow-hidden">
         {/* Hero Section */}
         <div className="text-center mb-20 slide-up">
           <div className="mb-6 pt-10"></div>
@@ -147,13 +147,13 @@ export default function Home() {
 
           <div className="bg-gradient-to-br from-white to-slate-50 rounded-2xl shadow-2xl overflow-hidden border border-slate-200">
             {/* Browser Header */}
-            <div className="bg-gray-100 px-4 py-3 flex items-center gap-3 border-b border-gray-200">
-              <div className="flex gap-1.5">
-                <div className="w-3 h-3 bg-red-400 rounded-full"></div>
-                <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
-                <div className="w-3 h-3 bg-green-400 rounded-full"></div>
+            <div className="bg-gray-100 px-3 sm:px-4 py-2 sm:py-3 flex items-center gap-2 sm:gap-3 border-b border-gray-200">
+              <div className="flex gap-1.5 flex-shrink-0">
+                <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 bg-red-400 rounded-full"></div>
+                <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 bg-yellow-400 rounded-full"></div>
+                <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 bg-green-400 rounded-full"></div>
               </div>
-              <span className="text-sm text-gray-600 font-medium">Analysis Report - TechCorp Solutions</span>
+              <span className="text-xs sm:text-sm text-gray-600 font-medium truncate">Analysis Report - TechCorp Solutions</span>
             </div>
 
             <div className="p-4 sm:p-8 space-y-6">
@@ -164,20 +164,20 @@ export default function Home() {
                     <div className="w-10 h-10 sm:w-12 sm:h-12 bg-slate-600 rounded-lg flex items-center justify-center flex-shrink-0">
                       <span className="text-white font-bold text-base sm:text-lg">T</span>
                     </div>
-                    <div className="flex-1 min-w-0">
-                      <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-1">TechForward Regional Bank</h3>
-                      <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6 text-xs sm:text-sm text-slate-600">
+                    <div className="flex-1 min-w-0 overflow-hidden">
+                      <h3 className="text-base sm:text-lg md:text-xl font-bold text-slate-900 mb-1 break-words">TechForward Regional Bank</h3>
+                      <div className="flex flex-col gap-1 sm:gap-2 text-xs sm:text-sm text-slate-600">
                         <span className="flex items-center gap-2">
-                          <Building2 className="h-3 w-3 sm:h-4 sm:w-4" />
-                          <span className="truncate">Depository Credit Intermediation</span>
+                          <Building2 className="h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" />
+                          <span className="break-words">Depository Credit Intermediation</span>
                         </span>
                         <span className="flex items-center gap-2">
-                          <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                          47 products analyzed
+                          <div className="w-2 h-2 bg-blue-500 rounded-full flex-shrink-0"></div>
+                          <span>47 products analyzed</span>
                         </span>
                         <span className="flex items-center gap-2">
-                          <DollarSign className="h-3 w-3 sm:h-4 sm:w-4" />
-                          <span className="truncate">$450K+ revenue potential</span>
+                          <DollarSign className="h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" />
+                          <span className="break-words">$450K+ revenue potential</span>
                         </span>
                       </div>
                     </div>
