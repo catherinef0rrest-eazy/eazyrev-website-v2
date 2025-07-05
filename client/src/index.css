@@ -279,9 +279,14 @@
 
   .rainbow-hover-btn:hover {
     background-color: #1e293b !important;
+    color: white !important;
   }
 
-  .rainbow-hover-btn > * {
+  .rainbow-hover-btn,
+  .rainbow-hover-btn:hover,
+  .rainbow-hover-btn > *,
+  .rainbow-hover-btn:hover > * {
+    color: white !important;
     position: relative;
     z-index: 2;
   }
