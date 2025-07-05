@@ -48,7 +48,7 @@ export default function Sidebar() {
 
       {/* Bottom Logo */}
       <div className="absolute bottom-0 left-0 right-0 p-6 border-t border-slate-200">
-        <div className="flex justify-center">
+        <div className="flex justify-start">
           <img 
             src={eazyLogoPath} 
             alt="eazy logo" 
