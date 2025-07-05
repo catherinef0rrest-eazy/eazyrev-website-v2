@@ -162,22 +162,6 @@ export default function SampleReport() {
                 analytics capabilities that could limit competitive positioning. The bank is positioned as a "Progressive Adopter" in the regional banking sector.
               </p>
             </div>
-            
-            {/* Analysis Icons Row */}
-            <div className="flex justify-center space-x-16 mt-8">
-              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                <Cloud className="h-6 w-6 text-blue-500" />
-              </div>
-              <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                <Shield className="h-6 w-6 text-green-500" />
-              </div>
-              <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
-                <DollarSign className="h-6 w-6 text-purple-500" />
-              </div>
-              <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center">
-                <Target className="h-6 w-6 text-orange-500" />
-              </div>
-            </div>
           </CardContent>
         </Card>
 
