@@ -453,232 +453,242 @@ export default function SampleReport() {
               <h3 className="text-2xl font-bold text-slate-900">Current Technology Stack</h3>
             </div>
             
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-6">
               {/* Cloud Infrastructure & Platforms */}
-              <div className="space-y-4">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">
-                    <Cloud className="h-4 w-4 text-blue-500" />
-                  </div>
-                  <h4 className="font-bold text-slate-900">Cloud Infrastructure & Platforms</h4>
-                </div>
-                
-                <div className="space-y-4">
-                  <div>
-                    <p className="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-2">IT Infrastructure</p>
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="outline" className="text-xs bg-blue-50 text-blue-700 border-blue-200">AWS EC2</Badge>
-                      <Badge variant="outline" className="text-xs bg-blue-50 text-blue-700 border-blue-200">Azure Virtual Machines</Badge>
-                      <Badge variant="outline" className="text-xs bg-blue-50 text-blue-700 border-blue-200">VMware ESXi</Badge>
+              <Card className="bg-blue-50 border border-blue-200 rounded-xl p-6">
+                <CardContent className="p-0">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">
+                      <Cloud className="h-4 w-4 text-blue-500" />
                     </div>
+                    <h4 className="font-bold text-slate-900">Cloud Infrastructure & Platforms</h4>
                   </div>
                   
-                  <div>
-                    <p className="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-2">Hosting</p>
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="outline" className="text-xs bg-blue-50 text-blue-700 border-blue-200">AWS</Badge>
-                      <Badge variant="outline" className="text-xs bg-blue-50 text-blue-700 border-blue-200">Microsoft Azure</Badge>
+                  <div className="space-y-4">
+                    <div>
+                      <p className="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-2">IT Infrastructure</p>
+                      <div className="flex flex-wrap gap-2">
+                        <Badge variant="outline" className="text-xs bg-blue-50 text-blue-700 border-blue-200">AWS EC2</Badge>
+                        <Badge variant="outline" className="text-xs bg-blue-50 text-blue-700 border-blue-200">Azure Virtual Machines</Badge>
+                        <Badge variant="outline" className="text-xs bg-blue-50 text-blue-700 border-blue-200">VMware ESXi</Badge>
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <p className="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-2">Hosting</p>
+                      <div className="flex flex-wrap gap-2">
+                        <Badge variant="outline" className="text-xs bg-blue-50 text-blue-700 border-blue-200">AWS</Badge>
+                        <Badge variant="outline" className="text-xs bg-blue-50 text-blue-700 border-blue-200">Microsoft Azure</Badge>
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <p className="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-2">Cloud Computing Platforms</p>
+                      <div className="flex flex-wrap gap-2">
+                        <Badge variant="outline" className="text-xs bg-blue-50 text-blue-700 border-blue-200">AWS Lambda</Badge>
+                        <Badge variant="outline" className="text-xs bg-blue-50 text-blue-700 border-blue-200">Azure Functions</Badge>
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <p className="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-2">Content Delivery Network (CDN)</p>
+                      <div className="flex flex-wrap gap-2">
+                        <Badge variant="outline" className="text-xs bg-blue-50 text-blue-700 border-blue-200">Cloudflare</Badge>
+                        <Badge variant="outline" className="text-xs bg-blue-50 text-blue-700 border-blue-200">Amazon CloudFront</Badge>
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <p className="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-2">Virtual Private Cloud (VPC)</p>
+                      <div className="flex flex-wrap gap-2">
+                        <Badge variant="outline" className="text-xs bg-blue-50 text-blue-700 border-blue-200">AWS VPC</Badge>
+                        <Badge variant="outline" className="text-xs bg-blue-50 text-blue-700 border-blue-200">Azure Virtual Network</Badge>
+                      </div>
                     </div>
                   </div>
-                  
-                  <div>
-                    <p className="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-2">Cloud Computing Platforms</p>
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="outline" className="text-xs bg-blue-50 text-blue-700 border-blue-200">AWS Lambda</Badge>
-                      <Badge variant="outline" className="text-xs bg-blue-50 text-blue-700 border-blue-200">Azure Functions</Badge>
-                    </div>
-                  </div>
-                  
-                  <div>
-                    <p className="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-2">Content Delivery Network (CDN)</p>
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="outline" className="text-xs bg-blue-50 text-blue-700 border-blue-200">Cloudflare</Badge>
-                      <Badge variant="outline" className="text-xs bg-blue-50 text-blue-700 border-blue-200">Amazon CloudFront</Badge>
-                    </div>
-                  </div>
-                  
-                  <div>
-                    <p className="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-2">Virtual Private Cloud (VPC)</p>
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="outline" className="text-xs bg-blue-50 text-blue-700 border-blue-200">AWS VPC</Badge>
-                      <Badge variant="outline" className="text-xs bg-blue-50 text-blue-700 border-blue-200">Azure Virtual Network</Badge>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                </CardContent>
+              </Card>
 
               {/* Data Management & Storage */}
-              <div className="space-y-4">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center">
-                    <Database className="h-4 w-4 text-green-500" />
-                  </div>
-                  <h4 className="font-bold text-slate-900">Data Management & Storage</h4>
-                </div>
-                
-                <div className="space-y-4">
-                  <div>
-                    <p className="text-xs font-semibold text-green-600 uppercase tracking-wide mb-2">Database Software</p>
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="outline" className="text-xs bg-green-50 text-green-700 border-green-200">SQL Server</Badge>
-                      <Badge variant="outline" className="text-xs bg-green-50 text-green-700 border-green-200">Oracle Database</Badge>
-                      <Badge variant="outline" className="text-xs bg-green-50 text-green-700 border-green-200">PostgreSQL</Badge>
+              <Card className="bg-green-50 border border-green-200 rounded-xl p-6">
+                <CardContent className="p-0">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center">
+                      <Database className="h-4 w-4 text-green-500" />
                     </div>
+                    <h4 className="font-bold text-slate-900">Data Management & Storage</h4>
                   </div>
                   
-                  <div>
-                    <p className="text-xs font-semibold text-green-600 uppercase tracking-wide mb-2">Data Warehouse</p>
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="outline" className="text-xs bg-green-50 text-green-700 border-green-200">Amazon Redshift</Badge>
-                      <Badge variant="outline" className="text-xs bg-green-50 text-green-700 border-green-200">Azure Synapse</Badge>
+                  <div className="space-y-4">
+                    <div>
+                      <p className="text-xs font-semibold text-green-600 uppercase tracking-wide mb-2">Database Software</p>
+                      <div className="flex flex-wrap gap-2">
+                        <Badge variant="outline" className="text-xs bg-green-50 text-green-700 border-green-200">SQL Server</Badge>
+                        <Badge variant="outline" className="text-xs bg-green-50 text-green-700 border-green-200">Oracle Database</Badge>
+                        <Badge variant="outline" className="text-xs bg-green-50 text-green-700 border-green-200">PostgreSQL</Badge>
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <p className="text-xs font-semibold text-green-600 uppercase tracking-wide mb-2">Data Warehouse</p>
+                      <div className="flex flex-wrap gap-2">
+                        <Badge variant="outline" className="text-xs bg-green-50 text-green-700 border-green-200">Amazon Redshift</Badge>
+                        <Badge variant="outline" className="text-xs bg-green-50 text-green-700 border-green-200">Azure Synapse</Badge>
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <p className="text-xs font-semibold text-green-600 uppercase tracking-wide mb-2">Big Data</p>
+                      <div className="flex flex-wrap gap-2">
+                        <Badge variant="outline" className="text-xs bg-green-50 text-green-700 border-green-200">Apache Hadoop</Badge>
+                        <Badge variant="outline" className="text-xs bg-green-50 text-green-700 border-green-200">Spark</Badge>
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <p className="text-xs font-semibold text-green-600 uppercase tracking-wide mb-2">NoSQL Databases</p>
+                      <div className="flex flex-wrap gap-2">
+                        <Badge variant="outline" className="text-xs bg-green-50 text-green-700 border-green-200">Redis</Badge>
+                        <Badge variant="outline" className="text-xs bg-green-50 text-green-700 border-green-200">MongoDB</Badge>
+                        <Badge variant="outline" className="text-xs bg-green-50 text-green-700 border-green-200">DynamoDB</Badge>
+                      </div>
                     </div>
                   </div>
-                  
-                  <div>
-                    <p className="text-xs font-semibold text-green-600 uppercase tracking-wide mb-2">Big Data</p>
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="outline" className="text-xs bg-green-50 text-green-700 border-green-200">Apache Hadoop</Badge>
-                      <Badge variant="outline" className="text-xs bg-green-50 text-green-700 border-green-200">Spark</Badge>
-                    </div>
-                  </div>
-                  
-                  <div>
-                    <p className="text-xs font-semibold text-green-600 uppercase tracking-wide mb-2">NoSQL Databases</p>
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="outline" className="text-xs bg-green-50 text-green-700 border-green-200">Redis</Badge>
-                      <Badge variant="outline" className="text-xs bg-green-50 text-green-700 border-green-200">MongoDB</Badge>
-                      <Badge variant="outline" className="text-xs bg-green-50 text-green-700 border-green-200">DynamoDB</Badge>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                </CardContent>
+              </Card>
 
               {/* Analytics & Intelligence */}
-              <div className="space-y-4">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center">
-                    <BarChart3 className="h-4 w-4 text-purple-500" />
-                  </div>
-                  <h4 className="font-bold text-slate-900">Analytics & Intelligence</h4>
-                </div>
-                
-                <div className="space-y-4">
-                  <div>
-                    <p className="text-xs font-semibold text-purple-600 uppercase tracking-wide mb-2">Analytics Tools & Software</p>
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="outline" className="text-xs bg-purple-50 text-purple-700 border-purple-200">Tableau</Badge>
-                      <Badge variant="outline" className="text-xs bg-purple-50 text-purple-700 border-purple-200">Power BI</Badge>
-                      <Badge variant="outline" className="text-xs bg-purple-50 text-purple-700 border-purple-200">Python Analytics</Badge>
+              <Card className="bg-purple-50 border border-purple-200 rounded-xl p-6">
+                <CardContent className="p-0">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center">
+                      <BarChart3 className="h-4 w-4 text-purple-500" />
                     </div>
+                    <h4 className="font-bold text-slate-900">Analytics & Intelligence</h4>
                   </div>
                   
-                  <div>
-                    <p className="text-xs font-semibold text-purple-600 uppercase tracking-wide mb-2">Business Intelligence</p>
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="outline" className="text-xs bg-purple-50 text-purple-700 border-purple-200">IBM Cognos</Badge>
-                      <Badge variant="outline" className="text-xs bg-purple-50 text-purple-700 border-purple-200">Microsoft BI</Badge>
-                      <Badge variant="outline" className="text-xs bg-purple-50 text-purple-700 border-purple-200">Qlik Sense</Badge>
+                  <div className="space-y-4">
+                    <div>
+                      <p className="text-xs font-semibold text-purple-600 uppercase tracking-wide mb-2">Analytics Tools & Software</p>
+                      <div className="flex flex-wrap gap-2">
+                        <Badge variant="outline" className="text-xs bg-purple-50 text-purple-700 border-purple-200">Tableau</Badge>
+                        <Badge variant="outline" className="text-xs bg-purple-50 text-purple-700 border-purple-200">Power BI</Badge>
+                        <Badge variant="outline" className="text-xs bg-purple-50 text-purple-700 border-purple-200">Python Analytics</Badge>
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <p className="text-xs font-semibold text-purple-600 uppercase tracking-wide mb-2">Business Intelligence</p>
+                      <div className="flex flex-wrap gap-2">
+                        <Badge variant="outline" className="text-xs bg-purple-50 text-purple-700 border-purple-200">IBM Cognos</Badge>
+                        <Badge variant="outline" className="text-xs bg-purple-50 text-purple-700 border-purple-200">Microsoft BI</Badge>
+                        <Badge variant="outline" className="text-xs bg-purple-50 text-purple-700 border-purple-200">Qlik Sense</Badge>
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <p className="text-xs font-semibold text-purple-600 uppercase tracking-wide mb-2">Artificial Intelligence</p>
+                      <div className="flex flex-wrap gap-2">
+                        <Badge variant="outline" className="text-xs bg-purple-50 text-purple-700 border-purple-200">Azure AI</Badge>
+                        <Badge variant="outline" className="text-xs bg-purple-50 text-purple-700 border-purple-200">AWS Machine Learning</Badge>
+                        <Badge variant="outline" className="text-xs bg-purple-50 text-purple-700 border-purple-200">TensorFlow</Badge>
+                      </div>
                     </div>
                   </div>
-                  
-                  <div>
-                    <p className="text-xs font-semibold text-purple-600 uppercase tracking-wide mb-2">Artificial Intelligence</p>
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="outline" className="text-xs bg-purple-50 text-purple-700 border-purple-200">Azure AI</Badge>
-                      <Badge variant="outline" className="text-xs bg-purple-50 text-purple-700 border-purple-200">AWS Machine Learning</Badge>
-                      <Badge variant="outline" className="text-xs bg-purple-50 text-purple-700 border-purple-200">TensorFlow</Badge>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                </CardContent>
+              </Card>
             </div>
 
             {/* Additional Technology Categories */}
-            <div className="grid md:grid-cols-2 gap-8 mt-12 pt-8 border-t border-slate-200">
+            <div className="grid md:grid-cols-2 gap-6 mt-8">
               {/* Integration & API Management */}
-              <div className="space-y-4">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center">
-                    <Network className="h-4 w-4 text-orange-500" />
-                  </div>
-                  <h4 className="font-bold text-slate-900">Integration & API Management</h4>
-                </div>
-                
-                <div className="space-y-3">
-                  <div>
-                    <p className="text-xs font-semibold text-orange-600 uppercase tracking-wide mb-2">Data Integration Tools</p>
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="outline" className="text-xs bg-orange-50 text-orange-700 border-orange-200">Azure Data Factory</Badge>
-                      <Badge variant="outline" className="text-xs bg-orange-50 text-orange-700 border-orange-200">AWS Glue</Badge>
+              <Card className="bg-orange-50 border border-orange-200 rounded-xl p-6">
+                <CardContent className="p-0">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center">
+                      <Network className="h-4 w-4 text-orange-500" />
                     </div>
+                    <h4 className="font-bold text-slate-900">Integration & API Management</h4>
                   </div>
                   
-                  <div>
-                    <p className="text-xs font-semibold text-orange-600 uppercase tracking-wide mb-2">API Management</p>
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="outline" className="text-xs bg-orange-50 text-orange-700 border-orange-200">Azure API Management</Badge>
-                      <Badge variant="outline" className="text-xs bg-orange-50 text-orange-700 border-orange-200">AWS API Gateway</Badge>
+                  <div className="space-y-4">
+                    <div>
+                      <p className="text-xs font-semibold text-orange-600 uppercase tracking-wide mb-2">Data Integration Tools</p>
+                      <div className="flex flex-wrap gap-2">
+                        <Badge variant="outline" className="text-xs bg-orange-50 text-orange-700 border-orange-200">Azure Data Factory</Badge>
+                        <Badge variant="outline" className="text-xs bg-orange-50 text-orange-700 border-orange-200">AWS Glue</Badge>
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <p className="text-xs font-semibold text-orange-600 uppercase tracking-wide mb-2">API Management</p>
+                      <div className="flex flex-wrap gap-2">
+                        <Badge variant="outline" className="text-xs bg-orange-50 text-orange-700 border-orange-200">Azure API Management</Badge>
+                        <Badge variant="outline" className="text-xs bg-orange-50 text-orange-700 border-orange-200">AWS API Gateway</Badge>
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <p className="text-xs font-semibold text-orange-600 uppercase tracking-wide mb-2">API Design</p>
+                      <div className="flex flex-wrap gap-2">
+                        <Badge variant="outline" className="text-xs bg-orange-50 text-orange-700 border-orange-200">Plaid API</Badge>
+                        <Badge variant="outline" className="text-xs bg-orange-50 text-orange-700 border-orange-200">RESTful APIs</Badge>
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <p className="text-xs font-semibold text-orange-600 uppercase tracking-wide mb-2">Cross-Stack Integration Technologies</p>
+                      <div className="flex flex-wrap gap-2">
+                        <Badge variant="outline" className="text-xs bg-orange-50 text-orange-700 border-orange-200">MuleSoft</Badge>
+                        <Badge variant="outline" className="text-xs bg-orange-50 text-orange-700 border-orange-200">Zapier</Badge>
+                        <Badge variant="outline" className="text-xs bg-orange-50 text-orange-700 border-orange-200">Microsoft Power Automate</Badge>
+                      </div>
                     </div>
                   </div>
-                  
-                  <div>
-                    <p className="text-xs font-semibold text-orange-600 uppercase tracking-wide mb-2">API Design</p>
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="outline" className="text-xs bg-orange-50 text-orange-700 border-orange-200">Plaid API</Badge>
-                      <Badge variant="outline" className="text-xs bg-orange-50 text-orange-700 border-orange-200">RESTful APIs</Badge>
-                    </div>
-                  </div>
-                  
-                  <div>
-                    <p className="text-xs font-semibold text-orange-600 uppercase tracking-wide mb-2">Cross-Stack Integration Technologies</p>
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="outline" className="text-xs bg-orange-50 text-orange-700 border-orange-200">MuleSoft</Badge>
-                      <Badge variant="outline" className="text-xs bg-orange-50 text-orange-700 border-orange-200">Zapier</Badge>
-                      <Badge variant="outline" className="text-xs bg-orange-50 text-orange-700 border-orange-200">Microsoft Power Automate</Badge>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                </CardContent>
+              </Card>
 
               {/* Development & Operations */}
-              <div className="space-y-4">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-8 h-8 bg-yellow-100 rounded-lg flex items-center justify-center">
-                    <Code className="h-4 w-4 text-yellow-600" />
-                  </div>
-                  <h4 className="font-bold text-slate-900">Development & Operations</h4>
-                </div>
-                
-                <div className="space-y-3">
-                  <div>
-                    <p className="text-xs font-semibold text-yellow-600 uppercase tracking-wide mb-2">Development</p>
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="outline" className="text-xs bg-yellow-50 text-yellow-700 border-yellow-200">Node.js</Badge>
-                      <Badge variant="outline" className="text-xs bg-yellow-50 text-yellow-700 border-yellow-200">Python</Badge>
-                      <Badge variant="outline" className="text-xs bg-yellow-50 text-yellow-700 border-yellow-200">React</Badge>
-                      <Badge variant="outline" className="text-xs bg-yellow-50 text-yellow-700 border-yellow-200">Angular</Badge>
+              <Card className="bg-yellow-50 border border-yellow-200 rounded-xl p-6">
+                <CardContent className="p-0">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-8 h-8 bg-yellow-100 rounded-lg flex items-center justify-center">
+                      <Code className="h-4 w-4 text-yellow-600" />
                     </div>
+                    <h4 className="font-bold text-slate-900">Development & Operations</h4>
                   </div>
                   
-                  <div>
-                    <p className="text-xs font-semibold text-yellow-600 uppercase tracking-wide mb-2">DevOps</p>
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="outline" className="text-xs bg-yellow-50 text-yellow-700 border-yellow-200">Jenkins</Badge>
-                      <Badge variant="outline" className="text-xs bg-yellow-50 text-yellow-700 border-yellow-200">Ansible</Badge>
-                      <Badge variant="outline" className="text-xs bg-yellow-50 text-yellow-700 border-yellow-200">Terraform</Badge>
+                  <div className="space-y-4">
+                    <div>
+                      <p className="text-xs font-semibold text-yellow-600 uppercase tracking-wide mb-2">Development</p>
+                      <div className="flex flex-wrap gap-2">
+                        <Badge variant="outline" className="text-xs bg-yellow-50 text-yellow-700 border-yellow-200">Node.js</Badge>
+                        <Badge variant="outline" className="text-xs bg-yellow-50 text-yellow-700 border-yellow-200">Python</Badge>
+                        <Badge variant="outline" className="text-xs bg-yellow-50 text-yellow-700 border-yellow-200">React</Badge>
+                        <Badge variant="outline" className="text-xs bg-yellow-50 text-yellow-700 border-yellow-200">Angular</Badge>
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <p className="text-xs font-semibold text-yellow-600 uppercase tracking-wide mb-2">DevOps</p>
+                      <div className="flex flex-wrap gap-2">
+                        <Badge variant="outline" className="text-xs bg-yellow-50 text-yellow-700 border-yellow-200">Jenkins</Badge>
+                        <Badge variant="outline" className="text-xs bg-yellow-50 text-yellow-700 border-yellow-200">Ansible</Badge>
+                        <Badge variant="outline" className="text-xs bg-yellow-50 text-yellow-700 border-yellow-200">Terraform</Badge>
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <p className="text-xs font-semibold text-yellow-600 uppercase tracking-wide mb-2">CI/CD Tools</p>
+                      <div className="flex flex-wrap gap-2">
+                        <Badge variant="outline" className="text-xs bg-yellow-50 text-yellow-700 border-yellow-200">GitHub Actions</Badge>
+                        <Badge variant="outline" className="text-xs bg-yellow-50 text-yellow-700 border-yellow-200">Azure DevOps</Badge>
+                        <Badge variant="outline" className="text-xs bg-yellow-50 text-yellow-700 border-yellow-200">Docker</Badge>
+                      </div>
                     </div>
                   </div>
-                  
-                  <div>
-                    <p className="text-xs font-semibold text-yellow-600 uppercase tracking-wide mb-2">CI/CD Tools</p>
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="outline" className="text-xs bg-yellow-50 text-yellow-700 border-yellow-200">GitHub Actions</Badge>
-                      <Badge variant="outline" className="text-xs bg-yellow-50 text-yellow-700 border-yellow-200">Azure DevOps</Badge>
-                      <Badge variant="outline" className="text-xs bg-yellow-50 text-yellow-700 border-yellow-200">Docker</Badge>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                </CardContent>
+              </Card>
             </div>
           </CardContent>
         </Card>
