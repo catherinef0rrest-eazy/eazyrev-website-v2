@@ -278,12 +278,12 @@ export default function SampleReport() {
                   <h4 className="font-semibold text-slate-900 mb-3">Microsoft Defender for Cloud</h4>
                   <div className="space-y-3 mb-4">
                     <div>
-                      <p className="text-xs text-slate-500 font-medium">• BUSINESS RATIONALE</p>
+                      <p className="text-xs text-slate-500 font-medium">BUSINESS RATIONALE</p>
                       <p className="text-sm text-slate-700">Enhance existing Azure security posture</p>
                     </div>
                   </div>
                   <div className="bg-green-50 rounded p-3">
-                    <p className="text-xs text-green-600 font-medium">• REVENUE IMPACT</p>
+                    <p className="text-xs text-green-600 font-medium">REVENUE IMPACT</p>
                     <p className="text-sm text-slate-900 font-semibold">$150K-250K ARR</p>
                   </div>
                 </CardContent>
@@ -302,12 +302,12 @@ export default function SampleReport() {
                   <h4 className="font-semibold text-slate-900 mb-3">AWS Analytics Suite</h4>
                   <div className="space-y-3 mb-4">
                     <div>
-                      <p className="text-xs text-slate-500 font-medium">• BUSINESS RATIONALE</p>
+                      <p className="text-xs text-slate-500 font-medium">BUSINESS RATIONALE</p>
                       <p className="text-sm text-slate-700">Address real-time analytics gap</p>
                     </div>
                   </div>
                   <div className="bg-blue-50 rounded p-3">
-                    <p className="text-xs text-blue-600 font-medium">• REVENUE IMPACT</p>
+                    <p className="text-xs text-blue-600 font-medium">REVENUE IMPACT</p>
                     <p className="text-sm text-slate-900 font-semibold">$200K-350K ARR</p>
                   </div>
                 </CardContent>
@@ -326,12 +326,12 @@ export default function SampleReport() {
                   <h4 className="font-semibold text-slate-900 mb-3">Fintech Partnership Platform</h4>
                   <div className="space-y-3 mb-4">
                     <div>
-                      <p className="text-xs text-slate-500 font-medium">• BUSINESS RATIONALE</p>
+                      <p className="text-xs text-slate-500 font-medium">BUSINESS RATIONALE</p>
                       <p className="text-sm text-slate-700">Enable third-party integrations</p>
                     </div>
                   </div>
                   <div className="bg-purple-50 rounded p-3">
-                    <p className="text-xs text-purple-600 font-medium">• REVENUE IMPACT</p>
+                    <p className="text-xs text-purple-600 font-medium">REVENUE IMPACT</p>
                     <p className="text-sm text-slate-900 font-semibold">$100K-200K ARR</p>
                   </div>
                 </CardContent>
@@ -364,16 +364,16 @@ export default function SampleReport() {
                   <h4 className="font-semibold text-slate-900 mb-4">Limited digital banking customer experience</h4>
                   <div className="space-y-3 mb-4">
                     <div>
-                      <p className="text-xs text-slate-500 font-medium">• IMPACT AREA</p>
+                      <p className="text-xs text-slate-500 font-medium">IMPACT AREA</p>
                       <p className="text-sm text-slate-700">Customer Experience</p>
                     </div>
                     <div>
-                      <p className="text-xs text-slate-500 font-medium">• GAP ANALYSIS</p>
+                      <p className="text-xs text-slate-500 font-medium">GAP ANALYSIS</p>
                       <p className="text-sm text-slate-700">Missing modern digital banking interface and mobile-first customer experience platform.</p>
                     </div>
                   </div>
                   <div className="bg-red-50 rounded p-3">
-                    <p className="text-xs text-red-600 font-medium">• RECOMMENDED ACTION</p>
+                    <p className="text-xs text-red-600 font-medium">RECOMMENDED ACTION</p>
                     <p className="text-sm text-slate-700">Implement comprehensive digital banking solution</p>
                   </div>
                 </CardContent>
@@ -392,16 +392,16 @@ export default function SampleReport() {
                   <h4 className="font-semibold text-slate-900 mb-4">Insufficient real-time analytics capabilities</h4>
                   <div className="space-y-3 mb-4">
                     <div>
-                      <p className="text-xs text-slate-500 font-medium">• IMPACT AREA</p>
+                      <p className="text-xs text-slate-500 font-medium">IMPACT AREA</p>
                       <p className="text-sm text-slate-700">Regulatory Compliance</p>
                     </div>
                     <div>
-                      <p className="text-xs text-slate-500 font-medium">• GAP ANALYSIS</p>
+                      <p className="text-xs text-slate-500 font-medium">GAP ANALYSIS</p>
                       <p className="text-sm text-slate-700">Limited API infrastructure for third-party integrations and open banking compliance requirements.</p>
                     </div>
                   </div>
                   <div className="bg-red-50 rounded p-3">
-                    <p className="text-xs text-red-600 font-medium">• RECOMMENDED ACTION</p>
+                    <p className="text-xs text-red-600 font-medium">RECOMMENDED ACTION</p>
                     <p className="text-sm text-slate-700">Deploy enterprise API gateway and management platform</p>
                   </div>
                 </CardContent>
@@ -420,16 +420,16 @@ export default function SampleReport() {
                   <h4 className="font-semibold text-slate-900 mb-4">API management and open banking readiness</h4>
                   <div className="space-y-3 mb-4">
                     <div>
-                      <p className="text-xs text-slate-500 font-medium">• IMPACT AREA</p>
+                      <p className="text-xs text-slate-500 font-medium">IMPACT AREA</p>
                       <p className="text-sm text-slate-700">Risk Management</p>
                     </div>
                     <div>
-                      <p className="text-xs text-slate-500 font-medium">• GAP ANALYSIS</p>
+                      <p className="text-xs text-slate-500 font-medium">GAP ANALYSIS</p>
                       <p className="text-sm text-slate-700">Insufficient real-time processing capabilities for fraud prevention and customer analytics.</p>
                     </div>
                   </div>
                   <div className="bg-orange-50 rounded p-3">
-                    <p className="text-xs text-orange-600 font-medium">• RECOMMENDED ACTION</p>
+                    <p className="text-xs text-orange-600 font-medium">RECOMMENDED ACTION</p>
                     <p className="text-sm text-slate-700">Integrate real-time analytics and fraud detection system</p>
                   </div>
                 </CardContent>
@@ -448,16 +448,16 @@ export default function SampleReport() {
                   <h4 className="font-semibold text-slate-900 mb-4">Customer data platform fragmentation</h4>
                   <div className="space-y-3 mb-4">
                     <div>
-                      <p className="text-xs text-slate-500 font-medium">• IMPACT AREA</p>
+                      <p className="text-xs text-slate-500 font-medium">IMPACT AREA</p>
                       <p className="text-sm text-slate-700">Data Strategy</p>
                     </div>
                     <div>
-                      <p className="text-xs text-slate-500 font-medium">• GAP ANALYSIS</p>
+                      <p className="text-xs text-slate-500 font-medium">GAP ANALYSIS</p>
                       <p className="text-sm text-slate-700">Fragmented customer data platforms limiting unified view and personalization capabilities.</p>
                     </div>
                   </div>
                   <div className="bg-orange-50 rounded p-3">
-                    <p className="text-xs text-orange-600 font-medium">• RECOMMENDED ACTION</p>
+                    <p className="text-xs text-orange-600 font-medium">RECOMMENDED ACTION</p>
                     <p className="text-sm text-slate-700">Consolidate customer data into unified platform</p>
                   </div>
                 </CardContent>
