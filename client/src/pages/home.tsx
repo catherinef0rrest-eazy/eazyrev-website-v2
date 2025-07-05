@@ -142,13 +142,24 @@ export default function Home() {
           <Card className="metric-card rounded-2xl p-8 mb-8 enterprise-shadow-lg card-hover-effect bg-white">
             <CardContent className="p-0">
               {/* Browser Header */}
-              <div className="flex items-center gap-2 mb-6 pb-3 border-b border-slate-200">
-                <div className="flex gap-2">
-                  <div className="w-3 h-3 bg-red-400 rounded-full"></div>
-                  <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
-                  <div className="w-3 h-3 bg-green-400 rounded-full"></div>
+              <div className="bg-slate-100 rounded-t-lg px-4 py-3 mb-6 border-b border-slate-200">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <div className="flex gap-2">
+                      <div className="w-3 h-3 bg-red-500 rounded-full hover:bg-red-600 transition-colors cursor-pointer"></div>
+                      <div className="w-3 h-3 bg-yellow-500 rounded-full hover:bg-yellow-600 transition-colors cursor-pointer"></div>
+                      <div className="w-3 h-3 bg-green-500 rounded-full hover:bg-green-600 transition-colors cursor-pointer"></div>
+                    </div>
+                    <span className="text-sm text-slate-600 font-medium">Analysis Report - TechCorp Solutions</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-4 h-4 border border-slate-400 rounded-sm flex items-center justify-center">
+                      <div className="w-2 h-2 bg-slate-400 rounded-sm"></div>
+                    </div>
+                    <div className="w-4 h-4 border border-slate-400 rounded-sm"></div>
+                    <div className="text-slate-400 text-lg leading-none">×</div>
+                  </div>
                 </div>
-                <span className="text-sm text-slate-500 ml-4">Analysis Report - TechCorp Solutions</span>
               </div>
 
               {/* Company Header */}
