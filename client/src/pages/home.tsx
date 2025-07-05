@@ -126,21 +126,12 @@ export default function Home() {
           </p>
         </div>
 
-        {/* Calendly Widget Placeholder */}
-        <Card className="metric-card rounded-2xl p-8 enterprise-shadow-lg bg-slate-50 border-2 border-dashed border-slate-300">
-          <CardContent className="p-0">
-            <div className="text-center">
-              <Calendar className="h-16 w-16 text-slate-400 mb-4 mx-auto" />
-              <h3 className="text-xl font-semibold text-slate-700 mb-2">Calendly Integration</h3>
-              <p className="text-slate-500 mb-4">Book a strategy call with our team</p>
-              <Link href="/contact">
-                <Button className="bg-slate-900 text-white px-6 py-2 rounded-lg hover:bg-slate-800 transition-colors">
-                  Schedule Demo
-                </Button>
-              </Link>
-            </div>
-          </CardContent>
-        </Card>
+        {/* Calendly Widget */}
+        <CalendlyInline 
+          url="https://calendly.com/ashwin-eazy/eazy-strategy-call"
+          height="700px"
+          className="w-full"
+        />
       </div>
     </div>
   );

@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
+import { CalendlyInline } from "@/components/calendly-inline";
 import { 
   ExternalLink, 
   Building2, 
@@ -716,17 +717,19 @@ export default function SampleReport() {
         </Card>
 
         {/* CTA Section */}
-        <div className="text-center">
+        <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4 text-slate-900">Get Your Custom Technology Analysis</h2>
           <p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto">
             Schedule a demo to see how eazyrev can transform your tech sales process with detailed insights like this.
           </p>
-          <Link href="/contact">
-            <Button className="bg-slate-900 hover:bg-slate-800 text-white px-8 py-3 text-base font-medium rounded-xl transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">
-              Schedule Your Demo
-            </Button>
-          </Link>
         </div>
+
+        {/* Calendly Widget */}
+        <CalendlyInline 
+          url="https://calendly.com/ashwin-eazy/eazy-strategy-call"
+          height="700px"
+          className="w-full"
+        />
       </div>
     </div>
   );
