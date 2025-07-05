@@ -262,11 +262,28 @@ export default function Home() {
                       <span className="font-semibold text-slate-900">Integration & API Management</span>
                       <Badge className="bg-red-100 text-red-700 text-xs font-medium">HIGH</Badge>
                     </div>
-                    <h4 className="font-semibold text-slate-900 mb-2">API management and open banking readiness</h4>
-                    <p className="text-sm text-slate-600 leading-relaxed">
-                      Limited API infrastructure for third-party integrations and 
-                      open banking compliance requirements.
-                    </p>
+                    <h4 className="font-semibold text-slate-900 mb-4">Insufficient real-time analytics capabilities</h4>
+                    
+                    <div className="space-y-3 mb-4">
+                      <div>
+                        <span className="text-xs font-medium text-slate-500 uppercase tracking-wide">IMPACT AREA</span>
+                        <p className="text-sm text-slate-700">Regulatory Compliance</p>
+                      </div>
+                      
+                      <div>
+                        <span className="text-xs font-medium text-slate-500 uppercase tracking-wide">GAP ANALYSIS</span>
+                        <p className="text-sm text-slate-700 leading-relaxed">
+                          Limited API infrastructure for third-party integrations and open banking compliance requirements.
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-red-50 rounded-lg p-3">
+                      <span className="text-xs font-medium text-red-700 uppercase tracking-wide">RECOMMENDED ACTION</span>
+                      <p className="text-sm text-slate-800 font-medium mt-1">
+                        Deploy enterprise API gateway and management platform
+                      </p>
+                    </div>
                   </CardContent>
                 </Card>
                 
@@ -279,16 +296,20 @@ export default function Home() {
                       <span className="font-semibold text-slate-900">Revenue Opportunities</span>
                     </div>
                     <div className="space-y-3">
-                      <div className="flex justify-between items-center">
-                        <span className="text-sm text-slate-700">Microsoft Defender</span>
+                      <div className="flex justify-between items-center py-2">
+                        <span className="text-sm text-slate-700 font-medium">Microsoft Defender for Cloud</span>
                         <Badge className="bg-red-100 text-red-700 text-xs">High</Badge>
                       </div>
-                      <div className="flex justify-between items-center">
-                        <span className="text-sm text-slate-700">Azure Backup</span>
+                      <div className="flex justify-between items-center py-2">
+                        <span className="text-sm text-slate-700 font-medium">Azure API Management</span>
+                        <Badge className="bg-red-100 text-red-700 text-xs">High</Badge>
+                      </div>
+                      <div className="flex justify-between items-center py-2">
+                        <span className="text-sm text-slate-700 font-medium">Azure Backup</span>
                         <Badge className="bg-orange-100 text-orange-700 text-xs">Medium</Badge>
                       </div>
-                      <div className="flex justify-between items-center">
-                        <span className="text-sm text-slate-700">Power BI Premium</span>
+                      <div className="flex justify-between items-center py-2">
+                        <span className="text-sm text-slate-700 font-medium">Power BI Premium</span>
                         <Badge className="bg-orange-100 text-orange-700 text-xs">Medium</Badge>
                       </div>
                     </div>
