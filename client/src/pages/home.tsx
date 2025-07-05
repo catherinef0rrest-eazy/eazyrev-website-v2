@@ -9,10 +9,15 @@ import { Network, Zap, Crosshair, Calendar, Building2, DollarSign, Cloud, Shield
 export default function Home() {
   const [typewriterText, setTypewriterText] = useState("");
   const [typewriterComplete, setTypewriterComplete] = useState(false);
+  const [hasStarted, setHasStarted] = useState(false);
 
   const fullText = "eazyrev leverages advanced AI and the world's largest and most accurate technology intelligence data available to analyze your prospect tech stacks and uncover sales insights.";
 
   useEffect(() => {
+    // Only start typewriter effect once per component mount
+    if (hasStarted) return;
+    
+    setHasStarted(true);
     let currentIndex = 0;
     const typeSpeed = 30; // milliseconds per character
 
@@ -27,7 +32,7 @@ export default function Home() {
     }, typeSpeed);
 
     return () => clearInterval(typeInterval);
-  }, []);
+  }, [hasStarted, fullText]);
 
   return (
     <div className="landing-backdrop">
@@ -72,12 +77,12 @@ export default function Home() {
 
         {/* Value Proposition */}
         <div className="mb-20">
-          <Card className="metric-card rounded-2xl p-10 mb-12 enterprise-shadow-lg float-animation">
-            <CardContent className="p-0">
-              <p className="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-4xl mx-auto min-h-[5rem] text-center px-4">
+          <Card className="metric-card rounded-2xl p-8 sm:p-10 mb-12 enterprise-shadow-lg float-animation">
+            <CardContent className="p-0 flex items-center justify-center min-h-[8rem]">
+              <p className="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-4xl text-center px-4">
                 {typewriterText}
                 {!typewriterComplete && (
-                  <span className="typewriter-cursor text-slate-400">|</span>
+                  <span className="typewriter-cursor text-slate-400 ml-1">|</span>
                 )}
               </p>
             </CardContent>
