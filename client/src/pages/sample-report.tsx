@@ -241,7 +241,7 @@ export default function SampleReport() {
                 <h2 className="text-xl font-medium text-white">Primary Recommendation</h2>
               </div>
               
-              <div className="bg-white/8 backdrop-blur-sm rounded-xl p-6 border border-white/10 mb-6">
+              <div className="bg-white/8 backdrop-blur-sm rounded-xl p-6 border border-white/10">
                 <p className="text-base leading-relaxed text-slate-100 mb-6">
                   TechForward Regional Bank is using Microsoft Azure for cloud infrastructure, you should cross-sell Microsoft Defender for Cloud to enhance their 
                   existing Azure security posture and address critical gaps in real-time threat detection.
@@ -265,75 +265,95 @@ export default function SampleReport() {
                   </div>
                 </div>
               </div>
-
-              {/* Actionable Seller Recommendations */}
-              <div className="space-y-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-6 h-6 bg-slate-700 rounded-full flex items-center justify-center">
-                    <CheckCircle className="h-4 w-4 text-white" />
-                  </div>
-                  <h3 className="text-lg font-medium text-white">Actionable Seller Recommendations</h3>
-                </div>
-
-                <div className="grid md:grid-cols-3 gap-6">
-                  {/* Cross-sell Opportunity */}
-                  <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                    <div className="flex items-center gap-2 mb-3">
-                      <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
-                        <CheckCircle className="h-4 w-4 text-white" />
-                      </div>
-                      <span className="text-sm text-white font-medium">Cross-sell Opportunity</span>
-                      <Badge className="bg-green-500 text-white text-xs">HIGH</Badge>
-                    </div>
-                    <h4 className="font-semibold text-white mb-2">Microsoft Defender for Cloud</h4>
-                    <p className="text-xs text-slate-300 mb-2">• BUSINESS RATIONALE</p>
-                    <p className="text-sm text-slate-200 mb-4">Enhance existing Azure security posture</p>
-                    <div className="bg-green-100/10 rounded p-2">
-                      <p className="text-xs text-green-200 font-medium">• REVENUE IMPACT</p>
-                      <p className="text-sm text-white font-semibold">$150K-250K ARR</p>
-                    </div>
-                  </div>
-
-                  {/* Upsell Opportunity */}
-                  <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                    <div className="flex items-center gap-2 mb-3">
-                      <div className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center">
-                        <TrendingUp className="h-4 w-4 text-white" />
-                      </div>
-                      <span className="text-sm text-white font-medium">Upsell Opportunity</span>
-                      <Badge className="bg-blue-500 text-white text-xs">MEDIUM</Badge>
-                    </div>
-                    <h4 className="font-semibold text-white mb-2">AWS Analytics Suite</h4>
-                    <p className="text-xs text-slate-300 mb-2">• BUSINESS RATIONALE</p>
-                    <p className="text-sm text-slate-200 mb-4">Address real-time analytics gap</p>
-                    <div className="bg-blue-100/10 rounded p-2">
-                      <p className="text-xs text-blue-200 font-medium">• REVENUE IMPACT</p>
-                      <p className="text-sm text-white font-semibold">$200K-350K ARR</p>
-                    </div>
-                  </div>
-
-                  {/* Co-sell Opportunity */}
-                  <div className="bg-white/5 rounded-lg p-4 border border-white/10">
-                    <div className="flex items-center gap-2 mb-3">
-                      <div className="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center">
-                        <Users className="h-4 w-4 text-white" />
-                      </div>
-                      <span className="text-sm text-white font-medium">Co-sell Opportunity</span>
-                      <Badge className="bg-purple-500 text-white text-xs">MEDIUM</Badge>
-                    </div>
-                    <h4 className="font-semibold text-white mb-2">Fintech Partnership Platform</h4>
-                    <p className="text-xs text-slate-300 mb-2">• BUSINESS RATIONALE</p>
-                    <p className="text-sm text-slate-200 mb-4">Enable third-party integrations</p>
-                    <div className="bg-purple-100/10 rounded p-2">
-                      <p className="text-xs text-purple-200 font-medium">• REVENUE IMPACT</p>
-                      <p className="text-sm text-white font-semibold">$100K-200K ARR</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
+
+        {/* Actionable Seller Recommendations */}
+        <Card className="metric-card rounded-2xl p-8 mb-12 enterprise-shadow-lg">
+          <CardContent className="p-0">
+            <div className="flex items-center gap-3 mb-8">
+              <div className="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center">
+                <CheckCircle className="h-5 w-5 text-slate-600" />
+              </div>
+              <h3 className="text-2xl font-bold text-slate-900">Actionable Seller Recommendations</h3>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              {/* Cross-sell Opportunity */}
+              <Card className="bg-white border border-slate-200 rounded-xl p-6">
+                <CardContent className="p-0">
+                  <div className="flex items-center gap-2 mb-4">
+                    <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                      <CheckCircle className="h-4 w-4 text-white" />
+                    </div>
+                    <span className="text-sm text-slate-700 font-medium">Cross-sell Opportunity</span>
+                    <Badge className="bg-green-500 text-white text-xs">HIGH</Badge>
+                  </div>
+                  <h4 className="font-semibold text-slate-900 mb-3">Microsoft Defender for Cloud</h4>
+                  <div className="space-y-3 mb-4">
+                    <div>
+                      <p className="text-xs text-slate-500 font-medium">• BUSINESS RATIONALE</p>
+                      <p className="text-sm text-slate-700">Enhance existing Azure security posture</p>
+                    </div>
+                  </div>
+                  <div className="bg-green-50 rounded p-3">
+                    <p className="text-xs text-green-600 font-medium">• REVENUE IMPACT</p>
+                    <p className="text-sm text-slate-900 font-semibold">$150K-250K ARR</p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Upsell Opportunity */}
+              <Card className="bg-white border border-slate-200 rounded-xl p-6">
+                <CardContent className="p-0">
+                  <div className="flex items-center gap-2 mb-4">
+                    <div className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center">
+                      <TrendingUp className="h-4 w-4 text-white" />
+                    </div>
+                    <span className="text-sm text-slate-700 font-medium">Upsell Opportunity</span>
+                    <Badge className="bg-blue-500 text-white text-xs">MEDIUM</Badge>
+                  </div>
+                  <h4 className="font-semibold text-slate-900 mb-3">AWS Analytics Suite</h4>
+                  <div className="space-y-3 mb-4">
+                    <div>
+                      <p className="text-xs text-slate-500 font-medium">• BUSINESS RATIONALE</p>
+                      <p className="text-sm text-slate-700">Address real-time analytics gap</p>
+                    </div>
+                  </div>
+                  <div className="bg-blue-50 rounded p-3">
+                    <p className="text-xs text-blue-600 font-medium">• REVENUE IMPACT</p>
+                    <p className="text-sm text-slate-900 font-semibold">$200K-350K ARR</p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Co-sell Opportunity */}
+              <Card className="bg-white border border-slate-200 rounded-xl p-6">
+                <CardContent className="p-0">
+                  <div className="flex items-center gap-2 mb-4">
+                    <div className="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center">
+                      <Users className="h-4 w-4 text-white" />
+                    </div>
+                    <span className="text-sm text-slate-700 font-medium">Co-sell Opportunity</span>
+                    <Badge className="bg-purple-500 text-white text-xs">MEDIUM</Badge>
+                  </div>
+                  <h4 className="font-semibold text-slate-900 mb-3">Fintech Partnership Platform</h4>
+                  <div className="space-y-3 mb-4">
+                    <div>
+                      <p className="text-xs text-slate-500 font-medium">• BUSINESS RATIONALE</p>
+                      <p className="text-sm text-slate-700">Enable third-party integrations</p>
+                    </div>
+                  </div>
+                  <div className="bg-purple-50 rounded p-3">
+                    <p className="text-xs text-purple-600 font-medium">• REVENUE IMPACT</p>
+                    <p className="text-sm text-slate-900 font-semibold">$100K-200K ARR</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </CardContent>
+        </Card>
 
         {/* Critical Technology Gaps */}
         <Card className="metric-card rounded-2xl p-8 mb-12 enterprise-shadow-lg">
