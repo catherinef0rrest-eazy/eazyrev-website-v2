@@ -95,6 +95,7 @@ The application follows a clean separation between frontend and backend with the
 Changelog:
 - July 05, 2025. Initial setup
 - July 05, 2025. Typography updates: Applied Neue Haas Grotesk to H1 headings and eazyrev brand name, set default body font weight to light (300), increased base font size to 16px for better readability
+- July 05, 2025. Font refinements: Updated body font weight to 350, adjusted eazyrev brand letter spacing to -0.02em, increased Executive Summary text to 20px, and enhanced text-sm size to 15px for better readability
 ```
 
 ## User Preferences

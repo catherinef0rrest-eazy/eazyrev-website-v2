@@ -89,6 +89,11 @@
   .text-xs {
     font-size: 0.8rem !important;
   }
+
+  /* Make text-sm slightly bigger for better readability */
+  .text-sm {
+    font-size: 0.9375rem !important; /* 15px instead of 14px */
+  }
 }
 
 @layer utilities {
