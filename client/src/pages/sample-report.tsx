@@ -345,100 +345,118 @@ export default function SampleReport() {
               <h3 className="text-2xl font-bold text-slate-900">Critical Technology Gaps</h3>
             </div>
             
-            <div className="grid md:grid-cols-2 gap-8">
-              {/* High Priority Gaps */}
-              <div className="space-y-6">
-                {/* Cloud Infrastructure Gap */}
-                <div className="border-l-4 border-red-500 pl-6">
-                  <div className="flex items-center gap-2 mb-3">
+            <div className="grid md:grid-cols-2 gap-6">
+              {/* Cloud Infrastructure Gap */}
+              <Card className="bg-white border border-slate-200 rounded-xl p-6">
+                <CardContent className="p-0">
+                  <div className="flex items-center gap-2 mb-4">
                     <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center">
                       <Cloud className="h-4 w-4 text-blue-500" />
                     </div>
                     <span className="text-sm font-medium text-slate-700">Cloud Infrastructure & Platforms</span>
                     <Badge className="bg-red-500 text-white text-xs">HIGH</Badge>
                   </div>
-                  <h4 className="font-semibold text-slate-900 mb-2">Limited digital banking customer experience</h4>
-                  <div className="space-y-2 mb-4">
-                    <p className="text-xs text-slate-500 font-medium">• IMPACT AREA</p>
-                    <p className="text-sm text-slate-700">Customer Experience</p>
-                    <p className="text-xs text-slate-500 font-medium">• GAP ANALYSIS</p>
-                    <p className="text-sm text-slate-700">Missing modern digital banking interface and mobile-first customer experience platform.</p>
+                  <h4 className="font-semibold text-slate-900 mb-4">Limited digital banking customer experience</h4>
+                  <div className="space-y-3 mb-4">
+                    <div>
+                      <p className="text-xs text-slate-500 font-medium">• IMPACT AREA</p>
+                      <p className="text-sm text-slate-700">Customer Experience</p>
+                    </div>
+                    <div>
+                      <p className="text-xs text-slate-500 font-medium">• GAP ANALYSIS</p>
+                      <p className="text-sm text-slate-700">Missing modern digital banking interface and mobile-first customer experience platform.</p>
+                    </div>
                   </div>
                   <div className="bg-red-50 rounded p-3">
                     <p className="text-xs text-red-600 font-medium">• RECOMMENDED ACTION</p>
                     <p className="text-sm text-slate-700">Implement comprehensive digital banking solution</p>
                   </div>
-                </div>
+                </CardContent>
+              </Card>
 
-                {/* Integration & API Management Gap */}
-                <div className="border-l-4 border-red-500 pl-6">
-                  <div className="flex items-center gap-2 mb-3">
+              {/* Integration & API Management Gap */}
+              <Card className="bg-white border border-slate-200 rounded-xl p-6">
+                <CardContent className="p-0">
+                  <div className="flex items-center gap-2 mb-4">
                     <div className="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center">
                       <Network className="h-4 w-4 text-orange-500" />
                     </div>
                     <span className="text-sm font-medium text-slate-700">Integration & API Management</span>
                     <Badge className="bg-red-500 text-white text-xs">HIGH</Badge>
                   </div>
-                  <h4 className="font-semibold text-slate-900 mb-2">Insufficient real-time analytics capabilities</h4>
-                  <div className="space-y-2 mb-4">
-                    <p className="text-xs text-slate-500 font-medium">• IMPACT AREA</p>
-                    <p className="text-sm text-slate-700">Regulatory Compliance</p>
-                    <p className="text-xs text-slate-500 font-medium">• GAP ANALYSIS</p>
-                    <p className="text-sm text-slate-700">Limited API infrastructure for third-party integrations and open banking compliance requirements.</p>
+                  <h4 className="font-semibold text-slate-900 mb-4">Insufficient real-time analytics capabilities</h4>
+                  <div className="space-y-3 mb-4">
+                    <div>
+                      <p className="text-xs text-slate-500 font-medium">• IMPACT AREA</p>
+                      <p className="text-sm text-slate-700">Regulatory Compliance</p>
+                    </div>
+                    <div>
+                      <p className="text-xs text-slate-500 font-medium">• GAP ANALYSIS</p>
+                      <p className="text-sm text-slate-700">Limited API infrastructure for third-party integrations and open banking compliance requirements.</p>
+                    </div>
                   </div>
                   <div className="bg-red-50 rounded p-3">
                     <p className="text-xs text-red-600 font-medium">• RECOMMENDED ACTION</p>
                     <p className="text-sm text-slate-700">Deploy enterprise API gateway and management platform</p>
                   </div>
-                </div>
-              </div>
+                </CardContent>
+              </Card>
 
-              {/* Medium Priority Gaps */}
-              <div className="space-y-6">
-                {/* Analytics & Intelligence Gap */}
-                <div className="border-l-4 border-orange-500 pl-6">
-                  <div className="flex items-center gap-2 mb-3">
+              {/* Analytics & Intelligence Gap */}
+              <Card className="bg-white border border-slate-200 rounded-xl p-6">
+                <CardContent className="p-0">
+                  <div className="flex items-center gap-2 mb-4">
                     <div className="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center">
                       <BarChart3 className="h-4 w-4 text-purple-500" />
                     </div>
                     <span className="text-sm font-medium text-slate-700">Analytics & Intelligence</span>
                     <Badge className="bg-orange-500 text-white text-xs">MEDIUM</Badge>
                   </div>
-                  <h4 className="font-semibold text-slate-900 mb-2">API management and open banking readiness</h4>
-                  <div className="space-y-2 mb-4">
-                    <p className="text-xs text-slate-500 font-medium">• IMPACT AREA</p>
-                    <p className="text-sm text-slate-700">Risk Management</p>
-                    <p className="text-xs text-slate-500 font-medium">• GAP ANALYSIS</p>
-                    <p className="text-sm text-slate-700">Insufficient real-time processing capabilities for fraud prevention and customer analytics.</p>
+                  <h4 className="font-semibold text-slate-900 mb-4">API management and open banking readiness</h4>
+                  <div className="space-y-3 mb-4">
+                    <div>
+                      <p className="text-xs text-slate-500 font-medium">• IMPACT AREA</p>
+                      <p className="text-sm text-slate-700">Risk Management</p>
+                    </div>
+                    <div>
+                      <p className="text-xs text-slate-500 font-medium">• GAP ANALYSIS</p>
+                      <p className="text-sm text-slate-700">Insufficient real-time processing capabilities for fraud prevention and customer analytics.</p>
+                    </div>
                   </div>
                   <div className="bg-orange-50 rounded p-3">
                     <p className="text-xs text-orange-600 font-medium">• RECOMMENDED ACTION</p>
                     <p className="text-sm text-slate-700">Integrate real-time analytics and fraud detection system</p>
                   </div>
-                </div>
+                </CardContent>
+              </Card>
 
-                {/* Data Management Gap */}
-                <div className="border-l-4 border-orange-500 pl-6">
-                  <div className="flex items-center gap-2 mb-3">
+              {/* Data Management Gap */}
+              <Card className="bg-white border border-slate-200 rounded-xl p-6">
+                <CardContent className="p-0">
+                  <div className="flex items-center gap-2 mb-4">
                     <div className="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
                       <Database className="h-4 w-4 text-green-500" />
                     </div>
                     <span className="text-sm font-medium text-slate-700">Data Management & Storage</span>
                     <Badge className="bg-orange-500 text-white text-xs">MEDIUM</Badge>
                   </div>
-                  <h4 className="font-semibold text-slate-900 mb-2">Customer data platform fragmentation</h4>
-                  <div className="space-y-2 mb-4">
-                    <p className="text-xs text-slate-500 font-medium">• IMPACT AREA</p>
-                    <p className="text-sm text-slate-700">Data Strategy</p>
-                    <p className="text-xs text-slate-500 font-medium">• GAP ANALYSIS</p>
-                    <p className="text-sm text-slate-700">Fragmented customer data platforms limiting unified view and personalization capabilities.</p>
+                  <h4 className="font-semibold text-slate-900 mb-4">Customer data platform fragmentation</h4>
+                  <div className="space-y-3 mb-4">
+                    <div>
+                      <p className="text-xs text-slate-500 font-medium">• IMPACT AREA</p>
+                      <p className="text-sm text-slate-700">Data Strategy</p>
+                    </div>
+                    <div>
+                      <p className="text-xs text-slate-500 font-medium">• GAP ANALYSIS</p>
+                      <p className="text-sm text-slate-700">Fragmented customer data platforms limiting unified view and personalization capabilities.</p>
+                    </div>
                   </div>
                   <div className="bg-orange-50 rounded p-3">
                     <p className="text-xs text-orange-600 font-medium">• RECOMMENDED ACTION</p>
                     <p className="text-sm text-slate-700">Consolidate customer data into unified platform</p>
                   </div>
-                </div>
-              </div>
+                </CardContent>
+              </Card>
             </div>
           </CardContent>
         </Card>
