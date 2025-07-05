@@ -65,7 +65,7 @@ export default function Payment() {
                   <div className="relative">
                     <Button 
                       onClick={handlePayment}
-                      className="w-full bg-slate-900 hover:bg-slate-800 text-white py-4 rounded-xl font-semibold text-lg transition-all duration-200 shadow-sm rainbow-hover-btn"
+                      className="w-full bg-slate-900 hover:bg-slate-800 text-white py-4 rounded-xl font-semibold text-lg transition-all duration-200 shadow-sm"
                     >
                       <span className="flex items-center justify-center space-x-2">
                         <span>Continue to Payment</span>
