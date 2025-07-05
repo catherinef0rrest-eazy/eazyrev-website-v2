@@ -158,28 +158,30 @@ export default function Home() {
 
             <div className="p-4 sm:p-8 space-y-6">
               {/* Company Header Card */}
-              <Card className="bg-white border border-slate-200 rounded-xl p-4 sm:p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <Card className="bg-white border border-slate-200 rounded-xl p-3 sm:p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <CardContent className="p-0">
-                  <div className="flex items-center gap-3 sm:gap-4">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-slate-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <span className="text-white font-bold text-base sm:text-lg">T</span>
-                    </div>
-                    <div className="flex-1 min-w-0 overflow-hidden">
-                      <h3 className="text-base sm:text-lg md:text-xl font-bold text-slate-900 mb-1 break-words">TechForward Regional Bank</h3>
-                      <div className="flex flex-col gap-1 sm:gap-2 text-xs sm:text-sm text-slate-600">
-                        <span className="flex items-center gap-2">
-                          <Building2 className="h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" />
-                          <span className="break-words">Depository Credit Intermediation</span>
-                        </span>
-                        <span className="flex items-center gap-2">
-                          <div className="w-2 h-2 bg-blue-500 rounded-full flex-shrink-0"></div>
-                          <span>47 products analyzed</span>
-                        </span>
-                        <span className="flex items-center gap-2">
-                          <DollarSign className="h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" />
-                          <span className="break-words">$450K+ revenue potential</span>
-                        </span>
+                  <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 bg-slate-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <span className="text-white font-bold text-base sm:text-lg">T</span>
                       </div>
+                      <div className="flex-1 min-w-0">
+                        <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900 mb-1 break-all">TechForward Regional Bank</h3>
+                      </div>
+                    </div>
+                    <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 text-xs sm:text-sm text-slate-600 pl-0 sm:pl-0">
+                      <span className="flex items-center gap-2 whitespace-nowrap">
+                        <Building2 className="h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" />
+                        <span className="truncate">Depository Credit</span>
+                      </span>
+                      <span className="flex items-center gap-2 whitespace-nowrap">
+                        <div className="w-2 h-2 bg-blue-500 rounded-full flex-shrink-0"></div>
+                        <span>47 products</span>
+                      </span>
+                      <span className="flex items-center gap-2 whitespace-nowrap">
+                        <DollarSign className="h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" />
+                        <span>$450K+</span>
+                      </span>
                     </div>
                   </div>
                 </CardContent>
