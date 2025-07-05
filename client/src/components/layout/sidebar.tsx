@@ -48,18 +48,12 @@ export default function Sidebar() {
 
       {/* Bottom Logo */}
       <div className="absolute bottom-0 left-0 right-0 p-6 border-t border-slate-200">
-        <div className="flex items-center gap-3">
-          <div className="w-8 h-8 flex items-center justify-center">
-            <img 
-              src={eazyLogoPath} 
-              alt="eazy logo" 
-              className="w-6 h-6 opacity-40"
-            />
-          </div>
-          <div className="text-sm">
-            <div className="font-medium text-slate-900">eazy</div>
-            <div className="text-slate-500">Enterprise</div>
-          </div>
+        <div className="flex justify-center">
+          <img 
+            src={eazyLogoPath} 
+            alt="eazy logo" 
+            className="w-12 h-12 opacity-40"
+          />
         </div>
       </div>
     </nav>
