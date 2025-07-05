@@ -139,7 +139,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="bg-slate-50 rounded-2xl shadow-2xl overflow-hidden border border-slate-200">
+          <div className="bg-white rounded-2xl shadow-2xl overflow-hidden border border-slate-200">
             {/* Browser Header */}
             <div className="bg-gray-100 px-4 py-3 flex items-center gap-3 border-b border-gray-200">
               <div className="flex gap-1.5">
