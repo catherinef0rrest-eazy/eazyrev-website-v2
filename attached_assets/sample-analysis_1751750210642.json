@@ -1,0 +1,187 @@
+[
+  {
+    "success": true,
+    "workflow_id": "3qSqdJLMse6Gugij_1750453854880",
+    "execution_time_ms": 192627,
+    "company": {
+      "id": "8B7C1A2CFD6E2051F3E95F1E9EC0E2D2",
+      "domain": "techforwardbank.com",
+      "name": "TechForward Regional Bank",
+      "industry": "Depository Credit Intermediation",
+      "products_total": 130,
+      "city": "Oakland",
+      "state": "California",
+      "country": "United States",
+      "postalCode": "94612",
+      "phone": "+1 (510) 555-0123",
+      "revenueRange": "$50-99 Million",
+      "employeeRange": "Large (251-1000 Employees)"
+    },
+    "analysis_outputs": {
+      "phase_1_infrastructure": {
+        "status": "success",
+        "output": {
+          "industry_context": {
+            "classification": "financial_services",
+            "baselines": {
+              "legacy_expected_pct": 65,
+              "cloud_adoption_norm": 2,
+              "vendor_count_range": [15, 35],
+              "compliance_requirements": ["SOX", "FFIEC", "GDPR", "PCI-DSS", "BSA/AML", "CRA"],
+              "business_drivers": ["regulatory_compliance", "digital_transformation", "cybersecurity", "customer_experience", "risk_management"]
+            }
+          },
+          "filtered_products": {
+            "total_analyzed": 100,
+            "infrastructure_relevant": 78,
+            "high_relevancy": 42,
+            "anomalies_detected": 8
+          }
+        }
+      },
+      "phase_2_patterns": {
+        "status": "success",
+        "output": {
+          "architecture_classification": {
+            "primary_pattern": "HYBRID TRANSITIONAL",
+            "confidence": 0.85,
+            "industry_interpretation": "ADVANCED for regional bank - TechForward Regional Bank demonstrates sophisticated technology adoption that exceeds typical community bank standards, indicating aggressive digital transformation initiative likely driven by competitive positioning in the California market.",
+            "supporting_evidence": [
+              "Advanced cloud adoption (AWS, Azure) unusual for regional banks",
+              "Enterprise-grade security stack with modern SIEM capabilities", 
+              "DevOps practices including CI/CD pipelines",
+              "API-first architecture approach"
+            ]
+          }
+        }
+      },
+      "phase_3_strategy": {
+        "status": "partial",
+        "output": {
+          "executive_summary": {
+            "company_position": "TechForward Regional Bank demonstrates sophisticated technology adoption that significantly exceeds typical community bank standards, with advanced cloud infrastructure (AWS/Azure), enterprise-grade security, and modern DevOps practices. However, critical gaps exist in customer-facing digital banking platforms and real-time analytics capabilities that could limit competitive positioning. The bank is positioned as a 'Progressive Adopter' in the regional banking sector.",
+            "key_strengths": [
+              "Multi-cloud infrastructure (AWS/Azure hybrid)",
+              "Advanced security posture with enterprise SIEM",
+              "Modern DevOps and CI/CD implementation",
+              "Strong compliance and regulatory framework"
+            ],
+            "critical_gaps": [
+              "Limited digital banking customer experience",
+              "Insufficient real-time analytics capabilities", 
+              "API management and open banking readiness",
+              "Customer data platform fragmentation"
+            ]
+          },
+          "strategic_recommendations": {
+            "immediate_priorities": [
+              {
+                "category": "Digital Banking Platform",
+                "recommendation": "Implement modern digital banking platform to compete with fintech offerings",
+                "business_impact": "High - Direct customer experience improvement",
+                "technical_complexity": "Medium",
+                "estimated_timeline": "6-9 months"
+              },
+              {
+                "category": "API Management",
+                "recommendation": "Deploy enterprise API gateway for open banking compliance and third-party integrations",
+                "business_impact": "High - Regulatory compliance and partnership enablement",
+                "technical_complexity": "Medium",
+                "estimated_timeline": "3-6 months"
+              }
+            ],
+            "medium_term_goals": [
+              {
+                "category": "Real-time Analytics",
+                "recommendation": "Implement real-time fraud detection and customer analytics platform",
+                "business_impact": "Medium-High - Risk reduction and customer insights",
+                "technical_complexity": "High",
+                "estimated_timeline": "9-12 months"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "results": {
+      "infrastructure_maturity": 3,
+      "architecture_pattern": "HYBRID TRANSITIONAL",
+      "top_opportunities": [
+        {
+          "category": "Cross-sell",
+          "product": "Microsoft Defender for Cloud",
+          "rationale": "Enhance existing Azure security posture",
+          "priority": "High",
+          "estimated_value": "$150K-250K ARR"
+        },
+        {
+          "category": "Upsell", 
+          "product": "AWS Analytics Suite",
+          "rationale": "Address real-time analytics gap",
+          "priority": "Medium",
+          "estimated_value": "$200K-350K ARR"
+        },
+        {
+          "category": "Co-sell",
+          "product": "Fintech Partnership Platform",
+          "rationale": "Enable third-party integrations",
+          "priority": "Medium",
+          "estimated_value": "$100K-200K ARR"
+        }
+      ],
+      "investment_required": "$2.5M-4.2M",
+      "expected_roi": "18-24 months",
+      "key_gaps": [
+        "Customer Digital Experience Platform",
+        "API Management & Open Banking",
+        "Real-time Analytics & Fraud Detection"
+      ],
+      "vendor_consolidation_savings": "$180K-320K annually"
+    },
+    "metadata": {
+      "timestamp": "2025-06-20T21:14:07.508Z",
+      "products_analyzed": 100,
+      "confidence_scores": {
+        "infrastructure": 85,
+        "pattern": 85,
+        "strategy": 92
+      },
+      "parsing_quality": {
+        "phase_1": "complete",
+        "phase_2": "complete", 
+        "phase_3": "partial"
+      },
+      "technology_stack": {
+        "cloud": {
+          "IT Infrastructure": ["AWS EC2", "Azure Virtual Machines", "VMware ESXi"],
+          "Hosting": ["AWS", "Microsoft Azure"],
+          "Cloud Computing Platforms": ["AWS Lambda", "Azure Functions"],
+          "Content Delivery Network (CDN)": ["Cloudflare", "Amazon CloudFront"],
+          "Virtual Private Cloud (VPC)": ["AWS VPC", "Azure Virtual Network"]
+        },
+        "data": {
+          "Database Software": ["SQL Server", "Oracle Database", "PostgreSQL"],
+          "Data Warehouse": ["Amazon Redshift", "Azure Synapse"],
+          "Big Data": ["Apache Hadoop", "Spark"],
+          "NoSQL Databases": ["Redis", "MongoDB", "DynamoDB"]
+        },
+        "analytics": {
+          "Analytics Tools & Software": ["Tableau", "Power BI", "Python Analytics"],
+          "Business Intelligence": ["IBM Cognos", "Microsoft BI", "Qlik Sense"],
+          "Artificial Intelligence": ["Azure AI", "AWS Machine Learning", "TensorFlow"]
+        },
+        "integrations": {
+          "Data Integration Tools": ["Azure Data Factory", "AWS Glue"],
+          "API Management": ["Azure API Management", "AWS API Gateway"],
+          "API Design": ["Plaid API", "RESTful APIs"],
+          "Cross-Stack Integration Technologies": ["MuleSoft", "Zapier", "Microsoft Power Automate"]
+        },
+        "development": {
+          "Development": ["Node.js", "Python", "React", "Angular"],
+          "DevOps": ["Jenkins", "Ansible", "Terraform"],
+          "CI/CD Tools": ["GitHub Actions", "Azure DevOps", "Docker"]
+        }
+      }
+    }
+  }
+]
