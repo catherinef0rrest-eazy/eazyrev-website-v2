@@ -5,8 +5,8 @@ import { Shield, ArrowRight, CheckCircle, Key } from "lucide-react";
 
 export default function Payment() {
   const handlePayment = () => {
-    // In a real implementation, this would redirect to Stripe Checkout
-    window.open("https://buy.stripe.com/test_payment_link", "_blank");
+    // Redirect to actual Stripe Checkout
+    window.open("https://buy.stripe.com/dRm28q6lfeB13GQ3Yg3sI00", "_blank");
   };
 
   return (
