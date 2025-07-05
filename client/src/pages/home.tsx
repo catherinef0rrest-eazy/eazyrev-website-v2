@@ -64,7 +64,7 @@ export default function Home() {
           </div>
 
           <Link href="/sample-report">
-            <Button className="bg-slate-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-slate-800 btn-advanced shadow-lg">
+            <Button className="bg-slate-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-slate-800 btn-advanced shadow-lg rainbow-hover-btn">
               See Sample Report
             </Button>
           </Link>
