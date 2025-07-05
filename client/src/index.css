@@ -250,6 +250,39 @@
     100% { background-position: 0% 50%; }
   }
 
+  /* Rainbow button hover effect */
+  .btn-rainbow {
+    position: relative;
+    background: #1e293b;
+    color: white;
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+
+  .btn-rainbow::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b, #ff9500, #ffcc00, #32cd32, #00b4db, #6c5ce7, #a29bfe);
+    background-size: 400% 400%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    animation: rainbowShift 3s ease-in-out infinite;
+    z-index: 0;
+  }
+
+  .btn-rainbow:hover::before {
+    opacity: 1;
+  }
+
+  .btn-rainbow > * {
+    position: relative;
+    z-index: 1;
+  }
+
   /* Floating animation for elements */
   .float-animation {
     animation: float 6s ease-in-out infinite;
