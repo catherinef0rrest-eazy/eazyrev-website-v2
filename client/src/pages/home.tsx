@@ -41,11 +41,11 @@ export default function Home() {
         {/* Hero Section */}
         <div className="text-center mb-20 slide-up">
           <div className="mb-6 pt-10"></div>
-          <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-slate-900 tracking-tight leading-tight px-2">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-slate-900 tracking-tight leading-tight px-2">
             Bespoke Sales Insights for{" "}
             <span className="text-slate-700 break-words">IT Services & Tech Vendors</span>
           </h1>
-          <p className="text-base sm:text-xl text-slate-600 mb-4 max-w-3xl mx-auto leading-relaxed px-2">
+          <p className="text-lg sm:text-xl text-slate-600 mb-6 max-w-3xl mx-auto leading-relaxed px-2">
             Engineered to help you target prospects with organizational fit, tech compatibility, urgency, and adoption readiness.
           </p>
           <p className="text-base sm:text-lg text-slate-500 mb-10 max-w-2xl mx-auto px-2">
