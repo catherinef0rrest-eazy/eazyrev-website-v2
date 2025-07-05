@@ -152,7 +152,7 @@ export default function Home() {
 
             <div className="p-12 space-y-8">
               {/* Company Header Card */}
-              <Card className="bg-white border border-slate-200 rounded-xl p-8">
+              <Card className="bg-white border border-slate-200 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <CardContent className="p-0">
                   <div className="flex items-center gap-6">
                     <div className="w-16 h-16 bg-slate-600 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -181,7 +181,7 @@ export default function Home() {
 
               {/* Metrics Grid */}
               <div className="grid grid-cols-4 gap-6">
-                <Card className="bg-white border border-slate-200 rounded-lg p-6 text-center">
+                <Card className="bg-white border border-slate-200 rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
                   <CardContent className="p-0">
                     <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
                       <Cloud className="h-6 w-6 text-blue-600" />
@@ -190,7 +190,7 @@ export default function Home() {
                     <p className="text-lg font-bold text-slate-900">Advanced</p>
                   </CardContent>
                 </Card>
-                <Card className="bg-white border border-slate-200 rounded-lg p-6 text-center">
+                <Card className="bg-white border border-slate-200 rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
                   <CardContent className="p-0">
                     <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
                       <Shield className="h-6 w-6 text-green-600" />
@@ -199,7 +199,7 @@ export default function Home() {
                     <p className="text-lg font-bold text-slate-900">Moderate</p>
                   </CardContent>
                 </Card>
-                <Card className="bg-white border border-slate-200 rounded-lg p-6 text-center">
+                <Card className="bg-white border border-slate-200 rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
                   <CardContent className="p-0">
                     <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-3">
                       <DollarSign className="h-6 w-6 text-purple-600" />
@@ -208,7 +208,7 @@ export default function Home() {
                     <p className="text-lg font-bold text-slate-900">$2.5M</p>
                   </CardContent>
                 </Card>
-                <Card className="bg-white border border-slate-200 rounded-lg p-6 text-center">
+                <Card className="bg-white border border-slate-200 rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
                   <CardContent className="p-0">
                     <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-3">
                       <Target className="h-6 w-6 text-orange-600" />
@@ -220,7 +220,7 @@ export default function Home() {
               </div>
 
               {/* Primary Recommendation Card */}
-              <Card className="bg-slate-800 text-white rounded-xl border-0">
+              <Card className="bg-slate-800 text-white rounded-xl border-0 shadow-xl hover:shadow-2xl transition-shadow duration-300">
                 <CardContent className="p-8">
                   <div className="flex items-center gap-4 mb-6">
                     <div className="w-10 h-10 bg-yellow-400 rounded-lg flex items-center justify-center">
@@ -253,7 +253,7 @@ export default function Home() {
 
               {/* Additional Sections */}
               <div className="grid md:grid-cols-2 gap-8">
-                <Card className="bg-white border border-slate-200 rounded-xl">
+                <Card className="bg-white border border-slate-200 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
                   <CardContent className="p-8">
                     <div className="flex items-center gap-4 mb-6">
                       <div className="w-8 h-8 bg-orange-100 rounded flex items-center justify-center">
@@ -270,7 +270,7 @@ export default function Home() {
                   </CardContent>
                 </Card>
                 
-                <Card className="bg-white border border-slate-200 rounded-xl">
+                <Card className="bg-white border border-slate-200 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
                   <CardContent className="p-8">
                     <div className="flex items-center gap-4 mb-6">
                       <div className="w-8 h-8 bg-blue-100 rounded flex items-center justify-center">
