@@ -139,36 +139,36 @@ export default function Home() {
             </p>
           </div>
 
-          <Card className="metric-card rounded-2xl p-8 mb-8 enterprise-shadow-lg card-hover-effect bg-white">
-            <CardContent className="p-0">
-              {/* Browser Header */}
-              <div className="bg-gray-50 px-4 py-3 mb-6 flex items-center gap-3 border-b border-gray-200">
-                <div className="flex gap-1.5">
-                  <div className="w-3 h-3 bg-red-400 rounded-full"></div>
-                  <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
-                  <div className="w-3 h-3 bg-green-400 rounded-full"></div>
-                </div>
-                <span className="text-sm text-gray-600 font-medium">Analysis Report - TechCorp Solutions</span>
+          <div className="bg-white rounded-2xl shadow-2xl overflow-hidden border border-slate-200">
+            {/* Browser Header */}
+            <div className="bg-gray-50 px-4 py-3 flex items-center gap-3 border-b border-gray-200">
+              <div className="flex gap-1.5">
+                <div className="w-3 h-3 bg-red-400 rounded-full"></div>
+                <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
+                <div className="w-3 h-3 bg-green-400 rounded-full"></div>
               </div>
+              <span className="text-sm text-gray-600 font-medium">Analysis Report - TechCorp Solutions</span>
+            </div>
 
+            <div className="p-8">
               {/* Company Header */}
-              <div className="flex items-start gap-4 mb-8">
+              <div className="flex items-center gap-4 mb-8">
                 <div className="w-12 h-12 bg-slate-600 rounded-lg flex items-center justify-center flex-shrink-0">
                   <span className="text-white font-bold text-lg">T</span>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl font-bold text-slate-900 mb-1">TechForward Regional Bank</h3>
+                  <h3 className="text-2xl font-bold text-slate-900 mb-2">TechForward Regional Bank</h3>
                   <div className="flex items-center gap-6 text-sm text-slate-600">
-                    <span className="flex items-center gap-1">
-                      <Building2 className="h-3 w-3" />
+                    <span className="flex items-center gap-2">
+                      <Building2 className="h-4 w-4" />
                       Depository Credit Intermediation
                     </span>
-                    <span className="flex items-center gap-1">
+                    <span className="flex items-center gap-2">
                       <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
                       47 products analyzed
                     </span>
-                    <span className="flex items-center gap-1">
-                      <DollarSign className="h-3 w-3" />
+                    <span className="flex items-center gap-2">
+                      <DollarSign className="h-4 w-4" />
                       $450K+ revenue potential identified
                     </span>
                   </div>
@@ -176,117 +176,123 @@ export default function Home() {
               </div>
 
               {/* Metrics Grid */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-                <div className="text-center p-4 bg-blue-50 rounded-lg">
-                  <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-2">
-                    <Cloud className="h-4 w-4 text-blue-600" />
+              <div className="grid grid-cols-4 gap-6 mb-10">
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <Cloud className="h-6 w-6 text-blue-600" />
                   </div>
-                  <p className="text-xs text-slate-600 mb-1">Cloud Adoption</p>
-                  <p className="font-bold text-slate-900">Advanced</p>
+                  <p className="text-sm text-slate-500 mb-1">Cloud Adoption</p>
+                  <p className="text-lg font-bold text-slate-900">Advanced</p>
                 </div>
-                <div className="text-center p-4 bg-green-50 rounded-lg">
-                  <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-2">
-                    <Shield className="h-4 w-4 text-green-600" />
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <Shield className="h-6 w-6 text-green-600" />
                   </div>
-                  <p className="text-xs text-slate-600 mb-1">Security</p>
-                  <p className="font-bold text-slate-900">Moderate</p>
+                  <p className="text-sm text-slate-500 mb-1">Security</p>
+                  <p className="text-lg font-bold text-slate-900">Moderate</p>
                 </div>
-                <div className="text-center p-4 bg-purple-50 rounded-lg">
-                  <div className="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-2">
-                    <DollarSign className="h-4 w-4 text-purple-600" />
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <DollarSign className="h-6 w-6 text-purple-600" />
                   </div>
-                  <p className="text-xs text-slate-600 mb-1">Investment</p>
-                  <p className="font-bold text-slate-900">$2.5M</p>
+                  <p className="text-sm text-slate-500 mb-1">Investment</p>
+                  <p className="text-lg font-bold text-slate-900">$2.5M</p>
                 </div>
-                <div className="text-center p-4 bg-orange-50 rounded-lg">
-                  <div className="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-2">
-                    <Target className="h-4 w-4 text-orange-600" />
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <Target className="h-6 w-6 text-orange-600" />
                   </div>
-                  <p className="text-xs text-slate-600 mb-1">Opportunities</p>
-                  <p className="font-bold text-slate-900">3</p>
+                  <p className="text-sm text-slate-500 mb-1">Opportunities</p>
+                  <p className="text-lg font-bold text-slate-900">3</p>
                 </div>
               </div>
 
               {/* Primary Recommendation */}
-              <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white rounded-xl p-6 mb-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-8 h-8 bg-yellow-400 rounded-lg flex items-center justify-center">
-                    <Zap className="h-4 w-4 text-yellow-900" />
+              <div className="bg-slate-800 text-white rounded-xl p-8 mb-8">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-10 h-10 bg-yellow-400 rounded-lg flex items-center justify-center">
+                    <Zap className="h-5 w-5 text-yellow-900" />
                   </div>
-                  <span className="font-medium">Primary Recommendation</span>
+                  <span className="text-lg font-semibold">Primary Recommendation</span>
                 </div>
                 
-                <p className="text-sm text-slate-100 mb-4">
-                  Cross-sell <strong>Microsoft Defender for Cloud</strong> to enhance Azure security posture and address critical gaps.
+                <p className="text-slate-200 mb-6 leading-relaxed">
+                  Cross-sell <strong className="text-white">Microsoft Defender for Cloud</strong> to enhance their existing 
+                  Azure security posture and address critical gaps in real-time threat detection.
                 </p>
                 
-                <div className="grid grid-cols-3 gap-4">
-                  <div className="text-center p-3 bg-white/10 rounded-lg">
-                    <p className="text-xs text-slate-300 mb-1">Est. Value</p>
-                    <p className="font-bold text-white">$150K-250K</p>
+                <div className="grid grid-cols-3 gap-6">
+                  <div className="text-center p-4 bg-slate-700 rounded-lg">
+                    <p className="text-sm text-slate-300 mb-2">Estimated Value</p>
+                    <p className="text-xl font-bold text-white">$150K-250K</p>
+                    <p className="text-xs text-slate-400">Annual Recurring Revenue</p>
                   </div>
-                  <div className="text-center p-3 bg-white/10 rounded-lg">
-                    <p className="text-xs text-slate-300 mb-1">Timeline</p>
-                    <p className="font-bold text-white">3-6 months</p>
+                  <div className="text-center p-4 bg-slate-700 rounded-lg">
+                    <p className="text-sm text-slate-300 mb-2">Implementation</p>
+                    <p className="text-xl font-bold text-white">3-6 months</p>
+                    <p className="text-xs text-slate-400">Timeline</p>
                   </div>
-                  <div className="text-center p-3 bg-white/10 rounded-lg">
-                    <p className="text-xs text-slate-300 mb-1">Priority</p>
-                    <p className="font-bold text-white">High</p>
+                  <div className="text-center p-4 bg-slate-700 rounded-lg">
+                    <p className="text-sm text-slate-300 mb-2">Priority</p>
+                    <p className="text-xl font-bold text-white">High</p>
+                    <p className="text-xs text-slate-400">Business Impact</p>
                   </div>
                 </div>
               </div>
 
               {/* Additional Sections Preview */}
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <div className="flex items-center gap-2 mb-3">
-                    <div className="w-5 h-5 bg-orange-100 rounded flex items-center justify-center">
-                      <Activity className="h-3 w-3 text-orange-600" />
+              <div className="border-t border-slate-200 pt-8">
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div>
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-6 h-6 bg-orange-100 rounded flex items-center justify-center">
+                        <Activity className="h-4 w-4 text-orange-600" />
+                      </div>
+                      <span className="font-semibold text-slate-900">Integration & API Management</span>
+                      <Badge className="bg-red-100 text-red-700 text-xs font-medium">HIGH</Badge>
                     </div>
-                    <span className="text-sm font-medium text-slate-700">Integration & API Management</span>
-                    <Badge className="bg-red-100 text-red-700 text-xs">HIGH</Badge>
+                    <h4 className="text-lg font-semibold text-slate-900 mb-3">API management and open banking readiness</h4>
+                    <p className="text-slate-600 leading-relaxed">
+                      Limited API infrastructure for third-party integrations and 
+                      open banking compliance requirements.
+                    </p>
                   </div>
-                  <h4 className="font-semibold text-slate-900 mb-2">API management and open banking readiness</h4>
-                  <p className="text-sm text-slate-600">
-                    Limited API infrastructure for third-party integrations and 
-                    open banking compliance requirements.
-                  </p>
-                </div>
-                
-                <div>
-                  <div className="flex items-center gap-2 mb-3">
-                    <div className="w-5 h-5 bg-blue-100 rounded flex items-center justify-center">
-                      <BarChart3 className="h-3 w-3 text-blue-600" />
+                  
+                  <div>
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-6 h-6 bg-blue-100 rounded flex items-center justify-center">
+                        <BarChart3 className="h-4 w-4 text-blue-600" />
+                      </div>
+                      <span className="font-semibold text-slate-900">Revenue Opportunities</span>
                     </div>
-                    <span className="text-sm font-medium text-slate-700">Revenue Opportunities</span>
-                  </div>
-                  <div className="space-y-2">
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-slate-700">Microsoft Defender</span>
-                      <Badge className="bg-red-100 text-red-700 text-xs">High</Badge>
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-slate-700">Azure Backup</span>
-                      <Badge className="bg-orange-100 text-orange-700 text-xs">Medium</Badge>
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-slate-700">Power BI Premium</span>
-                      <Badge className="bg-orange-100 text-orange-700 text-xs">Medium</Badge>
+                    <div className="space-y-3">
+                      <div className="flex justify-between items-center py-2">
+                        <span className="text-slate-700 font-medium">Microsoft Defender</span>
+                        <Badge className="bg-red-100 text-red-700 text-xs font-medium">High</Badge>
+                      </div>
+                      <div className="flex justify-between items-center py-2">
+                        <span className="text-slate-700 font-medium">Azure Backup</span>
+                        <Badge className="bg-orange-100 text-orange-700 text-xs font-medium">Medium</Badge>
+                      </div>
+                      <div className="flex justify-between items-center py-2">
+                        <span className="text-slate-700 font-medium">Power BI Premium</span>
+                        <Badge className="bg-orange-100 text-orange-700 text-xs font-medium">Medium</Badge>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
 
               {/* Call to Action */}
-              <div className="text-center mt-8 pt-6 border-t border-slate-200">
+              <div className="text-center mt-10 pt-8 border-t border-slate-200">
                 <Link href="/sample-report">
-                  <Button className="bg-slate-900 hover:bg-slate-800 text-white px-6 py-2 text-sm font-medium rounded-lg btn-advanced">
+                  <Button className="bg-slate-900 hover:bg-slate-800 text-white px-8 py-3 text-base font-medium rounded-lg btn-advanced shadow-lg">
                     View Full Report
                   </Button>
                 </Link>
               </div>
-            </CardContent>
-          </Card>
+            </div>
+          </div>
         </div>
 
         {/* Contact Section */}
