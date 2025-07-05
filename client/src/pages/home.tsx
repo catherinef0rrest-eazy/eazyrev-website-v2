@@ -3,7 +3,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { CalendlyInline } from "@/components/calendly-inline";
-import { Network, Zap, Clock, Calendar } from "lucide-react";
+import { Network, Zap, Target, Calendar } from "lucide-react";
 
 export default function Home() {
   const [typewriterText, setTypewriterText] = useState("");
@@ -113,7 +113,7 @@ export default function Home() {
             <Card className="metric-card rounded-xl p-8 group">
               <CardContent className="p-0">
                 <div className="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-slate-200 transition-colors">
-                  <Clock className="h-6 w-6 text-slate-600" />
+                  <Target className="h-6 w-6 text-slate-600" />
                 </div>
                 <h3 className="text-xl font-bold mb-4 text-slate-900 tracking-tight">
                   Opportunity Precision
