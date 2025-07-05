@@ -300,7 +300,7 @@ export default function Home() {
               <div className="text-center pt-6">
                 <Link href="/sample-report">
                   <Button className="btn-rainbow px-8 py-3 text-base font-medium rounded-lg btn-advanced shadow-lg">
-                    View Full Report
+                    <span className="btn-content">View Full Report</span>
                   </Button>
                 </Link>
               </div>

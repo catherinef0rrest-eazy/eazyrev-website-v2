@@ -52,7 +52,7 @@ export default function SampleReport() {
           </p>
           <Link href="/contact">
             <Button className="btn-rainbow px-8 py-3 text-base font-medium rounded-xl btn-advanced shadow-lg">
-              Get Your Custom Analysis
+              <span className="btn-content">Get Your Custom Analysis</span>
             </Button>
           </Link>
         </div>
