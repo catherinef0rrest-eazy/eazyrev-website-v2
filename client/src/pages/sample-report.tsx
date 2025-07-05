@@ -174,7 +174,7 @@ export default function SampleReport() {
                 <Cloud className="h-6 w-6 text-blue-500" />
               </div>
               <p className="text-xs font-medium text-slate-500 uppercase tracking-wide mb-2">Cloud Adoption</p>
-              <p className="font-bold text-2xl text-slate-900 mb-1">Intermediate</p>
+              <p className="font-bold text-2xl text-slate-900 mb-1">Advanced</p>
               <p className="text-xs text-slate-600">AWS + Azure Hybrid</p>
             </CardContent>
           </Card>
