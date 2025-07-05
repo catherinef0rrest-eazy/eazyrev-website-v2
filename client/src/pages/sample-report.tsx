@@ -729,7 +729,7 @@ export default function SampleReport() {
           <CardContent className="p-0">
             <CalendlyInline 
               url="https://calendly.com/ashwin-eazy/eazy-strategy-call"
-              height="700px"
+              height="900px"
               className="w-full"
             />
           </CardContent>

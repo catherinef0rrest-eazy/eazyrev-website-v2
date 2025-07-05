@@ -12,7 +12,7 @@ declare global {
   }
 }
 
-export function CalendlyInline({ url, height = "700px", className = "" }: CalendlyInlineProps) {
+export function CalendlyInline({ url, height = "900px", className = "" }: CalendlyInlineProps) {
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://assets.calendly.com/assets/external/widget.js";
@@ -28,7 +28,7 @@ export function CalendlyInline({ url, height = "700px", className = "" }: Calend
     <div
       className={`calendly-inline-widget ${className}`}
       data-url={url}
-      style={{ minWidth: "320px", height }}
+      style={{ minWidth: "320px", height, overflow: "hidden" }}
     />
   );
 }
