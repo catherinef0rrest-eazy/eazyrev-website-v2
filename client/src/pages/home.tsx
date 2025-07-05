@@ -73,7 +73,7 @@ export default function Home() {
         <div className="mb-20">
           <Card className="metric-card rounded-2xl p-10 mb-12 enterprise-shadow-lg">
             <CardContent className="p-0">
-              <p className="text-xl text-slate-700 leading-relaxed font-medium tracking-tight min-h-[2.5rem]">
+              <p className="text-xl text-slate-700 leading-relaxed font-light tracking-tight min-h-[2.5rem]">
                 {typewriterText}
                 {!typewriterComplete && (
                   <span className="animate-pulse text-slate-400">|</span>
