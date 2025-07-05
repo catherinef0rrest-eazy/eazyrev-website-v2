@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { cn } from "@/lib/utils";
-import { Menu, X, Building, ChartLine, CreditCard, Mail, Home } from "lucide-react";
+import { Menu, X, ChartLine, CreditCard, Mail, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import eazyLogoPath from "@assets/eazy logo black.svg";
 
 const navigation = [
   { name: "Home", href: "/", icon: Home },
@@ -31,10 +32,7 @@ export default function MobileNav() {
         <SheetContent side="left" className="w-64 p-0 sidebar-enhanced">
           <div className="p-6">
             {/* Logo */}
-            <div className="flex items-center gap-3 mb-8">
-              <div className="w-8 h-8 bg-slate-900 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">E</span>
-              </div>
+            <div className="flex items-center mb-8">
               <span className="font-bold text-2xl text-slate-900 tracking-wide brand-font">eazyrev.ai</span>
             </div>
 
@@ -48,14 +46,14 @@ export default function MobileNav() {
                   <Link key={item.name} href={item.href}>
                     <div
                       className={cn(
-                        "flex items-center gap-3 px-3 py-2 rounded-lg transition-colors",
+                        "flex items-center gap-3 px-3 py-2 rounded-lg sidebar-item",
                         isActive
-                          ? "bg-slate-200 text-slate-900"
+                          ? "bg-slate-200 text-slate-900 active"
                           : "text-slate-700 hover:bg-slate-100"
                       )}
                       onClick={() => setOpen(false)}
                     >
-                      <Icon className="w-5 h-5" />
+                      <Icon className="w-5 h-5 icon-hover-rotate" />
                       <span>{item.name}</span>
                     </div>
                   </Link>
@@ -64,16 +62,14 @@ export default function MobileNav() {
             </div>
           </div>
 
-          {/* Bottom Company Info */}
+          {/* Bottom Logo */}
           <div className="absolute bottom-0 left-0 right-0 p-6 border-t border-slate-200">
-            <div className="flex items-center gap-3">
-              <div className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center">
-                <Building className="w-4 h-4 text-gray-600" />
-              </div>
-              <div className="text-sm">
-                <div className="font-medium text-slate-900">eazy</div>
-                <div className="text-slate-500">Enterprise</div>
-              </div>
+            <div className="flex justify-start">
+              <img 
+                src={eazyLogoPath} 
+                alt="eazy logo" 
+                className="w-16 h-16 opacity-40 hover:opacity-60 transition-opacity duration-300 cursor-pointer"
+              />
             </div>
           </div>
         </SheetContent>
