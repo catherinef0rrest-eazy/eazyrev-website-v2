@@ -79,16 +79,28 @@ The application follows a clean separation between frontend and backend with the
 - Express server runs with tsx for TypeScript execution
 - Database migrations managed via `npm run db:push`
 
-### Production Build
+### Static Deployment (Vercel/Netlify)
+- **Build Command:** `vite build`
+- **Output Directory:** `dist/public`
+- **Framework:** Vite/React SPA
+- **Routing:** Client-side routing with fallback to index.html
+- **No backend required** - fully static application with Calendly integration
+
+### Full-Stack Deployment (Alternative)
 - Frontend builds to static assets in `dist/public`
 - Backend compiles to ES modules in `dist/` directory
 - Single Node.js process serves both static assets and API routes
 - Environment variables control database connections and API keys
 
+### Deployment Files
+- `vercel.json`: Vercel configuration for SPA routing
+- `build-static.sh`: Script for static-only builds
+- `DEPLOYMENT.md`: Complete deployment instructions
+
 ### Environment Configuration
-- `DATABASE_URL`: PostgreSQL connection string (required)
+- No environment variables required for static deployment
+- `DATABASE_URL`: PostgreSQL connection string (only for full-stack)
 - `NODE_ENV`: Environment mode (development/production)
-- Additional environment variables for external service integrations
 
 ## Changelog
 ```
