@@ -16,10 +16,7 @@ export default function Sidebar() {
     <nav className="sidebar-enhanced fixed left-0 top-0 h-full w-64 z-40 hidden lg:block">
       <div className="p-6">
         {/* Logo */}
-        <div className="flex items-center gap-3 mb-8">
-          <div className="w-8 h-8 bg-slate-900 rounded-lg flex items-center justify-center">
-            <span className="text-white font-bold text-sm">E</span>
-          </div>
+        <div className="flex items-center mb-8">
           <span className="font-bold text-xl text-slate-900">eazyrev</span>
         </div>
 
