@@ -6,14 +6,26 @@ import { CalendlyInline } from "@/components/calendly-inline";
 import { Network, Zap, Target, Calendar } from "lucide-react";
 
 export default function Home() {
+  const [typewriterText, setTypewriterText] = useState("");
   const [typewriterComplete, setTypewriterComplete] = useState(false);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setTypewriterComplete(true);
-    }, 4000);
+  const fullText = "eazyrev leverages advanced AI and the world's largest and most accurate technology intelligence data available to analyze your prospect tech stacks and uncover sales insights.";
 
-    return () => clearTimeout(timer);
+  useEffect(() => {
+    let currentIndex = 0;
+    const typeSpeed = 30; // milliseconds per character
+
+    const typeInterval = setInterval(() => {
+      if (currentIndex < fullText.length) {
+        setTypewriterText(fullText.slice(0, currentIndex + 1));
+        currentIndex++;
+      } else {
+        clearInterval(typeInterval);
+        setTypewriterComplete(true);
+      }
+    }, typeSpeed);
+
+    return () => clearInterval(typeInterval);
   }, []);
 
   return (
@@ -61,13 +73,11 @@ export default function Home() {
         <div className="mb-20">
           <Card className="metric-card rounded-2xl p-10 mb-12 enterprise-shadow-lg">
             <CardContent className="p-0">
-              <p 
-                className={`text-xl text-slate-700 leading-relaxed font-medium tracking-tight ${
-                  !typewriterComplete ? "typewriter-container" : ""
-                }`}
-                style={!typewriterComplete ? { whiteSpace: "nowrap", overflow: "hidden" } : {}}
-              >
-                eazyrev leverages advanced AI and the world's largest and most accurate technology intelligence data available to analyze your prospect tech stacks and uncover sales insights.
+              <p className="text-xl text-slate-700 leading-relaxed font-medium tracking-tight min-h-[2.5rem]">
+                {typewriterText}
+                {!typewriterComplete && (
+                  <span className="animate-pulse text-slate-400">|</span>
+                )}
               </p>
             </CardContent>
           </Card>
