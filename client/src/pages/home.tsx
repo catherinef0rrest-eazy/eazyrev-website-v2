@@ -30,7 +30,7 @@ export default function Home() {
 
   return (
     <div className="landing-backdrop">
-      <div className="landing-content max-w-5xl mx-auto px-6 pt-20 pb-16">
+      <div className="landing-content max-w-5xl mx-auto px-6 pt-20 pb-16 page-transition">
         {/* Hero Section */}
         <div className="text-center mb-20 slide-up">
           <div className="mb-6 pt-10"></div>
@@ -46,24 +46,24 @@ export default function Home() {
           </p>
           
           <div className="flex justify-center gap-8 mb-10">
-            <div className="text-center stagger-fade-in">
-              <div className="text-2xl font-bold text-slate-900">20.7M</div>
+            <div className="text-center stats-appear" style={{ animationDelay: '0.1s' }}>
+              <div className="text-2xl font-bold text-slate-900 gradient-text">20.7M</div>
               <div className="text-sm text-slate-600 font-medium">Companies</div>
             </div>
             <div className="w-px bg-slate-200 mx-4"></div>
-            <div className="text-center stagger-fade-in">
-              <div className="text-2xl font-bold text-slate-900">220K</div>
+            <div className="text-center stats-appear" style={{ animationDelay: '0.2s' }}>
+              <div className="text-2xl font-bold text-slate-900 gradient-text">220K</div>
               <div className="text-sm text-slate-600 font-medium">Products</div>
             </div>
             <div className="w-px bg-slate-200 mx-4"></div>
-            <div className="text-center stagger-fade-in">
-              <div className="text-2xl font-bold text-slate-900">158K</div>
+            <div className="text-center stats-appear" style={{ animationDelay: '0.3s' }}>
+              <div className="text-2xl font-bold text-slate-900 gradient-text">158K</div>
               <div className="text-sm text-slate-600 font-medium">Vendors</div>
             </div>
           </div>
 
           <Link href="/sample-report">
-            <Button className="bg-slate-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-slate-800 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+            <Button className="bg-slate-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-slate-800 btn-advanced shadow-lg">
               See Sample Report
             </Button>
           </Link>
@@ -71,12 +71,12 @@ export default function Home() {
 
         {/* Value Proposition */}
         <div className="mb-20">
-          <Card className="metric-card rounded-2xl p-10 mb-12 enterprise-shadow-lg">
+          <Card className="metric-card rounded-2xl p-10 mb-12 enterprise-shadow-lg float-animation">
             <CardContent className="p-0">
               <p className="text-xl text-slate-700 leading-relaxed font-light tracking-tight min-h-[2.5rem]">
                 {typewriterText}
                 {!typewriterComplete && (
-                  <span className="animate-pulse text-slate-400">|</span>
+                  <span className="typewriter-cursor text-slate-400">|</span>
                 )}
               </p>
             </CardContent>
@@ -84,9 +84,9 @@ export default function Home() {
 
           {/* 3-Column Benefits */}
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="metric-card rounded-xl p-8 group">
+            <Card className="metric-card rounded-xl p-8 group card-hover-effect" style={{ animationDelay: '0.1s' }}>
               <CardContent className="p-0">
-                <div className="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-slate-200 transition-colors">
+                <div className="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-slate-200 transition-colors icon-hover-rotate">
                   <Network className="h-6 w-6 text-slate-600" />
                 </div>
                 <h3 className="text-xl font-bold mb-4 text-slate-900 tracking-tight">
@@ -97,9 +97,9 @@ export default function Home() {
                 </p>
               </CardContent>
             </Card>
-            <Card className="metric-card rounded-xl p-8 group">
+            <Card className="metric-card rounded-xl p-8 group card-hover-effect" style={{ animationDelay: '0.2s' }}>
               <CardContent className="p-0">
-                <div className="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-slate-200 transition-colors">
+                <div className="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-slate-200 transition-colors icon-hover-rotate">
                   <Zap className="h-6 w-6 text-slate-600" />
                 </div>
                 <h3 className="text-xl font-bold mb-4 text-slate-900 tracking-tight">
@@ -110,9 +110,9 @@ export default function Home() {
                 </p>
               </CardContent>
             </Card>
-            <Card className="metric-card rounded-xl p-8 group">
+            <Card className="metric-card rounded-xl p-8 group card-hover-effect" style={{ animationDelay: '0.3s' }}>
               <CardContent className="p-0">
-                <div className="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-slate-200 transition-colors">
+                <div className="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-slate-200 transition-colors icon-hover-rotate">
                   <Crosshair className="h-6 w-6 text-slate-600" />
                 </div>
                 <h3 className="text-xl font-bold mb-4 text-slate-900 tracking-tight">

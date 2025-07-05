@@ -36,7 +36,7 @@ export default function SampleReport() {
 
   return (
     <div className="landing-backdrop">
-      <div className="landing-content max-w-7xl mx-auto px-6 pt-20 pb-16 fade-in min-h-screen">
+      <div className="landing-content max-w-7xl mx-auto px-6 pt-20 pb-16 page-transition min-h-screen">
         {/* Page Header */}
         <div className="text-center mb-16">
           <div className="mb-6">
@@ -51,14 +51,14 @@ export default function SampleReport() {
             This sample analysis for TechForward Regional Bank demonstrates how our AI-powered insights engine surfaces high-value cross-sell, upsell, and net new opportunities in minutes, not weeks.
           </p>
           <Link href="/contact">
-            <Button className="bg-slate-900 hover:bg-slate-800 text-white px-8 py-3 text-base font-medium rounded-xl transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">
+            <Button className="bg-slate-900 hover:bg-slate-800 text-white px-8 py-3 text-base font-medium rounded-xl btn-advanced shadow-lg">
               Get Your Custom Analysis
             </Button>
           </Link>
         </div>
 
         {/* Company Account Summary */}
-        <Card className="metric-card rounded-2xl p-8 mb-12 enterprise-shadow-lg bg-white border border-slate-200">
+        <Card className="metric-card rounded-2xl p-8 mb-12 enterprise-shadow-lg bg-white border border-slate-200 card-hover-effect">
           <CardContent className="p-0">
             <div className="grid md:grid-cols-2 gap-8">
               {/* Left Column - Company Identity */}
@@ -148,7 +148,7 @@ export default function SampleReport() {
         </Card>
 
         {/* Executive Summary */}
-        <Card className="metric-card rounded-2xl p-10 mb-12 enterprise-shadow-lg">
+        <Card className="metric-card rounded-2xl p-10 mb-12 enterprise-shadow-lg card-hover-effect">
           <CardContent className="p-0">
             <div className="flex items-center gap-3 mb-8">
               <div className="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center">
@@ -266,7 +266,7 @@ export default function SampleReport() {
 
             <div className="grid md:grid-cols-3 gap-6">
               {/* Cross-sell Opportunity */}
-              <Card className="bg-white border border-slate-200 rounded-xl p-6">
+              <Card className="bg-white border border-slate-200 rounded-xl p-6 card-hover-effect" style={{ animationDelay: '0.1s' }}>
                 <CardContent className="p-0">
                   <div className="flex items-center gap-2 mb-4">
                     <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
@@ -290,7 +290,7 @@ export default function SampleReport() {
               </Card>
 
               {/* Upsell Opportunity */}
-              <Card className="bg-white border border-slate-200 rounded-xl p-6">
+              <Card className="bg-white border border-slate-200 rounded-xl p-6 card-hover-effect" style={{ animationDelay: '0.2s' }}>
                 <CardContent className="p-0">
                   <div className="flex items-center gap-2 mb-4">
                     <div className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center">
@@ -314,7 +314,7 @@ export default function SampleReport() {
               </Card>
 
               {/* Co-sell Opportunity */}
-              <Card className="bg-white border border-slate-200 rounded-xl p-6">
+              <Card className="bg-white border border-slate-200 rounded-xl p-6 card-hover-effect" style={{ animationDelay: '0.3s' }}>
                 <CardContent className="p-0">
                   <div className="flex items-center gap-2 mb-4">
                     <div className="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center">
