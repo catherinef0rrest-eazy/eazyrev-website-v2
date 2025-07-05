@@ -150,26 +150,26 @@ export default function Home() {
               <span className="text-sm text-gray-600 font-medium">Analysis Report - TechCorp Solutions</span>
             </div>
 
-            <div className="p-12 space-y-8">
+            <div className="p-8 space-y-6">
               {/* Company Header Card */}
-              <Card className="bg-white border border-slate-200 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <Card className="bg-white border border-slate-200 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <CardContent className="p-0">
-                  <div className="flex items-center gap-6">
-                    <div className="w-16 h-16 bg-slate-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <span className="text-white font-bold text-xl">T</span>
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 bg-slate-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <span className="text-white font-bold text-lg">T</span>
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-2xl font-bold text-slate-900 mb-3">TechForward Regional Bank</h3>
-                      <div className="flex items-center gap-8 text-sm text-slate-600">
-                        <span className="flex items-center gap-3">
+                      <h3 className="text-xl font-bold text-slate-900 mb-1">TechForward Regional Bank</h3>
+                      <div className="flex items-center gap-6 text-sm text-slate-600">
+                        <span className="flex items-center gap-2">
                           <Building2 className="h-4 w-4" />
                           Depository Credit Intermediation
                         </span>
-                        <span className="flex items-center gap-3">
+                        <span className="flex items-center gap-2">
                           <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
                           47 products analyzed
                         </span>
-                        <span className="flex items-center gap-3">
+                        <span className="flex items-center gap-2">
                           <DollarSign className="h-4 w-4" />
                           $450K+ revenue potential identified
                         </span>
@@ -180,90 +180,90 @@ export default function Home() {
               </Card>
 
               {/* Metrics Grid */}
-              <div className="grid grid-cols-4 gap-6">
-                <Card className="bg-white border border-slate-200 rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
+              <div className="grid grid-cols-4 gap-4">
+                <Card className="bg-white border border-slate-200 rounded-lg p-4 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
                   <CardContent className="p-0">
-                    <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                      <Cloud className="h-6 w-6 text-blue-600" />
+                    <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                      <Cloud className="h-5 w-5 text-blue-600" />
                     </div>
-                    <p className="text-sm text-slate-500 mb-2">Cloud Adoption</p>
-                    <p className="text-lg font-bold text-slate-900">Advanced</p>
+                    <p className="text-xs text-slate-500 mb-1">Cloud Adoption</p>
+                    <p className="font-bold text-slate-900">Advanced</p>
                   </CardContent>
                 </Card>
-                <Card className="bg-white border border-slate-200 rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
+                <Card className="bg-white border border-slate-200 rounded-lg p-4 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
                   <CardContent className="p-0">
-                    <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                      <Shield className="h-6 w-6 text-green-600" />
+                    <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                      <Shield className="h-5 w-5 text-green-600" />
                     </div>
-                    <p className="text-sm text-slate-500 mb-2">Security</p>
-                    <p className="text-lg font-bold text-slate-900">Moderate</p>
+                    <p className="text-xs text-slate-500 mb-1">Security</p>
+                    <p className="font-bold text-slate-900">Moderate</p>
                   </CardContent>
                 </Card>
-                <Card className="bg-white border border-slate-200 rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
+                <Card className="bg-white border border-slate-200 rounded-lg p-4 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
                   <CardContent className="p-0">
-                    <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                      <DollarSign className="h-6 w-6 text-purple-600" />
+                    <div className="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                      <DollarSign className="h-5 w-5 text-purple-600" />
                     </div>
-                    <p className="text-sm text-slate-500 mb-2">Investment</p>
-                    <p className="text-lg font-bold text-slate-900">$2.5M</p>
+                    <p className="text-xs text-slate-500 mb-1">Investment</p>
+                    <p className="font-bold text-slate-900">$2.5M</p>
                   </CardContent>
                 </Card>
-                <Card className="bg-white border border-slate-200 rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
+                <Card className="bg-white border border-slate-200 rounded-lg p-4 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
                   <CardContent className="p-0">
-                    <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                      <Target className="h-6 w-6 text-orange-600" />
+                    <div className="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                      <Target className="h-5 w-5 text-orange-600" />
                     </div>
-                    <p className="text-sm text-slate-500 mb-2">Opportunities</p>
-                    <p className="text-lg font-bold text-slate-900">3</p>
+                    <p className="text-xs text-slate-500 mb-1">Opportunities</p>
+                    <p className="font-bold text-slate-900">3</p>
                   </CardContent>
                 </Card>
               </div>
 
               {/* Primary Recommendation Card */}
               <Card className="bg-slate-800 text-white rounded-xl border-0 shadow-xl hover:shadow-2xl transition-shadow duration-300">
-                <CardContent className="p-8">
-                  <div className="flex items-center gap-4 mb-6">
-                    <div className="w-10 h-10 bg-yellow-400 rounded-lg flex items-center justify-center">
-                      <Zap className="h-5 w-5 text-yellow-900" />
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-8 h-8 bg-yellow-400 rounded-lg flex items-center justify-center">
+                      <Zap className="h-4 w-4 text-yellow-900" />
                     </div>
-                    <span className="text-lg font-semibold">Primary Recommendation</span>
+                    <span className="font-semibold">Primary Recommendation</span>
                   </div>
                   
-                  <p className="text-slate-200 mb-6 leading-relaxed">
+                  <p className="text-slate-200 mb-4 leading-relaxed text-sm">
                     Cross-sell <strong className="text-white">Microsoft Defender for Cloud</strong> to enhance their existing 
                     Azure security posture and address critical gaps in real-time threat detection.
                   </p>
                   
-                  <div className="grid grid-cols-3 gap-6">
-                    <div className="text-center p-4 bg-slate-700 rounded-lg">
-                      <p className="text-sm text-slate-300 mb-2">Est. Value</p>
-                      <p className="text-xl font-bold text-white">$150K-250K</p>
+                  <div className="grid grid-cols-3 gap-4">
+                    <div className="text-center p-3 bg-slate-700 rounded-lg">
+                      <p className="text-xs text-slate-300 mb-1">Est. Value</p>
+                      <p className="font-bold text-white">$150K-250K</p>
                     </div>
-                    <div className="text-center p-4 bg-slate-700 rounded-lg">
-                      <p className="text-sm text-slate-300 mb-2">Timeline</p>
-                      <p className="text-xl font-bold text-white">3-6 months</p>
+                    <div className="text-center p-3 bg-slate-700 rounded-lg">
+                      <p className="text-xs text-slate-300 mb-1">Timeline</p>
+                      <p className="font-bold text-white">3-6 months</p>
                     </div>
-                    <div className="text-center p-4 bg-slate-700 rounded-lg">
-                      <p className="text-sm text-slate-300 mb-2">Priority</p>
-                      <p className="text-xl font-bold text-white">High</p>
+                    <div className="text-center p-3 bg-slate-700 rounded-lg">
+                      <p className="text-xs text-slate-300 mb-1">Priority</p>
+                      <p className="font-bold text-white">High</p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
 
               {/* Additional Sections */}
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-2 gap-6">
                 <Card className="bg-white border border-slate-200 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                  <CardContent className="p-8">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="w-8 h-8 bg-orange-100 rounded flex items-center justify-center">
-                        <Activity className="h-5 w-5 text-orange-600" />
+                  <CardContent className="p-6">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-6 h-6 bg-orange-100 rounded flex items-center justify-center">
+                        <Activity className="h-4 w-4 text-orange-600" />
                       </div>
-                      <span className="text-lg font-semibold text-slate-900">Integration & API Management</span>
+                      <span className="font-semibold text-slate-900">Integration & API Management</span>
                       <Badge className="bg-red-100 text-red-700 text-xs font-medium">HIGH</Badge>
                     </div>
-                    <h4 className="text-lg font-semibold text-slate-900 mb-4">API management and open banking readiness</h4>
-                    <p className="text-slate-600 leading-relaxed">
+                    <h4 className="font-semibold text-slate-900 mb-2">API management and open banking readiness</h4>
+                    <p className="text-sm text-slate-600 leading-relaxed">
                       Limited API infrastructure for third-party integrations and 
                       open banking compliance requirements.
                     </p>
@@ -271,24 +271,24 @@ export default function Home() {
                 </Card>
                 
                 <Card className="bg-white border border-slate-200 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                  <CardContent className="p-8">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="w-8 h-8 bg-blue-100 rounded flex items-center justify-center">
-                        <BarChart3 className="h-5 w-5 text-blue-600" />
+                  <CardContent className="p-6">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-6 h-6 bg-blue-100 rounded flex items-center justify-center">
+                        <BarChart3 className="h-4 w-4 text-blue-600" />
                       </div>
-                      <span className="text-lg font-semibold text-slate-900">Revenue Opportunities</span>
+                      <span className="font-semibold text-slate-900">Revenue Opportunities</span>
                     </div>
-                    <div className="space-y-4">
-                      <div className="flex justify-between items-center py-2">
-                        <span className="text-slate-700 font-medium">Microsoft Defender</span>
+                    <div className="space-y-3">
+                      <div className="flex justify-between items-center">
+                        <span className="text-sm text-slate-700">Microsoft Defender</span>
                         <Badge className="bg-red-100 text-red-700 text-xs">High</Badge>
                       </div>
-                      <div className="flex justify-between items-center py-2">
-                        <span className="text-slate-700 font-medium">Azure Backup</span>
+                      <div className="flex justify-between items-center">
+                        <span className="text-sm text-slate-700">Azure Backup</span>
                         <Badge className="bg-orange-100 text-orange-700 text-xs">Medium</Badge>
                       </div>
-                      <div className="flex justify-between items-center py-2">
-                        <span className="text-slate-700 font-medium">Power BI Premium</span>
+                      <div className="flex justify-between items-center">
+                        <span className="text-sm text-slate-700">Power BI Premium</span>
                         <Badge className="bg-orange-100 text-orange-700 text-xs">Medium</Badge>
                       </div>
                     </div>
