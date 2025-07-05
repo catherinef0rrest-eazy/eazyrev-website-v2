@@ -283,10 +283,16 @@
   }
 
   .rainbow-hover-btn,
+  .rainbow-hover-btn > * {
+    color: white !important;
+    position: relative;
+    z-index: 2;
+  }
+
   .rainbow-hover-btn:hover,
-  .rainbow-hover-btn > *,
   .rainbow-hover-btn:hover > * {
     color: white !important;
+    text-shadow: 0 0 8px rgba(0,0,0,0.8), 0 0 16px rgba(0,0,0,0.6);
     position: relative;
     z-index: 2;
   }
