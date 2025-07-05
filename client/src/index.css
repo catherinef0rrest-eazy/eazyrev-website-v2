@@ -250,50 +250,43 @@
     100% { background-position: 0% 50%; }
   }
 
-  /* Rainbow button hover effect */
-  .btn-rainbow {
-    background: #1e293b !important;
-    border: 1px solid #1e293b !important;
-    color: white !important;
+  /* Rainbow hover effect for buttons */
+  .rainbow-hover-btn {
     position: relative;
     overflow: hidden;
-    transition: all 0.4s ease;
   }
 
-  .btn-rainbow:before {
+  .rainbow-hover-btn::after {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    right: 0;
+    bottom: 0;
     background: linear-gradient(135deg, 
-      #ff416c 0%, 
-      #ff4b2b 14%, 
-      #ff9500 28%, 
-      #ffcc00 42%, 
-      #32cd32 57%, 
-      #00b4db 71%, 
-      #6c5ce7 85%, 
-      #a29bfe 100%);
+      #ff416c, #ff4b2b, #ff9500, #ffcc00, 
+      #32cd32, #00b4db, #6c5ce7, #a29bfe);
     background-size: 300% 300%;
     opacity: 0;
     z-index: 1;
-    transition: opacity 0.4s ease;
+    transition: opacity 0.3s ease;
   }
 
-  .btn-rainbow:hover:before {
+  .rainbow-hover-btn:hover::after {
     opacity: 1;
-    animation: rainbowFlow 2s ease-in-out infinite;
+    animation: rainbowWave 2s ease-in-out infinite;
   }
 
-  .btn-rainbow * {
+  .rainbow-hover-btn:hover {
+    background-color: #1e293b !important;
+  }
+
+  .rainbow-hover-btn > * {
     position: relative;
     z-index: 2;
-    color: white !important;
   }
 
-  @keyframes rainbowFlow {
+  @keyframes rainbowWave {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }

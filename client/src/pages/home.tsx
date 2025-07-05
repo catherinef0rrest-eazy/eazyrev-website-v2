@@ -299,8 +299,8 @@ export default function Home() {
               {/* Call to Action */}
               <div className="text-center pt-6">
                 <Link href="/sample-report">
-                  <Button className="btn-rainbow px-8 py-3 text-base font-medium rounded-lg btn-advanced shadow-lg">
-                    <span className="btn-content">View Full Report</span>
+                  <Button className="bg-slate-900 hover:bg-slate-800 text-white px-8 py-3 text-base font-medium rounded-lg btn-advanced shadow-lg rainbow-hover-btn">
+                    View Full Report
                   </Button>
                 </Link>
               </div>

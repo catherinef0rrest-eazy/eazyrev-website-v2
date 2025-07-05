@@ -51,8 +51,8 @@ export default function SampleReport() {
             This sample analysis for TechForward Regional Bank demonstrates how our AI-powered insights engine surfaces high-value cross-sell, upsell, and net new opportunities in minutes, not weeks.
           </p>
           <Link href="/contact">
-            <Button className="btn-rainbow px-8 py-3 text-base font-medium rounded-xl btn-advanced shadow-lg">
-              <span className="btn-content">Get Your Custom Analysis</span>
+            <Button className="bg-slate-900 hover:bg-slate-800 text-white px-8 py-3 text-base font-medium rounded-xl btn-advanced shadow-lg rainbow-hover-btn">
+              Get Your Custom Analysis
             </Button>
           </Link>
         </div>
