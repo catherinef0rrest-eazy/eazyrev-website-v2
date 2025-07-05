@@ -1,6 +1,7 @@
 import { Link, useLocation } from "wouter";
 import { cn } from "@/lib/utils";
-import { Building, ChartLine, CreditCard, Mail, Home } from "lucide-react";
+import { ChartLine, CreditCard, Mail, Home } from "lucide-react";
+import eazyLogoPath from "@assets/eazy logo black.svg";
 
 const navigation = [
   { name: "Home", href: "/", icon: Home },
@@ -45,11 +46,15 @@ export default function Sidebar() {
         </div>
       </div>
 
-      {/* Bottom Company Info */}
+      {/* Bottom Logo */}
       <div className="absolute bottom-0 left-0 right-0 p-6 border-t border-slate-200">
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center">
-            <Building className="w-4 h-4 text-gray-600" />
+          <div className="w-8 h-8 flex items-center justify-center">
+            <img 
+              src={eazyLogoPath} 
+              alt="eazy logo" 
+              className="w-6 h-6 opacity-40"
+            />
           </div>
           <div className="text-sm">
             <div className="font-medium text-slate-900">eazy</div>
