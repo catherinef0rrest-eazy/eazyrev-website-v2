@@ -35,7 +35,7 @@ export default function MobileNav() {
               <div className="w-8 h-8 bg-slate-900 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">E</span>
               </div>
-              <span className="font-bold text-xl text-slate-900 tracking-wider">eazyrev</span>
+              <span className="font-bold text-xl text-slate-900 tracking-wide">eazyrev</span>
             </div>
 
             {/* Navigation Links */}
