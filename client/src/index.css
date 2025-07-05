@@ -242,6 +242,14 @@
     100% { background-position: 0% 50%; }
   }
 
+  @keyframes rainbowShift {
+    0% { background-position: 0% 50%; }
+    25% { background-position: 100% 0%; }
+    50% { background-position: 100% 100%; }
+    75% { background-position: 0% 100%; }
+    100% { background-position: 0% 50%; }
+  }
+
   /* Floating animation for elements */
   .float-animation {
     animation: float 6s ease-in-out infinite;
@@ -284,7 +292,9 @@
     top: 0;
     height: 100%;
     width: 3px;
-    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+    background: linear-gradient(135deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #ffeaa7, #dda0dd, #ff7675);
+    background-size: 200% 200%;
+    animation: rainbowShift 3s ease-in-out infinite;
     transform: scaleY(0);
     transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   }
