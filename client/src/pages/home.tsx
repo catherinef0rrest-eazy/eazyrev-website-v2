@@ -35,30 +35,30 @@ export default function Home() {
         {/* Hero Section */}
         <div className="text-center mb-20 slide-up">
           <div className="mb-6 pt-10"></div>
-          <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-slate-900 tracking-tight leading-tight">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-slate-900 tracking-tight leading-tight">
             Bespoke Sales Insights for{" "}
-            <span className="text-slate-700 whitespace-nowrap">IT Services & Tech Vendors</span>
+            <span className="text-slate-700 sm:whitespace-nowrap">IT Services & Tech Vendors</span>
           </h1>
-          <p className="text-xl text-slate-600 mb-6 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl text-slate-600 mb-6 max-w-3xl mx-auto leading-relaxed px-2">
             Engineered to help you target prospects with organizational fit, tech compatibility, urgency, and adoption readiness.
           </p>
-          <p className="text-lg text-slate-500 mb-10 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-slate-500 mb-10 max-w-2xl mx-auto px-2">
             From 500 Possibilities to 5 Perfect Recommendations
           </p>
           
-          <div className="flex justify-center gap-8 mb-10">
+          <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-8 mb-10 px-4">
             <div className="text-center stats-appear" style={{ animationDelay: '0.1s' }}>
-              <div className="text-2xl font-bold text-slate-900 gradient-text">20.7M</div>
+              <div className="text-xl sm:text-2xl font-bold text-slate-900 gradient-text">20.7M</div>
               <div className="text-sm text-slate-600 font-medium">Companies</div>
             </div>
-            <div className="w-px bg-slate-200 mx-4"></div>
+            <div className="hidden sm:block w-px bg-slate-200 mx-4"></div>
             <div className="text-center stats-appear" style={{ animationDelay: '0.2s' }}>
-              <div className="text-2xl font-bold text-slate-900 gradient-text">220K</div>
+              <div className="text-xl sm:text-2xl font-bold text-slate-900 gradient-text">220K</div>
               <div className="text-sm text-slate-600 font-medium">Products</div>
             </div>
-            <div className="w-px bg-slate-200 mx-4"></div>
+            <div className="hidden sm:block w-px bg-slate-200 mx-4"></div>
             <div className="text-center stats-appear" style={{ animationDelay: '0.3s' }}>
-              <div className="text-2xl font-bold text-slate-900 gradient-text">158K</div>
+              <div className="text-xl sm:text-2xl font-bold text-slate-900 gradient-text">158K</div>
               <div className="text-sm text-slate-600 font-medium">Vendors</div>
             </div>
           </div>
@@ -74,7 +74,7 @@ export default function Home() {
         <div className="mb-20">
           <Card className="metric-card rounded-2xl p-10 mb-12 enterprise-shadow-lg float-animation">
             <CardContent className="p-0">
-              <p className="text-xl text-slate-600 leading-relaxed max-w-4xl mx-auto min-h-[5rem] text-center">
+              <p className="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-4xl mx-auto min-h-[5rem] text-center px-4">
                 {typewriterText}
                 {!typewriterComplete && (
                   <span className="typewriter-cursor text-slate-400">|</span>
@@ -84,42 +84,42 @@ export default function Home() {
           </Card>
 
           {/* 3-Column Benefits */}
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="metric-card rounded-xl p-8 group card-hover-effect" style={{ animationDelay: '0.1s' }}>
+          <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+            <Card className="metric-card rounded-xl p-6 sm:p-8 group card-hover-effect" style={{ animationDelay: '0.1s' }}>
               <CardContent className="p-0">
                 <div className="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-slate-200 transition-colors icon-hover-rotate">
                   <Network className="h-6 w-6 text-slate-600" />
                 </div>
-                <h3 className="text-xl font-bold mb-4 text-slate-900 tracking-tight">
+                <h3 className="text-lg sm:text-xl font-bold mb-4 text-slate-900 tracking-tight">
                   Multi-Signal Intelligence
                 </h3>
-                <p className="text-slate-600 leading-relaxed text-base">
+                <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
                   Combines technographics, job postings, buyer intent, case studies, and CRM data
                 </p>
               </CardContent>
             </Card>
-            <Card className="metric-card rounded-xl p-8 group card-hover-effect" style={{ animationDelay: '0.2s' }}>
+            <Card className="metric-card rounded-xl p-6 sm:p-8 group card-hover-effect" style={{ animationDelay: '0.2s' }}>
               <CardContent className="p-0">
                 <div className="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-slate-200 transition-colors icon-hover-rotate">
                   <Zap className="h-6 w-6 text-slate-600" />
                 </div>
-                <h3 className="text-xl font-bold mb-4 text-slate-900 tracking-tight">
+                <h3 className="text-lg sm:text-xl font-bold mb-4 text-slate-900 tracking-tight">
                   Plug-and-Play Recommendations
                 </h3>
-                <p className="text-slate-600 leading-relaxed text-base">
+                <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
                   Automated filtering from broad possibilities to targeted opportunities
                 </p>
               </CardContent>
             </Card>
-            <Card className="metric-card rounded-xl p-8 group card-hover-effect" style={{ animationDelay: '0.3s' }}>
+            <Card className="metric-card rounded-xl p-6 sm:p-8 group card-hover-effect" style={{ animationDelay: '0.3s' }}>
               <CardContent className="p-0">
                 <div className="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-slate-200 transition-colors icon-hover-rotate">
                   <Crosshair className="h-6 w-6 text-slate-600" />
                 </div>
-                <h3 className="text-xl font-bold mb-4 text-slate-900 tracking-tight">
+                <h3 className="text-lg sm:text-xl font-bold mb-4 text-slate-900 tracking-tight">
                   Opportunity Precision
                 </h3>
-                <p className="text-slate-600 leading-relaxed text-base">
+                <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
                   Target prospects with organizational fit, tech compatibility, urgency, and tech readiness
                 </p>
               </CardContent>
@@ -130,10 +130,10 @@ export default function Home() {
         {/* Sample Report Preview */}
         <div className="mb-20">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4 text-slate-900 tracking-tight">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-slate-900 tracking-tight">
               See How It Works
             </h2>
-            <p className="text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto px-4">
               Experience our AI-powered analysis in action. This sample report shows how we transform 
               complex technology data into clear, actionable sales opportunities.
             </p>
@@ -150,28 +150,28 @@ export default function Home() {
               <span className="text-sm text-gray-600 font-medium">Analysis Report - TechCorp Solutions</span>
             </div>
 
-            <div className="p-8 space-y-6">
+            <div className="p-4 sm:p-8 space-y-6">
               {/* Company Header Card */}
-              <Card className="bg-white border border-slate-200 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <Card className="bg-white border border-slate-200 rounded-xl p-4 sm:p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <CardContent className="p-0">
-                  <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 bg-slate-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <span className="text-white font-bold text-lg">T</span>
+                  <div className="flex items-center gap-3 sm:gap-4">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-slate-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <span className="text-white font-bold text-base sm:text-lg">T</span>
                     </div>
-                    <div className="flex-1">
-                      <h3 className="text-xl font-bold text-slate-900 mb-1">TechForward Regional Bank</h3>
-                      <div className="flex items-center gap-6 text-sm text-slate-600">
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-1">TechForward Regional Bank</h3>
+                      <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6 text-xs sm:text-sm text-slate-600">
                         <span className="flex items-center gap-2">
-                          <Building2 className="h-4 w-4" />
-                          Depository Credit Intermediation
+                          <Building2 className="h-3 w-3 sm:h-4 sm:w-4" />
+                          <span className="truncate">Depository Credit Intermediation</span>
                         </span>
                         <span className="flex items-center gap-2">
                           <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
                           47 products analyzed
                         </span>
                         <span className="flex items-center gap-2">
-                          <DollarSign className="h-4 w-4" />
-                          $450K+ revenue potential identified
+                          <DollarSign className="h-3 w-3 sm:h-4 sm:w-4" />
+                          <span className="truncate">$450K+ revenue potential</span>
                         </span>
                       </div>
                     </div>
@@ -180,41 +180,41 @@ export default function Home() {
               </Card>
 
               {/* Metrics Grid */}
-              <div className="grid grid-cols-4 gap-4">
-                <Card className="bg-white border border-slate-200 rounded-lg p-4 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
+                <Card className="bg-white border border-slate-200 rounded-lg p-3 sm:p-4 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
                   <CardContent className="p-0">
-                    <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-2">
-                      <Cloud className="h-5 w-5 text-blue-600" />
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                      <Cloud className="h-4 w-4 sm:h-5 sm:w-5 text-blue-600" />
                     </div>
                     <p className="text-xs text-slate-500 mb-1">Cloud Adoption</p>
-                    <p className="font-bold text-slate-900">Advanced</p>
+                    <p className="font-bold text-slate-900 text-sm sm:text-base">Advanced</p>
                   </CardContent>
                 </Card>
-                <Card className="bg-white border border-slate-200 rounded-lg p-4 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
+                <Card className="bg-white border border-slate-200 rounded-lg p-3 sm:p-4 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
                   <CardContent className="p-0">
-                    <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-2">
-                      <Shield className="h-5 w-5 text-green-600" />
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                      <Shield className="h-4 w-4 sm:h-5 sm:w-5 text-green-600" />
                     </div>
                     <p className="text-xs text-slate-500 mb-1">Security</p>
-                    <p className="font-bold text-slate-900">Moderate</p>
+                    <p className="font-bold text-slate-900 text-sm sm:text-base">Moderate</p>
                   </CardContent>
                 </Card>
-                <Card className="bg-white border border-slate-200 rounded-lg p-4 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
+                <Card className="bg-white border border-slate-200 rounded-lg p-3 sm:p-4 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
                   <CardContent className="p-0">
-                    <div className="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-2">
-                      <DollarSign className="h-5 w-5 text-purple-600" />
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                      <DollarSign className="h-4 w-4 sm:h-5 sm:w-5 text-purple-600" />
                     </div>
                     <p className="text-xs text-slate-500 mb-1">Investment</p>
-                    <p className="font-bold text-slate-900">$2.5M</p>
+                    <p className="font-bold text-slate-900 text-sm sm:text-base">$2.5M</p>
                   </CardContent>
                 </Card>
-                <Card className="bg-white border border-slate-200 rounded-lg p-4 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
+                <Card className="bg-white border border-slate-200 rounded-lg p-3 sm:p-4 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
                   <CardContent className="p-0">
-                    <div className="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-2">
-                      <Target className="h-5 w-5 text-orange-600" />
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                      <Target className="h-4 w-4 sm:h-5 sm:w-5 text-orange-600" />
                     </div>
                     <p className="text-xs text-slate-500 mb-1">Opportunities</p>
-                    <p className="font-bold text-slate-900">3</p>
+                    <p className="font-bold text-slate-900 text-sm sm:text-base">3</p>
                   </CardContent>
                 </Card>
               </div>
@@ -252,18 +252,20 @@ export default function Home() {
               </Card>
 
               {/* Additional Sections */}
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                 <Card className="bg-white border border-slate-200 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                  <CardContent className="p-6">
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className="w-6 h-6 bg-orange-100 rounded flex items-center justify-center">
-                        <Activity className="h-4 w-4 text-orange-600" />
+                  <CardContent className="p-4 sm:p-6">
+                    <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 mb-4">
+                      <div className="flex items-center gap-3">
+                        <div className="w-6 h-6 bg-orange-100 rounded flex items-center justify-center">
+                          <Activity className="h-4 w-4 text-orange-600" />
+                        </div>
+                        <span className="font-semibold text-slate-900 text-sm sm:text-base">Integration & API Management</span>
                       </div>
-                      <span className="font-semibold text-slate-900">Integration & API Management</span>
-                      <Badge className="bg-red-100 text-red-700 text-xs font-medium">HIGH</Badge>
+                      <Badge className="bg-red-100 text-red-700 text-xs font-medium self-start sm:self-auto">HIGH</Badge>
                     </div>
-                    <h4 className="font-semibold text-slate-900 mb-2">API management and open banking readiness</h4>
-                    <p className="text-sm text-slate-600 leading-relaxed">
+                    <h4 className="font-semibold text-slate-900 mb-2 text-sm sm:text-base">API management and open banking readiness</h4>
+                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       Limited API infrastructure for third-party integrations and 
                       open banking compliance requirements.
                     </p>
@@ -271,12 +273,12 @@ export default function Home() {
                 </Card>
                 
                 <Card className="bg-white border border-slate-200 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                  <CardContent className="p-6">
+                  <CardContent className="p-4 sm:p-6">
                     <div className="flex items-center gap-3 mb-4">
                       <div className="w-6 h-6 bg-blue-100 rounded flex items-center justify-center">
                         <BarChart3 className="h-4 w-4 text-blue-600" />
                       </div>
-                      <span className="font-semibold text-slate-900">Revenue Opportunities</span>
+                      <span className="font-semibold text-slate-900 text-sm sm:text-base">Revenue Opportunities</span>
                     </div>
                     <div className="space-y-3">
                       <div className="flex justify-between items-center">
@@ -310,20 +312,20 @@ export default function Home() {
 
         {/* Contact Section */}
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold mb-3 text-slate-900 tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-3 text-slate-900 tracking-tight px-4">
             Ready to Transform Your IT Services Sales?
           </h2>
-          <p className="text-slate-600 text-lg leading-relaxed max-w-2xl mx-auto">
+          <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto px-4">
             Schedule a demo with our team and see immediate results in your tech sales process.
           </p>
         </div>
 
         {/* Calendly Widget */}
-        <Card className="metric-card rounded-2xl p-6 enterprise-shadow-lg">
+        <Card className="metric-card rounded-2xl p-4 sm:p-6 enterprise-shadow-lg">
           <CardContent className="p-0">
             <CalendlyInline 
               url="https://calendly.com/ashwin-eazy/eazy-strategy-call"
-              height="900px"
+              height="600px"
               className="w-full"
             />
           </CardContent>

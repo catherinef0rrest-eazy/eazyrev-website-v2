@@ -36,7 +36,7 @@ export default function SampleReport() {
 
   return (
     <div className="landing-backdrop">
-      <div className="landing-content max-w-7xl mx-auto px-6 pt-20 pb-16 page-transition min-h-screen">
+      <div className="landing-content max-w-7xl mx-auto px-4 sm:px-6 pt-20 pb-16 page-transition min-h-screen">
         {/* Page Header */}
         <div className="text-center mb-16">
           <div className="mb-6">
@@ -44,10 +44,10 @@ export default function SampleReport() {
               Sample Technology Intelligence Report
             </Badge>
           </div>
-          <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-slate-900 tracking-tight leading-tight">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-slate-900 tracking-tight leading-tight">
             Sales Insights Made Eazy
           </h1>
-          <p className="text-xl text-slate-600 mb-6 leading-relaxed max-w-4xl mx-auto">
+          <p className="text-lg sm:text-xl text-slate-600 mb-6 leading-relaxed max-w-4xl mx-auto px-2">
             This sample analysis for TechForward Regional Bank demonstrates how our AI-powered insights engine surfaces high-value cross-sell, upsell, and net new opportunities in minutes, not weeks.
           </p>
           <Link href="/contact">
@@ -58,9 +58,9 @@ export default function SampleReport() {
         </div>
 
         {/* Company Account Summary */}
-        <Card className="metric-card rounded-2xl p-8 mb-12 enterprise-shadow-lg bg-white border border-slate-200 card-hover-effect">
+        <Card className="metric-card rounded-2xl p-4 sm:p-8 mb-12 enterprise-shadow-lg bg-white border border-slate-200 card-hover-effect">
           <CardContent className="p-0">
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
               {/* Left Column - Company Identity */}
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
