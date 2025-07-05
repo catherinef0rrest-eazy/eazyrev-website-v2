@@ -84,11 +84,6 @@
     font-family: 'Neue Haas Grotesk Display Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 
-  /* H1 headers use Neue Haas Grotesk */
-  h1 {
-    font-family: 'Neue Haas Grotesk Display Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  }
-
   /* Improve readability of small text */
   .text-xs {
     font-size: 0.8rem !important;
