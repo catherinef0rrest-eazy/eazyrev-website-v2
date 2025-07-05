@@ -90,9 +90,30 @@
     font-size: 0.8rem !important;
   }
 
-  /* Make text-sm slightly bigger for better readability */
+  /* Typography consistency overrides */
   .text-sm {
     font-size: 0.9375rem !important; /* 15px instead of 14px */
+  }
+
+  /* Ensure consistent typography hierarchy across the site */
+  .typography-base {
+    font-size: 1rem; /* 16px - standard body text */
+    line-height: 1.5;
+  }
+  
+  .typography-small {
+    font-size: 0.9375rem; /* 15px - small descriptive text */
+    line-height: 1.4;
+  }
+  
+  .typography-large {
+    font-size: 1.125rem; /* 18px - large body text */
+    line-height: 1.6;
+  }
+  
+  .typography-xl {
+    font-size: 1.25rem; /* 20px - subtitle text */
+    line-height: 1.6;
   }
 }
 

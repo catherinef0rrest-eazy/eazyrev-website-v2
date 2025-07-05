@@ -92,7 +92,7 @@ export default function Home() {
                 <h3 className="text-xl font-bold mb-4 text-slate-900 tracking-tight">
                   Multi-Signal Intelligence
                 </h3>
-                <p className="text-slate-600 leading-relaxed">
+                <p className="text-slate-600 leading-relaxed text-base">
                   Combines technographics, job postings, buyer intent, case studies, and CRM data
                 </p>
               </CardContent>
@@ -105,7 +105,7 @@ export default function Home() {
                 <h3 className="text-xl font-bold mb-4 text-slate-900 tracking-tight">
                   Plug-and-Play Recommendations
                 </h3>
-                <p className="text-slate-600 leading-relaxed">
+                <p className="text-slate-600 leading-relaxed text-base">
                   Automated filtering from broad possibilities to targeted opportunities
                 </p>
               </CardContent>
@@ -118,7 +118,7 @@ export default function Home() {
                 <h3 className="text-xl font-bold mb-4 text-slate-900 tracking-tight">
                   Opportunity Precision
                 </h3>
-                <p className="text-slate-600 leading-relaxed">
+                <p className="text-slate-600 leading-relaxed text-base">
                   Target prospects with organizational fit, tech compatibility, urgency, and tech readiness
                 </p>
               </CardContent>
