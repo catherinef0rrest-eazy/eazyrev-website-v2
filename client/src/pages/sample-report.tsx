@@ -455,7 +455,7 @@ export default function SampleReport() {
             
             <div className="grid md:grid-cols-3 gap-6">
               {/* Cloud Infrastructure & Platforms */}
-              <Card className="bg-blue-50 border border-blue-200 rounded-xl p-6">
+              <Card className="bg-white border border-slate-200 rounded-xl p-6">
                 <CardContent className="p-0">
                   <div className="flex items-center gap-3 mb-6">
                     <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">
@@ -510,7 +510,7 @@ export default function SampleReport() {
               </Card>
 
               {/* Data Management & Storage */}
-              <Card className="bg-green-50 border border-green-200 rounded-xl p-6">
+              <Card className="bg-white border border-slate-200 rounded-xl p-6">
                 <CardContent className="p-0">
                   <div className="flex items-center gap-3 mb-6">
                     <div className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center">
@@ -558,7 +558,7 @@ export default function SampleReport() {
               </Card>
 
               {/* Analytics & Intelligence */}
-              <Card className="bg-purple-50 border border-purple-200 rounded-xl p-6">
+              <Card className="bg-white border border-slate-200 rounded-xl p-6">
                 <CardContent className="p-0">
                   <div className="flex items-center gap-3 mb-6">
                     <div className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center">
@@ -602,7 +602,7 @@ export default function SampleReport() {
             {/* Additional Technology Categories */}
             <div className="grid md:grid-cols-2 gap-6 mt-8">
               {/* Integration & API Management */}
-              <Card className="bg-orange-50 border border-orange-200 rounded-xl p-6">
+              <Card className="bg-white border border-slate-200 rounded-xl p-6">
                 <CardContent className="p-0">
                   <div className="flex items-center gap-3 mb-6">
                     <div className="w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center">
@@ -649,7 +649,7 @@ export default function SampleReport() {
               </Card>
 
               {/* Development & Operations */}
-              <Card className="bg-yellow-50 border border-yellow-200 rounded-xl p-6">
+              <Card className="bg-white border border-slate-200 rounded-xl p-6">
                 <CardContent className="p-0">
                   <div className="flex items-center gap-3 mb-6">
                     <div className="w-8 h-8 bg-yellow-100 rounded-lg flex items-center justify-center">
