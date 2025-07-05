@@ -157,7 +157,7 @@ export default function SampleReport() {
               <h2 className="text-2xl font-bold text-slate-900 tracking-tight">Executive Summary</h2>
             </div>
             <div className="bg-gray-50 rounded-lg p-6">
-              <p className="text-gray-700 leading-relaxed text-sm">
+              <p className="text-gray-700 leading-relaxed text-base">
                 TechForward Regional Bank demonstrates sophisticated technology adoption that significantly exceeds typical community bank standards, with advanced cloud 
                 infrastructure (AWS/Azure), enterprise-grade security, and modern DevOps practices. However, critical gaps exist in customer-facing digital banking platforms and real-time 
                 analytics capabilities that could limit competitive positioning. The bank is positioned as a "Progressive Adopter" in the regional banking sector.
