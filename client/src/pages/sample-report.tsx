@@ -185,7 +185,7 @@ export default function SampleReport() {
                 <Shield className="h-6 w-6 text-green-500" />
               </div>
               <p className="text-xs font-medium text-slate-500 uppercase tracking-wide mb-2">Security Posture</p>
-              <p className="font-bold text-2xl text-slate-900 mb-1">Strong</p>
+              <p className="font-bold text-2xl text-slate-900 mb-1">Moderate</p>
               <p className="text-xs text-slate-600">Enterprise SIEM</p>
             </CardContent>
           </Card>
