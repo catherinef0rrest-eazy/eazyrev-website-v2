@@ -150,141 +150,154 @@ export default function Home() {
               <span className="text-sm text-gray-600 font-medium">Analysis Report - TechCorp Solutions</span>
             </div>
 
-            <div className="p-8">
-              {/* Company Header */}
-              <div className="flex items-center gap-4 mb-8">
-                <div className="w-12 h-12 bg-slate-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <span className="text-white font-bold text-lg">T</span>
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-slate-900 mb-2">TechForward Regional Bank</h3>
-                  <div className="flex items-center gap-6 text-sm text-slate-600">
-                    <span className="flex items-center gap-2">
-                      <Building2 className="h-4 w-4" />
-                      Depository Credit Intermediation
-                    </span>
-                    <span className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                      47 products analyzed
-                    </span>
-                    <span className="flex items-center gap-2">
-                      <DollarSign className="h-4 w-4" />
-                      $450K+ revenue potential identified
-                    </span>
+            <div className="p-12 space-y-8">
+              {/* Company Header Card */}
+              <Card className="bg-white border border-slate-200 rounded-xl p-8">
+                <CardContent className="p-0">
+                  <div className="flex items-center gap-6">
+                    <div className="w-16 h-16 bg-slate-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <span className="text-white font-bold text-xl">T</span>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-2xl font-bold text-slate-900 mb-3">TechForward Regional Bank</h3>
+                      <div className="flex items-center gap-8 text-sm text-slate-600">
+                        <span className="flex items-center gap-3">
+                          <Building2 className="h-4 w-4" />
+                          Depository Credit Intermediation
+                        </span>
+                        <span className="flex items-center gap-3">
+                          <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                          47 products analyzed
+                        </span>
+                        <span className="flex items-center gap-3">
+                          <DollarSign className="h-4 w-4" />
+                          $450K+ revenue potential identified
+                        </span>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
+                </CardContent>
+              </Card>
 
               {/* Metrics Grid */}
-              <div className="grid grid-cols-4 gap-6 mb-10">
-                <div className="text-center">
-                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                    <Cloud className="h-6 w-6 text-blue-600" />
-                  </div>
-                  <p className="text-sm text-slate-500 mb-1">Cloud Adoption</p>
-                  <p className="text-lg font-bold text-slate-900">Advanced</p>
-                </div>
-                <div className="text-center">
-                  <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                    <Shield className="h-6 w-6 text-green-600" />
-                  </div>
-                  <p className="text-sm text-slate-500 mb-1">Security</p>
-                  <p className="text-lg font-bold text-slate-900">Moderate</p>
-                </div>
-                <div className="text-center">
-                  <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                    <DollarSign className="h-6 w-6 text-purple-600" />
-                  </div>
-                  <p className="text-sm text-slate-500 mb-1">Investment</p>
-                  <p className="text-lg font-bold text-slate-900">$2.5M</p>
-                </div>
-                <div className="text-center">
-                  <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                    <Target className="h-6 w-6 text-orange-600" />
-                  </div>
-                  <p className="text-sm text-slate-500 mb-1">Opportunities</p>
-                  <p className="text-lg font-bold text-slate-900">3</p>
-                </div>
+              <div className="grid grid-cols-4 gap-6">
+                <Card className="bg-white border border-slate-200 rounded-lg p-6 text-center">
+                  <CardContent className="p-0">
+                    <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                      <Cloud className="h-6 w-6 text-blue-600" />
+                    </div>
+                    <p className="text-sm text-slate-500 mb-2">Cloud Adoption</p>
+                    <p className="text-lg font-bold text-slate-900">Advanced</p>
+                  </CardContent>
+                </Card>
+                <Card className="bg-white border border-slate-200 rounded-lg p-6 text-center">
+                  <CardContent className="p-0">
+                    <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                      <Shield className="h-6 w-6 text-green-600" />
+                    </div>
+                    <p className="text-sm text-slate-500 mb-2">Security</p>
+                    <p className="text-lg font-bold text-slate-900">Moderate</p>
+                  </CardContent>
+                </Card>
+                <Card className="bg-white border border-slate-200 rounded-lg p-6 text-center">
+                  <CardContent className="p-0">
+                    <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                      <DollarSign className="h-6 w-6 text-purple-600" />
+                    </div>
+                    <p className="text-sm text-slate-500 mb-2">Investment</p>
+                    <p className="text-lg font-bold text-slate-900">$2.5M</p>
+                  </CardContent>
+                </Card>
+                <Card className="bg-white border border-slate-200 rounded-lg p-6 text-center">
+                  <CardContent className="p-0">
+                    <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                      <Target className="h-6 w-6 text-orange-600" />
+                    </div>
+                    <p className="text-sm text-slate-500 mb-2">Opportunities</p>
+                    <p className="text-lg font-bold text-slate-900">3</p>
+                  </CardContent>
+                </Card>
               </div>
 
-              {/* Primary Recommendation */}
-              <div className="bg-slate-800 text-white rounded-xl p-8 mb-8">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-10 h-10 bg-yellow-400 rounded-lg flex items-center justify-center">
-                    <Zap className="h-5 w-5 text-yellow-900" />
+              {/* Primary Recommendation Card */}
+              <Card className="bg-slate-800 text-white rounded-xl border-0">
+                <CardContent className="p-8">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-10 h-10 bg-yellow-400 rounded-lg flex items-center justify-center">
+                      <Zap className="h-5 w-5 text-yellow-900" />
+                    </div>
+                    <span className="text-lg font-semibold">Primary Recommendation</span>
                   </div>
-                  <span className="text-lg font-semibold">Primary Recommendation</span>
-                </div>
-                
-                <p className="text-slate-200 mb-6 leading-relaxed">
-                  Cross-sell <strong className="text-white">Microsoft Defender for Cloud</strong> to enhance their existing 
-                  Azure security posture and address critical gaps in real-time threat detection.
-                </p>
-                
-                <div className="grid grid-cols-3 gap-6">
-                  <div className="text-center p-4 bg-slate-700 rounded-lg">
-                    <p className="text-sm text-slate-300 mb-2">Estimated Value</p>
-                    <p className="text-xl font-bold text-white">$150K-250K</p>
-                    <p className="text-xs text-slate-400">Annual Recurring Revenue</p>
+                  
+                  <p className="text-slate-200 mb-6 leading-relaxed">
+                    Cross-sell <strong className="text-white">Microsoft Defender for Cloud</strong> to enhance their existing 
+                    Azure security posture and address critical gaps in real-time threat detection.
+                  </p>
+                  
+                  <div className="grid grid-cols-3 gap-6">
+                    <div className="text-center p-4 bg-slate-700 rounded-lg">
+                      <p className="text-sm text-slate-300 mb-2">Est. Value</p>
+                      <p className="text-xl font-bold text-white">$150K-250K</p>
+                    </div>
+                    <div className="text-center p-4 bg-slate-700 rounded-lg">
+                      <p className="text-sm text-slate-300 mb-2">Timeline</p>
+                      <p className="text-xl font-bold text-white">3-6 months</p>
+                    </div>
+                    <div className="text-center p-4 bg-slate-700 rounded-lg">
+                      <p className="text-sm text-slate-300 mb-2">Priority</p>
+                      <p className="text-xl font-bold text-white">High</p>
+                    </div>
                   </div>
-                  <div className="text-center p-4 bg-slate-700 rounded-lg">
-                    <p className="text-sm text-slate-300 mb-2">Implementation</p>
-                    <p className="text-xl font-bold text-white">3-6 months</p>
-                    <p className="text-xs text-slate-400">Timeline</p>
-                  </div>
-                  <div className="text-center p-4 bg-slate-700 rounded-lg">
-                    <p className="text-sm text-slate-300 mb-2">Priority</p>
-                    <p className="text-xl font-bold text-white">High</p>
-                    <p className="text-xs text-slate-400">Business Impact</p>
-                  </div>
-                </div>
-              </div>
+                </CardContent>
+              </Card>
 
-              {/* Additional Sections Preview */}
-              <div className="border-t border-slate-200 pt-8">
-                <div className="grid md:grid-cols-2 gap-8">
-                  <div>
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className="w-6 h-6 bg-orange-100 rounded flex items-center justify-center">
-                        <Activity className="h-4 w-4 text-orange-600" />
+              {/* Additional Sections */}
+              <div className="grid md:grid-cols-2 gap-8">
+                <Card className="bg-white border border-slate-200 rounded-xl">
+                  <CardContent className="p-8">
+                    <div className="flex items-center gap-4 mb-6">
+                      <div className="w-8 h-8 bg-orange-100 rounded flex items-center justify-center">
+                        <Activity className="h-5 w-5 text-orange-600" />
                       </div>
-                      <span className="font-semibold text-slate-900">Integration & API Management</span>
+                      <span className="text-lg font-semibold text-slate-900">Integration & API Management</span>
                       <Badge className="bg-red-100 text-red-700 text-xs font-medium">HIGH</Badge>
                     </div>
-                    <h4 className="text-lg font-semibold text-slate-900 mb-3">API management and open banking readiness</h4>
+                    <h4 className="text-lg font-semibold text-slate-900 mb-4">API management and open banking readiness</h4>
                     <p className="text-slate-600 leading-relaxed">
                       Limited API infrastructure for third-party integrations and 
                       open banking compliance requirements.
                     </p>
-                  </div>
-                  
-                  <div>
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className="w-6 h-6 bg-blue-100 rounded flex items-center justify-center">
-                        <BarChart3 className="h-4 w-4 text-blue-600" />
+                  </CardContent>
+                </Card>
+                
+                <Card className="bg-white border border-slate-200 rounded-xl">
+                  <CardContent className="p-8">
+                    <div className="flex items-center gap-4 mb-6">
+                      <div className="w-8 h-8 bg-blue-100 rounded flex items-center justify-center">
+                        <BarChart3 className="h-5 w-5 text-blue-600" />
                       </div>
-                      <span className="font-semibold text-slate-900">Revenue Opportunities</span>
+                      <span className="text-lg font-semibold text-slate-900">Revenue Opportunities</span>
                     </div>
-                    <div className="space-y-3">
+                    <div className="space-y-4">
                       <div className="flex justify-between items-center py-2">
                         <span className="text-slate-700 font-medium">Microsoft Defender</span>
-                        <Badge className="bg-red-100 text-red-700 text-xs font-medium">High</Badge>
+                        <Badge className="bg-red-100 text-red-700 text-xs">High</Badge>
                       </div>
                       <div className="flex justify-between items-center py-2">
                         <span className="text-slate-700 font-medium">Azure Backup</span>
-                        <Badge className="bg-orange-100 text-orange-700 text-xs font-medium">Medium</Badge>
+                        <Badge className="bg-orange-100 text-orange-700 text-xs">Medium</Badge>
                       </div>
                       <div className="flex justify-between items-center py-2">
                         <span className="text-slate-700 font-medium">Power BI Premium</span>
-                        <Badge className="bg-orange-100 text-orange-700 text-xs font-medium">Medium</Badge>
+                        <Badge className="bg-orange-100 text-orange-700 text-xs">Medium</Badge>
                       </div>
                     </div>
-                  </div>
-                </div>
+                  </CardContent>
+                </Card>
               </div>
 
               {/* Call to Action */}
-              <div className="text-center mt-10 pt-8 border-t border-slate-200">
+              <div className="text-center pt-6">
                 <Link href="/sample-report">
                   <Button className="bg-slate-900 hover:bg-slate-800 text-white px-8 py-3 text-base font-medium rounded-lg btn-advanced shadow-lg">
                     View Full Report
