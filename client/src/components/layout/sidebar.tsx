@@ -52,7 +52,7 @@ export default function Sidebar() {
           <img 
             src={eazyLogoPath} 
             alt="eazy logo" 
-            className="w-12 h-12 opacity-40"
+            className="w-16 h-16 opacity-40 hover:opacity-60 transition-opacity duration-300 cursor-pointer"
           />
         </div>
       </div>
