@@ -271,12 +271,12 @@
     background-size: 400% 400%;
     opacity: 0;
     transition: opacity 0.3s ease;
-    animation: rainbowShift 3s ease-in-out infinite;
     z-index: 1;
   }
 
   .btn-rainbow:hover::before {
     opacity: 1;
+    animation: rainbowShift 3s ease-in-out infinite;
   }
 
   .btn-rainbow:hover {
@@ -285,10 +285,11 @@
   }
 
   .btn-rainbow span,
-  .btn-rainbow .btn-content {
+  .btn-rainbow .btn-content,
+  .btn-rainbow > * {
     position: relative;
     z-index: 2;
-    color: white;
+    color: white !important;
   }
 
   /* Floating animation for elements */
