@@ -82,6 +82,7 @@
 
   .brand-font {
     font-family: 'Neue Haas Grotesk Display Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    letter-spacing: -0.02em;
   }
 
   /* Improve readability of small text */
