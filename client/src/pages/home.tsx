@@ -70,7 +70,7 @@ export default function Home() {
           </div>
 
           <Link href="/sample-report">
-            <Button className="bg-slate-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-slate-800 btn-advanced shadow-lg rainbow-hover-btn">
+            <Button className="bg-slate-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-slate-800 btn-advanced shadow-lg professional-btn">
               See Sample Report
             </Button>
           </Link>
@@ -307,7 +307,7 @@ export default function Home() {
               {/* Call to Action */}
               <div className="text-center pt-6">
                 <Link href="/sample-report">
-                  <Button className="bg-slate-900 hover:bg-slate-800 text-white px-8 py-3 text-base font-medium rounded-lg btn-advanced shadow-lg rainbow-hover-btn">
+                  <Button className="bg-slate-900 hover:bg-slate-800 text-white px-8 py-3 text-base font-medium rounded-lg btn-advanced shadow-lg professional-btn">
                     View Full Report
                   </Button>
                 </Link>

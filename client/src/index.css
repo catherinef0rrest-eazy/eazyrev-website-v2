@@ -301,87 +301,43 @@
     100% { background-position: 0% 50%; }
   }
 
-  @keyframes rainbowShift {
-    0% { background-position: 0% 50%; }
-    25% { background-position: 100% 0%; }
-    50% { background-position: 100% 100%; }
-    75% { background-position: 0% 100%; }
-    100% { background-position: 0% 50%; }
-  }
 
-  /* Rainbow hover effect for buttons */
-  .rainbow-hover-btn {
+
+  /* Professional black button with subtle animation */
+  .professional-btn {
+    background-color: #1e293b;
+    color: white;
+    border: 1px solid #334155;
     position: relative;
     overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .rainbow-hover-btn::before {
+  .professional-btn::before {
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.3);
-    z-index: 1;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.6s ease;
   }
 
-  .rainbow-hover-btn::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(135deg, 
-      rgba(255, 65, 108, 0.7), rgba(255, 75, 43, 0.7), rgba(255, 149, 0, 0.7), rgba(255, 204, 0, 0.7), 
-      rgba(50, 205, 50, 0.7), rgba(0, 180, 219, 0.7), rgba(108, 92, 231, 0.7), rgba(162, 155, 254, 0.7));
-    background-size: 300% 300%;
-    opacity: 0;
-    z-index: 2;
-    transition: opacity 0.3s ease;
+  .professional-btn:hover {
+    background-color: #0f172a;
+    border-color: #475569;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   }
 
-  .rainbow-hover-btn:hover::before {
-    opacity: 1;
+  .professional-btn:hover::before {
+    left: 100%;
   }
 
-  .rainbow-hover-btn:hover::after {
-    opacity: 1;
-    animation: rainbowWave 2s ease-in-out infinite;
-  }
-
-  .rainbow-hover-btn:hover {
-    background-color: #1e293b !important;
-    color: white !important;
-  }
-
-  .rainbow-hover-btn,
-  .rainbow-hover-btn > * {
-    color: white !important;
-    position: relative;
-    z-index: 2;
-  }
-
-  .rainbow-hover-btn:hover,
-  .rainbow-hover-btn:hover > * {
-    color: white !important;
-    text-shadow: 
-      0 0 4px rgba(0,0,0,1),
-      0 0 8px rgba(0,0,0,0.8),
-      1px 1px 2px rgba(0,0,0,0.9),
-      -1px -1px 2px rgba(0,0,0,0.9);
-    position: relative;
-    z-index: 2;
-    font-weight: 600 !important;
-  }
-
-  @keyframes rainbowWave {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+  .professional-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
   /* Floating animation for elements */
@@ -426,9 +382,7 @@
     top: 0;
     height: 100%;
     width: 3px;
-    background: linear-gradient(135deg, #ff416c, #ff4b2b, #ff9500, #ffcc00, #32cd32, #00b4db, #6c5ce7, #a29bfe);
-    background-size: 400% 400%;
-    animation: rainbowShift 4s ease-in-out infinite;
+    background: #1e293b;
     transform: scaleY(0);
     transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   }
