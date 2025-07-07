@@ -47,12 +47,12 @@ export default function Sidebar() {
       </div>
 
       {/* Bottom Logo */}
-      <div className="absolute bottom-0 left-0 right-0 p-6 border-t border-slate-200">
-        <div className="flex justify-start">
+      <div className="absolute bottom-0 left-0 right-0 p-6 border-t border-slate-200 bg-white">
+        <div className="flex justify-center">
           <img 
             src={eazyLogoPath} 
             alt="eazy logo" 
-            className="w-16 h-16 opacity-40 hover:opacity-60 transition-opacity duration-300 cursor-pointer"
+            className="w-20 h-20 opacity-80 hover:opacity-100 transition-all duration-300 cursor-pointer hover:scale-105"
           />
         </div>
       </div>
