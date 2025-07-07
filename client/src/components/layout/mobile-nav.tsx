@@ -31,17 +31,9 @@ export default function MobileNav() {
         </SheetTrigger>
         <SheetContent side="left" className="w-64 p-0 sidebar-enhanced">
           <div className="p-6">
-            {/* Header with Logo and Close Button */}
-            <div className="flex items-center justify-between mb-8">
+            {/* Logo */}
+            <div className="flex items-center mb-8">
               <span className="font-bold text-2xl text-slate-900 tracking-wide brand-font">eazyrev.ai</span>
-              <Button
-                variant="ghost"
-                size="icon"
-                className="h-8 w-8 rounded-md"
-                onClick={() => setOpen(false)}
-              >
-                <X className="h-4 w-4" />
-              </Button>
             </div>
 
             {/* Navigation Links */}
