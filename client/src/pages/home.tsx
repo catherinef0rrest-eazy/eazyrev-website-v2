@@ -52,20 +52,20 @@ export default function Home() {
             From 500 Possibilities to 5 Perfect Recommendations
           </p>
           
-          <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-8 mb-10 px-4">
-            <div className="text-center stats-appear" style={{ animationDelay: '0.1s' }}>
-              <div className="text-xl sm:text-2xl font-bold text-slate-900 gradient-text">20.7M</div>
-              <div className="text-sm text-slate-600 font-medium">Companies</div>
+          <div className="flex flex-row justify-center gap-3 sm:gap-8 mb-10 px-4">
+            <div className="text-center stats-appear flex-1" style={{ animationDelay: '0.1s' }}>
+              <div className="text-lg sm:text-2xl font-bold text-slate-900 gradient-text">20.7M</div>
+              <div className="text-xs sm:text-sm text-slate-600 font-medium">Companies</div>
             </div>
-            <div className="hidden sm:block w-px bg-slate-200 mx-4"></div>
-            <div className="text-center stats-appear" style={{ animationDelay: '0.2s' }}>
-              <div className="text-xl sm:text-2xl font-bold text-slate-900 gradient-text">220K</div>
-              <div className="text-sm text-slate-600 font-medium">Products</div>
+            <div className="w-px bg-slate-200 mx-2 sm:mx-4"></div>
+            <div className="text-center stats-appear flex-1" style={{ animationDelay: '0.2s' }}>
+              <div className="text-lg sm:text-2xl font-bold text-slate-900 gradient-text">220K</div>
+              <div className="text-xs sm:text-sm text-slate-600 font-medium">Products</div>
             </div>
-            <div className="hidden sm:block w-px bg-slate-200 mx-4"></div>
-            <div className="text-center stats-appear" style={{ animationDelay: '0.3s' }}>
-              <div className="text-xl sm:text-2xl font-bold text-slate-900 gradient-text">158K</div>
-              <div className="text-sm text-slate-600 font-medium">Vendors</div>
+            <div className="w-px bg-slate-200 mx-2 sm:mx-4"></div>
+            <div className="text-center stats-appear flex-1" style={{ animationDelay: '0.3s' }}>
+              <div className="text-lg sm:text-2xl font-bold text-slate-900 gradient-text">158K</div>
+              <div className="text-xs sm:text-sm text-slate-600 font-medium">Vendors</div>
             </div>
           </div>
 
