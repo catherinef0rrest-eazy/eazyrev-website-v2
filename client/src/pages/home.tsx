@@ -43,7 +43,7 @@ export default function Home() {
           <div className="mb-6 pt-10"></div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-slate-900 tracking-tight leading-tight">
             Bespoke Sales Insights for{" "}
-            <span className="text-slate-700 sm:whitespace-nowrap">IT Services & Tech Vendors</span>
+            <span className="text-slate-700 block sm:inline">IT Services & Tech Vendors</span>
           </h1>
           <p className="text-lg sm:text-xl text-slate-600 mb-6 max-w-3xl mx-auto leading-relaxed px-2">
             Engineered to help you target prospects with organizational fit, tech compatibility, urgency, and adoption readiness.

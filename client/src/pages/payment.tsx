@@ -11,22 +11,22 @@ export default function Payment() {
 
   return (
     <div className="landing-backdrop">
-      <div className="landing-content max-w-3xl mx-auto px-6 pt-20 pb-16 page-transition">
+      <div className="landing-content max-w-3xl mx-auto px-4 sm:px-6 pt-20 pb-16 page-transition">
         <div className="text-center mb-12">
           <div className="mb-6">
             <Badge variant="secondary" className="px-4 py-2 bg-slate-100 text-slate-700 text-sm font-medium rounded-full mb-4">
               Secure Payment
             </Badge>
           </div>
-          <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-slate-900 tracking-tight leading-tight">
-            Complete Your Payment
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-slate-900 tracking-tight leading-tight">
+            <span className="block sm:inline">Complete Your</span> <span className="block sm:inline">Payment</span>
           </h1>
-          <p className="text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto mb-6">
+          <p className="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto mb-6 px-2">
             Secure payment processing for your eazyrev service
           </p>
         </div>
 
-        <Card className="metric-card rounded-2xl p-10 enterprise-shadow-lg">
+        <Card className="metric-card rounded-2xl p-6 sm:p-10 enterprise-shadow-lg">
           <CardContent className="p-0">
             {/* Clean Payment Card */}
             <div className="relative group cursor-pointer">

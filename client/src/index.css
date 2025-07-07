@@ -129,11 +129,12 @@
       overflow-x: hidden;
     }
     
-    /* Prevent text overflow */
+    /* Prevent text overflow and improve word wrapping */
     h1, h2, h3, h4, h5, h6 {
       word-wrap: break-word;
       overflow-wrap: break-word;
-      hyphens: auto;
+      hyphens: none; /* Disable hyphens for cleaner appearance */
+      word-break: keep-all; /* Keep words together when possible */
     }
     
     /* Improve touch targets */
@@ -148,6 +149,18 @@
       margin-right: -8px;
       width: calc(100% + 16px);
       max-width: 100vw;
+    }
+    
+    /* Better text wrapping for specific elements */
+    .text-3xl, .text-4xl, .text-5xl {
+      line-height: 1.2;
+      word-spacing: -0.05em;
+    }
+    
+    /* Prevent awkward breaks in brand names and technical terms */
+    .brand-font, .whitespace-nowrap {
+      white-space: normal !important;
+      word-break: keep-all;
     }
   }
   
