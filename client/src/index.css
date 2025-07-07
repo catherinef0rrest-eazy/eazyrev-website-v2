@@ -301,6 +301,14 @@
     100% { background-position: 0% 50%; }
   }
 
+  @keyframes rainbowShift {
+    0% { background-position: 0% 50%; }
+    25% { background-position: 100% 0%; }
+    50% { background-position: 100% 100%; }
+    75% { background-position: 0% 100%; }
+    100% { background-position: 0% 50%; }
+  }
+
 
 
   /* Professional black button with subtle animation */
@@ -382,7 +390,9 @@
     top: 0;
     height: 100%;
     width: 3px;
-    background: #1e293b;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b, #ff9500, #ffcc00, #32cd32, #00b4db, #6c5ce7, #a29bfe);
+    background-size: 400% 400%;
+    animation: rainbowShift 4s ease-in-out infinite;
     transform: scaleY(0);
     transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   }
