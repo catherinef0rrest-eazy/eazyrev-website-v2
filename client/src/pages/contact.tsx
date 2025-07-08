@@ -19,7 +19,7 @@ export default function Contact() {
         </div>
 
         <Card className="metric-card rounded-2xl enterprise-shadow-lg card-hover-effect mx-auto">
-          <CardContent className="p-6 flex justify-center">
+          <CardContent className="pt-6 px-6 pb-8 flex justify-center">
             <CalendlyInline 
               url="https://calendly.com/ashwin-eazy/eazy-strategy-call"
               height="920px"
