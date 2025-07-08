@@ -385,22 +385,7 @@
     overflow: hidden;
   }
 
-  .sidebar-item::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 3px;
-    background: #3b82f6;
-    transform: scaleY(0);
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  }
 
-  .sidebar-item:hover::before,
-  .sidebar-item.active::before {
-    transform: scaleY(1);
-  }
 
   .sidebar-item:hover {
     background: linear-gradient(135deg, rgba(59, 130, 246, 0.08), rgba(99, 102, 241, 0.12));
