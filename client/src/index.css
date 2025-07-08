@@ -422,6 +422,19 @@
       transition-duration: 0.01ms !important;
     }
   }
+
+  /* Calendly widget fixes */
+  .calendly-inline-widget {
+    overflow: visible !important;
+    min-height: 700px !important;
+  }
+
+  .calendly-inline-widget iframe {
+    border: none !important;
+    width: 100% !important;
+    height: 100% !important;
+    overflow: visible !important;
+  }
 }
 
 @layer utilities {
