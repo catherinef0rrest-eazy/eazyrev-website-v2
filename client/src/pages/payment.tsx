@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Shield, ArrowRight, CheckCircle, Key } from "lucide-react";
+import { ArrowRight, CheckCircle, Key } from "lucide-react";
+import stripeIconPath from "@assets/stripe icon.svg";
 
 export default function Payment() {
   const handlePayment = () => {
@@ -35,8 +36,12 @@ export default function Payment() {
                   {/* Header Section */}
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-8 gap-4">
                     <div className="flex items-center space-x-4">
-                      <div className="w-12 h-12 bg-[#635BFF] rounded-xl flex items-center justify-center">
-                        <Shield className="h-6 w-6 text-white" />
+                      <div className="w-12 h-12 bg-[#635BFF] rounded-xl flex items-center justify-center p-2">
+                        <img 
+                          src={stripeIconPath} 
+                          alt="Stripe" 
+                          className="w-full h-full object-contain"
+                        />
                       </div>
                       <div>
                         <h3 className="text-xl font-semibold text-slate-900">Secure Payment</h3>
@@ -54,7 +59,7 @@ export default function Payment() {
                       <span className="text-slate-700 font-medium">Eazyrev Service</span>
                     </div>
                     <div className="flex items-center space-x-2 text-sm text-slate-500">
-                      <Shield className="h-3 w-3" />
+                      <Key className="h-3 w-3" />
                       <span>End-to-end encryption</span>
                       <span>•</span>
                       <span>PCI DSS compliant</span>
