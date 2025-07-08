@@ -121,13 +121,13 @@ export default function SampleReport() {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-2 gap-4 pt-4 border-t border-slate-200">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-slate-200">
                   <div>
                     <div className="flex items-center gap-2 mb-2">
                       <DollarSign className="h-3 w-3 text-slate-500" />
-                      <span className="text-sm font-medium text-slate-600 uppercase tracking-wide">Revenue</span>
+                      <span className="text-xs sm:text-sm font-medium text-slate-600 uppercase tracking-wide">Revenue</span>
                     </div>
-                    <Badge className="bg-green-100 text-green-800 hover:bg-green-100">
+                    <Badge className="bg-green-100 text-green-800 hover:bg-green-100 text-xs sm:text-sm px-2 py-1 rounded-md inline-block">
                       {company.revenueRange}
                     </Badge>
                   </div>
@@ -135,10 +135,10 @@ export default function SampleReport() {
                   <div>
                     <div className="flex items-center gap-2 mb-2">
                       <Users className="h-3 w-3 text-slate-500" />
-                      <span className="text-sm font-medium text-slate-600 uppercase tracking-wide">Employees</span>
+                      <span className="text-xs sm:text-sm font-medium text-slate-600 uppercase tracking-wide">Employees</span>
                     </div>
-                    <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-100">
-                      {company.employeeRange}
+                    <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-100 text-xs sm:text-sm px-2 py-1 rounded-md inline-block max-w-full">
+                      <span className="block truncate">{company.employeeRange}</span>
                     </Badge>
                   </div>
                 </div>
