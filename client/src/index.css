@@ -379,8 +379,10 @@
 
   /* Enhanced sidebar animations */
   .sidebar-item {
-    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
+    border-radius: 8px;
+    overflow: hidden;
   }
 
   .sidebar-item::before {
@@ -390,16 +392,32 @@
     top: 0;
     height: 100%;
     width: 3px;
-    background: linear-gradient(135deg, #ff416c, #ff4b2b, #ff9500, #ffcc00, #32cd32, #00b4db, #6c5ce7, #a29bfe);
-    background-size: 400% 400%;
-    animation: rainbowShift 4s ease-in-out infinite;
+    background: #3b82f6;
     transform: scaleY(0);
-    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .sidebar-item:hover::before,
   .sidebar-item.active::before {
     transform: scaleY(1);
+  }
+
+  .sidebar-item:hover {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.08), rgba(99, 102, 241, 0.12));
+    box-shadow: 
+      0 4px 12px rgba(59, 130, 246, 0.15),
+      0 2px 6px rgba(59, 130, 246, 0.08),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    transform: translateY(-1px);
+  }
+
+  .sidebar-item.active {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.12), rgba(99, 102, 241, 0.16));
+    box-shadow: 
+      0 6px 16px rgba(59, 130, 246, 0.2),
+      0 3px 8px rgba(59, 130, 246, 0.12),
+      inset 0 1px 0 rgba(255, 255, 255, 0.15);
+    transform: translateY(-1px);
   }
 
   /* Loading shimmer effect */
