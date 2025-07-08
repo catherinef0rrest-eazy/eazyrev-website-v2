@@ -22,7 +22,7 @@ export default function Contact() {
           <CardContent className="p-0">
             <CalendlyInline 
               url="https://calendly.com/ashwin-eazy/eazy-strategy-call"
-              height="900px"
+              height="920px"
               className="w-full"
             />
           </CardContent>
