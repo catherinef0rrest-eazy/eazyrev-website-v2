@@ -331,7 +331,7 @@ export default function Home() {
           <CardContent className="p-0">
             <CalendlyInline 
               url="https://calendly.com/ashwin-eazy/eazy-strategy-call"
-              height="600px"
+              height="900px"
               className="w-full"
             />
           </CardContent>
