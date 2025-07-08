@@ -327,12 +327,12 @@ export default function Home() {
         </div>
 
         {/* Calendly Widget */}
-        <Card className="metric-card rounded-2xl p-4 sm:p-6 enterprise-shadow-lg">
-          <CardContent className="p-0">
+        <Card className="metric-card rounded-2xl p-4 sm:p-6 enterprise-shadow-lg mx-auto">
+          <CardContent className="p-0 flex justify-center items-center">
             <CalendlyInline 
               url="https://calendly.com/ashwin-eazy/eazy-strategy-call"
               height="920px"
-              className="w-full"
+              className="w-full max-w-full"
             />
           </CardContent>
         </Card>
