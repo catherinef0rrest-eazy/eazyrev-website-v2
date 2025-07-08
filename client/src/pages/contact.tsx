@@ -18,13 +18,11 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="bg-white rounded-2xl enterprise-shadow-lg p-1">
-          <CalendlyInline 
-            url="https://calendly.com/ashwin-eazy/eazy-strategy-call"
-            height="750px"
-            className="w-full rounded-xl"
-          />
-        </div>
+        <CalendlyInline 
+          url="https://calendly.com/ashwin-eazy/eazy-strategy-call"
+          height="750px"
+          className="w-full"
+        />
       </div>
     </div>
   );
