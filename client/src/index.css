@@ -424,16 +424,16 @@
   }
 
   /* Calendly widget fixes */
-  .calendly-inline-widget {
+  .calendly-widget-container {
     overflow: visible !important;
-    min-height: 700px !important;
+    min-height: 750px !important;
   }
 
-  .calendly-inline-widget iframe {
+  .calendly-widget-container iframe {
     border: none !important;
     width: 100% !important;
-    height: 100% !important;
-    overflow: visible !important;
+    height: 750px !important;
+    min-height: 750px !important;
   }
 }
 
