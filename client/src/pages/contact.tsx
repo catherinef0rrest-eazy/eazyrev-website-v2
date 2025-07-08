@@ -18,15 +18,13 @@ export default function Contact() {
           </p>
         </div>
 
-        <Card className="metric-card rounded-2xl p-4 sm:p-6 enterprise-shadow-lg card-hover-effect">
-          <CardContent className="p-0">
-            <CalendlyInline 
-              url="https://calendly.com/ashwin-eazy/eazy-strategy-call"
-              height="600px"
-              className="w-full"
-            />
-          </CardContent>
-        </Card>
+        <div className="rounded-2xl enterprise-shadow-lg overflow-hidden">
+          <CalendlyInline 
+            url="https://calendly.com/ashwin-eazy/eazy-strategy-call"
+            height="700px"
+            className="w-full"
+          />
+        </div>
       </div>
     </div>
   );

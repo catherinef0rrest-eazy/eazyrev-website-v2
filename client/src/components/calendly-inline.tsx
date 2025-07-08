@@ -28,7 +28,7 @@ export function CalendlyInline({ url, height = "900px", className = "" }: Calend
     <div
       className={`calendly-inline-widget ${className}`}
       data-url={url}
-      style={{ minWidth: "320px", height, overflow: "hidden" }}
+      style={{ minWidth: "320px", height }}
     />
   );
 }
