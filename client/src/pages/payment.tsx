@@ -18,8 +18,8 @@ export default function Payment() {
               Secure Payment
             </Badge>
           </div>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-slate-900 tracking-tight leading-tight">
-            <span className="block sm:inline">Complete Your</span> <span className="block sm:inline">Payment</span>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-slate-900 tracking-tight leading-tight px-2">
+            <span className="block">Complete Your</span> <span className="block">Payment</span>
           </h1>
           <p className="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto mb-6 px-2">
             Secure payment processing for your eazyrev service
