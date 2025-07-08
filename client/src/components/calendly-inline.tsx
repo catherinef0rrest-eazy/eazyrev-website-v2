@@ -26,9 +26,9 @@ export function CalendlyInline({ url, height = "900px", className = "" }: Calend
 
   return (
     <div
-      className={`calendly-inline-widget ${className}`}
+      className={`calendly-inline-widget ${className} mx-auto`}
       data-url={url}
-      style={{ minWidth: "320px", height, overflow: "hidden" }}
+      style={{ minWidth: "320px", height, overflow: "hidden", margin: "0 auto" }}
     />
   );
 }
