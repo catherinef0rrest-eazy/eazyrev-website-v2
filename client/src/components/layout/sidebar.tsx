@@ -22,7 +22,7 @@ export default function Sidebar() {
         </div>
 
         {/* Navigation Links */}
-        <div className="space-y-2">
+        <div className="space-y-6">
           {navigation.map((item) => {
             const Icon = item.icon;
             const isActive = location === item.href;
@@ -47,7 +47,7 @@ export default function Sidebar() {
       </div>
 
       {/* Bottom Logo */}
-      <div className="absolute bottom-0 left-0 right-0 p-6 border-t border-slate-200 bg-white">
+      <div className="absolute bottom-0 left-0 right-0 p-6 border-t border-slate-200 bg-slate-50">
         <div className="flex justify-start">
           <img 
             src={eazyLogoPath} 
