@@ -18,8 +18,8 @@ export default function Payment() {
               Secure Payment
             </Badge>
           </div>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-slate-900 tracking-tight leading-tight">
-            <span className="block sm:inline">Complete Your</span> <span className="block sm:inline">Payment</span>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-slate-900 tracking-tight leading-tight px-2">
+            <span className="block">Complete Your</span> <span className="block">Payment</span>
           </h1>
           <p className="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto mb-6 px-2">
             Secure payment processing for your eazyrev service
@@ -33,7 +33,7 @@ export default function Payment() {
               <Card className="metric-card rounded-2xl p-8 enterprise-shadow-lg transition-all duration-200 group-hover:shadow-xl">
                 <CardContent className="p-0">
                   {/* Header Section */}
-                  <div className="flex items-center justify-between mb-8">
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-8 gap-4">
                     <div className="flex items-center space-x-4">
                       <div className="w-12 h-12 bg-[#635BFF] rounded-xl flex items-center justify-center">
                         <Shield className="h-6 w-6 text-white" />
@@ -43,7 +43,7 @@ export default function Payment() {
                         <p className="text-slate-600 text-sm font-medium">Powered by Stripe</p>
                       </div>
                     </div>
-                    <Badge variant="secondary" className="bg-slate-100 text-slate-700 text-xs font-medium border border-slate-200">
+                    <Badge variant="secondary" className="bg-slate-100 text-slate-700 text-xs sm:text-sm font-medium border border-slate-200 px-3 py-1 rounded-md self-start sm:self-center">
                       SSL Secured
                     </Badge>
                   </div>
