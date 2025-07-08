@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;350;400;500;600;700&display=swap');
-@import url('https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro');
+@import url('https://fonts.cdnfonts.com/css/neue-haas-grotesk-text');
 
 @tailwind base;
 @tailwind components;
@@ -81,7 +81,7 @@
   }
 
   .brand-font {
-    font-family: 'Neue Haas Grotesk Display Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Neue Haas Grotesk Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     letter-spacing: -0.02em;
   }
 
