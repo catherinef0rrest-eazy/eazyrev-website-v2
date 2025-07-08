@@ -78,9 +78,9 @@ export default function Home() {
 
         {/* Value Proposition */}
         <div className="mb-20">
-          <Card className="metric-card rounded-2xl p-8 sm:p-10 mb-12 enterprise-shadow-lg float-animation">
-            <CardContent className="p-0 flex items-center justify-center min-h-[8rem]">
-              <p className="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-4xl text-center px-4">
+          <Card className="metric-card rounded-2xl p-6 sm:p-8 mb-12 enterprise-shadow-lg float-animation">
+            <CardContent className="p-0 flex items-center justify-center min-h-[4rem]">
+              <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-4xl text-center px-4">
                 {typewriterText}
                 {!typewriterComplete && (
                   <span className="typewriter-cursor text-slate-400 ml-1">|</span>
