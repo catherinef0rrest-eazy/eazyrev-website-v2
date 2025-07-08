@@ -22,7 +22,7 @@ export default function Sidebar() {
         </div>
 
         {/* Navigation Links */}
-        <div className="space-y-2">
+        <div className="space-y-4">
           {navigation.map((item) => {
             const Icon = item.icon;
             const isActive = location === item.href;
