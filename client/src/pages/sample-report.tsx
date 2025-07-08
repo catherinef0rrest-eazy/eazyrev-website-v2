@@ -68,7 +68,7 @@ export default function SampleReport() {
                     <span className="text-white font-bold text-lg">T</span>
                   </div>
                   <div className="flex-1 min-w-0">
-                    <h2 className="text-2xl font-bold text-slate-900 mb-2 truncate">
+                    <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-2">
                       {company.name}
                     </h2>
                     <a 
