@@ -18,11 +18,13 @@ export default function Contact() {
           </p>
         </div>
 
-        <CalendlyInline 
-          url="https://calendly.com/ashwin-eazy/eazy-strategy-call"
-          height="800px"
-          className="w-full"
-        />
+        <div style={{ height: "1000px", overflow: "visible" }}>
+          <CalendlyInline 
+            url="https://calendly.com/ashwin-eazy/eazy-strategy-call"
+            height="1000px"
+            className="w-full"
+          />
+        </div>
       </div>
     </div>
   );

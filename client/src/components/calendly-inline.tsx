@@ -42,7 +42,9 @@ export function CalendlyInline({ url, height = "900px", className = "" }: Calend
       style={{ 
         minWidth: "320px", 
         height,
-        width: "100%"
+        minHeight: height,
+        width: "100%",
+        overflow: "visible"
       }}
     />
   );
