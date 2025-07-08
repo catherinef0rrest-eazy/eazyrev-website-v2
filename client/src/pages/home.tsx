@@ -41,7 +41,7 @@ export default function Home() {
         {/* Hero Section */}
         <div className="text-center mb-20 slide-up">
           <div className="mb-6 pt-10"></div>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-slate-900 tracking-tight leading-tight lg:leading-relaxed">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-slate-900 tracking-tight leading-tight lg:leading-snug">
             Bespoke Sales Insights for{" "}
             <span className="text-slate-700 block lg:inline whitespace-nowrap">IT Services & Tech Vendors</span>
           </h1>
