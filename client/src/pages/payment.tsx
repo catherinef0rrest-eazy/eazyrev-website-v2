@@ -36,11 +36,11 @@ export default function Payment() {
                   {/* Header Section */}
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-8 gap-4">
                     <div className="flex items-center space-x-4">
-                      <div className="w-12 h-12 bg-[#635BFF] rounded-xl flex items-center justify-center p-2">
+                      <div className="w-12 h-12 bg-[#635BFF] rounded-xl flex items-center justify-center p-1">
                         <img 
                           src={stripeIconPath} 
                           alt="Stripe" 
-                          className="w-full h-full object-contain"
+                          className="w-8 h-8 object-contain"
                         />
                       </div>
                       <div>
