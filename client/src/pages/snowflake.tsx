@@ -171,7 +171,7 @@ export default function Snowflake() {
             <Card className="metric-card rounded-xl p-8 group card-hover-effect border-l-4 border-l-slate-300" style={{ animationDelay: '0.1s' }}>
               <CardContent className="p-0">
                 <div className="flex items-start mb-4">
-                  <Badge className="bg-slate-100 text-slate-600 mr-3 mb-2">Platform Modernization Signal</Badge>
+                  <Badge className="bg-slate-100 text-slate-600 mr-3 mb-2 text-base font-semibold">Platform Modernization Signal</Badge>
                 </div>
                 <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
                   A regional healthcare provider still using SQL Server + SSIS. Recently opened 
@@ -183,7 +183,7 @@ export default function Snowflake() {
             <Card className="metric-card rounded-xl p-8 group card-hover-effect border-l-4 border-l-slate-300" style={{ animationDelay: '0.2s' }}>
               <CardContent className="p-0">
                 <div className="flex items-start mb-4">
-                  <Badge className="bg-slate-100 text-slate-600 mr-3 mb-2">Pipeline Optimization Signal</Badge>
+                  <Badge className="bg-slate-100 text-slate-600 mr-3 mb-2 text-base font-semibold">Pipeline Optimization Signal</Badge>
                 </div>
                 <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
                   A retail company using Snowflake for reporting, but still running legacy batch 
@@ -195,7 +195,7 @@ export default function Snowflake() {
             <Card className="metric-card rounded-xl p-8 group card-hover-effect border-l-4 border-l-slate-300" style={{ animationDelay: '0.3s' }}>
               <CardContent className="p-0">
                 <div className="flex items-start mb-4">
-                  <Badge className="bg-slate-100 text-slate-600 mr-3 mb-2">Modeling & Insights Signal</Badge>
+                  <Badge className="bg-slate-100 text-slate-600 mr-3 mb-2 text-base font-semibold">Modeling & Insights Signal</Badge>
                 </div>
                 <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
                   A fintech firm running Snowflake + Tableau, but with no modeling layer (no dbt). 
