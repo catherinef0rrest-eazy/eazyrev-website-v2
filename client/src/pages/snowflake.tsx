@@ -72,27 +72,26 @@ export default function Snowflake() {
         </div>
 
         {/* What Are Technographics */}
-        <Card className="metric-card rounded-2xl p-8 mb-16 enterprise-shadow-lg float-animation">
-          <CardContent className="p-0">
-            <div className="text-center mb-8">
-              <div className="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mx-auto mb-6">
-                <Database className="h-8 w-8 text-purple-600" />
+        <div className="mb-16">
+          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-8 text-center">
+            What Are Technographics?
+          </h2>
+          <Card className="metric-card rounded-2xl p-8 enterprise-shadow-lg float-animation">
+            <CardContent className="p-0">
+              <div className="text-center mb-8">
+                <p className="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-4xl mx-auto">
+                  <strong>Technographics = a company's tech DNA</strong> — what software and systems they've adopted, how those tools work 
+                  together, and where there's room to grow.
+                </p>
               </div>
-              <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-6">
-                What Are Technographics?
-              </h2>
-              <p className="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-4xl mx-auto">
-                <strong>Technographics = a company's tech DNA</strong> — what software and systems they've adopted, how those tools work 
-                together, and where there's room to grow.
+              <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto text-center">
+                We scan for patterns that align with your offering — then surface organizations already positioned to benefit 
+                from your services. We pair that with decision-maker and influencer data, so your team connects with the right 
+                people, not just the right companies.
               </p>
-            </div>
-            <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto text-center">
-              We scan for patterns that align with your offering — then surface organizations already positioned to benefit 
-              from your services. We pair that with decision-maker and influencer data, so your team connects with the right 
-              people, not just the right companies.
-            </p>
-          </CardContent>
-        </Card>
+            </CardContent>
+          </Card>
+        </div>
 
         {/* What You Get */}
         <div className="mb-16">
