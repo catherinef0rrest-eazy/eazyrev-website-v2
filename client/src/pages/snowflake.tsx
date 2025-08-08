@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CalendlyInline } from "@/components/calendly-inline";
+import snowflakeLogo from "@assets/snowflake-color.svg";
 import { 
   Database, 
   Cloud, 
@@ -30,7 +31,11 @@ export default function Snowflake() {
         <div className="text-center mb-20 slide-up">
           <div className="mb-6 pt-10"></div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-slate-900 tracking-tight leading-tight lg:leading-[1.15]">
-            Lead Generation Engine for<br /><span className="text-slate-700">Snowflake Services</span>
+            Lead Generation Engine for<br />
+            <span className="text-slate-700 flex items-center justify-center gap-3">
+              <img src={snowflakeLogo} alt="Snowflake" className="h-8 sm:h-10 lg:h-12 w-auto" />
+              Snowflake Services
+            </span>
           </h1>
           <p className="text-lg sm:text-xl text-slate-600 mb-6 max-w-3xl mx-auto leading-relaxed px-2">
             Sell to the right companies, at the right time, with the right message.
