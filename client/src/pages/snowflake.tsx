@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { CalendlyInline } from "@/components/calendly-inline";
 import { 
   Database, 
   Cloud, 
@@ -270,44 +271,26 @@ export default function Snowflake() {
           </div>
         </div>
 
-        {/* Call to Action */}
-        <div className="text-center">
-          <Card className="metric-card rounded-2xl p-8 mb-12 enterprise-shadow-lg float-animation bg-gradient-to-br from-slate-50 to-white">
-            <CardContent className="p-0">
-              <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-6 brand-font">
-                Let's Talk
-              </h2>
-              <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-                Your next best customers are out there — We'll help you find them.
-              </p>
-              
-              <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                <div className="flex items-center text-slate-600">
-                  <Mail className="h-5 w-5 mr-3 text-blue-600" />
-                  <a href="mailto:ashwin@eazy.systems" className="text-lg font-medium hover:text-blue-600 transition-colors">
-                    ashwin@eazy.systems
-                  </a>
-                </div>
-                <div className="hidden sm:block w-px h-6 bg-slate-300"></div>
-                <div className="flex items-center text-slate-600">
-                  <Globe className="h-5 w-5 mr-3 text-emerald-600" />
-                  <a href="https://eazyrev.ai" className="text-lg font-medium hover:text-emerald-600 transition-colors">
-                    eazyrev.ai
-                  </a>
-                </div>
-              </div>
-
-              <div className="mt-8">
-                <Link href="/contact">
-                  <Button className="bg-slate-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-slate-800 btn-advanced shadow-lg professional-btn">
-                    Get Started
-                    <ArrowRight className="h-5 w-5 ml-2" />
-                  </Button>
-                </Link>
-              </div>
-            </CardContent>
-          </Card>
+        {/* Contact Section */}
+        <div className="text-center mb-8">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-3 text-slate-900 tracking-tight px-4 brand-font">
+            Ready to Transform Your IT Services Sales?
+          </h2>
+          <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto px-4">
+            Schedule a demo with our team and see immediate results in your tech sales process.
+          </p>
         </div>
+
+        {/* Calendly Widget */}
+        <Card className="metric-card rounded-2xl enterprise-shadow-lg mx-auto">
+          <CardContent className="pt-6 px-6 pb-8 flex justify-center items-center">
+            <CalendlyInline 
+              url="https://calendly.com/ashwin-eazy/eazy-strategy-call"
+              height="920px"
+              className="w-full max-w-full"
+            />
+          </CardContent>
+        </Card>
       </div>
     </div>
   );
