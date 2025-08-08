@@ -29,12 +29,9 @@ export default function Snowflake() {
         {/* Hero Section */}
         <div className="text-center mb-20 slide-up">
           <div className="mb-6 pt-10"></div>
-          <div className="flex items-center justify-center mb-6">
-            <SnowflakeIcon className="h-12 w-12 text-blue-600 mr-4" />
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight leading-tight lg:leading-[1.15]">
-              Eazy Lead Generation Engine for Snowflake Services
-            </h1>
-          </div>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-slate-900 tracking-tight leading-tight lg:leading-[1.15]">
+            Eazy Lead Generation Engine for Snowflake Services
+          </h1>
           <p className="text-lg sm:text-xl text-slate-600 mb-6 max-w-3xl mx-auto leading-relaxed px-2">
             Sell to the right companies, at the right time, with the right message.
           </p>
