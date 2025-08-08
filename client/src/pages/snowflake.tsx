@@ -17,6 +17,7 @@ import {
   Globe,
   DollarSign,
   CreditCard,
+  CircleDollarSign,
   ArrowRight,
   Snowflake as SnowflakeIcon,
   Activity,
@@ -234,7 +235,7 @@ export default function Snowflake() {
             <Card className="metric-card rounded-xl p-6 sm:p-8 group card-hover-effect h-full" style={{ animationDelay: '0.1s' }}>
               <CardContent className="p-0 flex flex-col items-center text-center h-full">
                 <div className="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-slate-200 transition-colors icon-hover-rotate">
-                  <CreditCard className="h-6 w-6 text-slate-600" />
+                  <CircleDollarSign className="h-6 w-6 text-slate-600" />
                 </div>
                 <h3 className="text-lg sm:text-xl font-bold mb-4 text-slate-900 tracking-tight">
                   $4,500
@@ -248,7 +249,7 @@ export default function Snowflake() {
             <Card className="metric-card rounded-xl p-6 sm:p-8 group card-hover-effect h-full" style={{ animationDelay: '0.2s' }}>
               <CardContent className="p-0 flex flex-col items-center text-center h-full">
                 <div className="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-slate-200 transition-colors icon-hover-rotate">
-                  <CreditCard className="h-6 w-6 text-slate-600" />
+                  <CircleDollarSign className="h-6 w-6 text-slate-600" />
                 </div>
                 <h3 className="text-lg sm:text-xl font-bold mb-4 text-slate-900 tracking-tight">
                   $7,500
