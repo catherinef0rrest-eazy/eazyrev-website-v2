@@ -30,7 +30,7 @@ export default function Snowflake() {
         <div className="text-center mb-20 slide-up">
           <div className="mb-6 pt-10"></div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-slate-900 tracking-tight leading-tight lg:leading-[1.15]">
-            Lead Generation for Snowflake Services
+            Lead Generation Engine for<br />Snowflake Services
           </h1>
           <p className="text-lg sm:text-xl text-slate-600 mb-6 max-w-3xl mx-auto leading-relaxed px-2">
             Sell to the right companies, at the right time, with the right message.
