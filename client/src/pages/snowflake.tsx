@@ -42,7 +42,7 @@ export default function Snowflake() {
           <Card className="metric-card rounded-xl p-8 group card-hover-effect" style={{ animationDelay: '0.1s' }}>
             <CardContent className="p-0">
               <h3 className="text-lg sm:text-xl font-bold mb-4 text-slate-900 tracking-tight">
-                Technology Compatibility = Better Deals, Faster
+                Tech Compatibility = Better Deals, Faster
               </h3>
               <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
                 You don't need more volume — you need better precision. We help you zero in on customers that are the right 
