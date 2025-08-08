@@ -12,6 +12,8 @@ eazyrev provides AI-powered sales insights for IT services and tech vendors, hel
 - **Plug-and-Play Recommendations**: Automated filtering from broad possibilities to targeted opportunities  
 - **Opportunity Precision**: Target prospects with organizational fit, tech compatibility, urgency, and tech readiness
 - **Specialized Solutions**: Custom lead generation engines for specific platforms (Snowflake services)
+- **Professional UI**: Enterprise-grade design system with sophisticated animations and responsive layouts
+- **Clean Codebase**: Optimized imports, removed legacy files, updated dependencies
 
 ## Tech Stack
 
@@ -62,7 +64,7 @@ The application will be available at `http://localhost:5000`
 - **Sample Report** (`/sample-report`) - Interactive demo of AI analysis
 - **Payment** (`/payment`) - Stripe integration for subscriptions
 - **Contact** (`/contact`) - Calendly-embedded scheduling
-- **Snowflake Services** (`/snowflake`) - Specialized lead generation (unlisted)
+- **Snowflake Services** (`/snowflake`) - Specialized lead generation page (unlisted, accessible via direct URL)
 
 ## Design System
 
@@ -70,6 +72,7 @@ The application will be available at `http://localhost:5000`
 - **Color Palette**: Professional slate grays with blue, emerald, and purple accents
 - **Animations**: Subtle professional animations with accessibility support
 - **Responsive**: Mobile-first design with sidebar navigation
+- **Components**: Consistent card-based layouts with hover effects and professional shadows
 
 ## Deployment
 
