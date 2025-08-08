@@ -168,10 +168,10 @@ export default function Snowflake() {
             Example Opportunities
           </h2>
           <div className="space-y-6">
-            <Card className="metric-card rounded-xl p-8 group card-hover-effect border-l-4 border-l-blue-500" style={{ animationDelay: '0.1s' }}>
+            <Card className="metric-card rounded-xl p-8 group card-hover-effect border-l-4 border-l-slate-300" style={{ animationDelay: '0.1s' }}>
               <CardContent className="p-0">
                 <div className="flex items-start mb-4">
-                  <Badge className="bg-blue-100 text-blue-700 mr-3 mb-2">Platform Modernization Signal</Badge>
+                  <Badge className="bg-slate-100 text-slate-600 mr-3 mb-2">Platform Modernization Signal</Badge>
                 </div>
                 <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
                   A regional healthcare provider still using SQL Server + SSIS. Recently opened 
@@ -180,10 +180,10 @@ export default function Snowflake() {
               </CardContent>
             </Card>
 
-            <Card className="metric-card rounded-xl p-8 group card-hover-effect border-l-4 border-l-emerald-500" style={{ animationDelay: '0.2s' }}>
+            <Card className="metric-card rounded-xl p-8 group card-hover-effect border-l-4 border-l-slate-300" style={{ animationDelay: '0.2s' }}>
               <CardContent className="p-0">
                 <div className="flex items-start mb-4">
-                  <Badge className="bg-emerald-100 text-emerald-700 mr-3 mb-2">Pipeline Optimization Signal</Badge>
+                  <Badge className="bg-slate-100 text-slate-600 mr-3 mb-2">Pipeline Optimization Signal</Badge>
                 </div>
                 <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
                   A retail company using Snowflake for reporting, but still running legacy batch 
@@ -192,10 +192,10 @@ export default function Snowflake() {
               </CardContent>
             </Card>
 
-            <Card className="metric-card rounded-xl p-8 group card-hover-effect border-l-4 border-l-purple-500" style={{ animationDelay: '0.3s' }}>
+            <Card className="metric-card rounded-xl p-8 group card-hover-effect border-l-4 border-l-slate-300" style={{ animationDelay: '0.3s' }}>
               <CardContent className="p-0">
                 <div className="flex items-start mb-4">
-                  <Badge className="bg-purple-100 text-purple-700 mr-3 mb-2">Modeling & Insights Signal</Badge>
+                  <Badge className="bg-slate-100 text-slate-600 mr-3 mb-2">Modeling & Insights Signal</Badge>
                 </div>
                 <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
                   A fintech firm running Snowflake + Tableau, but with no modeling layer (no dbt). 
