@@ -1,27 +1,15 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+
 import { CalendlyInline } from "@/components/calendly-inline";
 import snowflakeLogo from "@assets/snowflake-color.svg";
 import { 
-  Database, 
-  Cloud, 
-  Zap, 
-  Target, 
   Users, 
   Building2, 
   TrendingUp, 
   CheckCircle2,
-  Mail,
-  Globe,
-  DollarSign,
-  CreditCard,
   CircleDollarSign,
-  ArrowRight,
-  Snowflake as SnowflakeIcon,
-  Activity,
-  Settings,
   BarChart3
 } from "lucide-react";
 

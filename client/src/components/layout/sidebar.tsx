@@ -1,6 +1,6 @@
 import { Link, useLocation } from "wouter";
 import { cn } from "@/lib/utils";
-import { ChartLine, CreditCard, Mail, Home, Database } from "lucide-react";
+import { ChartLine, CreditCard, Mail, Home } from "lucide-react";
 import eazyLogoPath from "@assets/eazy logo black.svg";
 
 const navigation = [
