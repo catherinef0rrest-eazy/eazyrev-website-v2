@@ -218,8 +218,8 @@ export default function Snowflake() {
             Pricing
           </h2>
           <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
-            <Card className="metric-card rounded-xl p-6 sm:p-8 group card-hover-effect" style={{ animationDelay: '0.1s' }}>
-              <CardContent className="p-0">
+            <Card className="metric-card rounded-xl p-6 sm:p-8 group card-hover-effect h-full" style={{ animationDelay: '0.1s' }}>
+              <CardContent className="p-0 flex flex-col items-center text-center h-full">
                 <div className="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-slate-200 transition-colors icon-hover-rotate">
                   <DollarSign className="h-6 w-6 text-slate-600" />
                 </div>
@@ -232,8 +232,8 @@ export default function Snowflake() {
               </CardContent>
             </Card>
 
-            <Card className="metric-card rounded-xl p-6 sm:p-8 group card-hover-effect" style={{ animationDelay: '0.2s' }}>
-              <CardContent className="p-0">
+            <Card className="metric-card rounded-xl p-6 sm:p-8 group card-hover-effect h-full" style={{ animationDelay: '0.2s' }}>
+              <CardContent className="p-0 flex flex-col items-center text-center h-full">
                 <div className="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-slate-200 transition-colors icon-hover-rotate">
                   <DollarSign className="h-6 w-6 text-slate-600" />
                 </div>
