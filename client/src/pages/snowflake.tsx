@@ -31,11 +31,11 @@ export default function Snowflake() {
           <div className="mb-6 pt-10"></div>
           <div className="flex items-center justify-center mb-6">
             <SnowflakeIcon className="h-12 w-12 text-blue-600 mr-4" />
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight leading-tight lg:leading-[1.15] brand-font">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight leading-tight lg:leading-[1.15]">
               Eazy Lead Generation Engine for Snowflake Services
             </h1>
           </div>
-          <p className="text-xl sm:text-2xl text-slate-600 mb-6 max-w-4xl mx-auto leading-relaxed px-2 font-medium">
+          <p className="text-lg sm:text-xl text-slate-600 mb-6 max-w-3xl mx-auto leading-relaxed px-2">
             Sell to the right companies, at the right time, with the right message.
           </p>
         </div>
@@ -47,10 +47,10 @@ export default function Snowflake() {
               <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-200 transition-colors icon-hover-rotate">
                 <Target className="h-6 w-6 text-blue-600" />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-slate-900 tracking-tight">
+              <h3 className="text-lg sm:text-xl font-bold mb-4 text-slate-900 tracking-tight">
                 Technology Compatibility = Better Deals, Faster
               </h3>
-              <p className="text-slate-600 leading-relaxed">
+              <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
                 You don't need more volume — you need better precision. We help you zero in on customers that are the right 
                 technological fit for your services — whether it's Snowflake migration, data modernization, or orchestration. That 
                 means more strategic conversations, faster momentum, and stronger win rates.
@@ -63,10 +63,10 @@ export default function Snowflake() {
               <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-emerald-200 transition-colors icon-hover-rotate">
                 <Zap className="h-6 w-6 text-emerald-600" />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-slate-900 tracking-tight">
+              <h3 className="text-lg sm:text-xl font-bold mb-4 text-slate-900 tracking-tight">
                 Unlock a New Level of Targeting
               </h3>
-              <p className="text-slate-600 leading-relaxed">
+              <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
                 Even the best GTM teams only see part of the picture. We bring technographic visibility to the front of your sales 
                 motion — so your team focuses on accounts with the right signals, timing, and people in place to make the deal real.
               </p>
@@ -81,15 +81,15 @@ export default function Snowflake() {
               <div className="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mx-auto mb-6">
                 <Database className="h-8 w-8 text-purple-600" />
               </div>
-              <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-6 brand-font">
+              <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-6">
                 What Are Technographics?
               </h2>
-              <p className="text-lg text-slate-600 leading-relaxed max-w-4xl mx-auto">
+              <p className="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-4xl mx-auto">
                 <strong>Technographics = a company's tech DNA</strong> — what software and systems they've adopted, how those tools work 
                 together, and where there's room to grow.
               </p>
             </div>
-            <p className="text-base text-slate-600 leading-relaxed max-w-3xl mx-auto text-center">
+            <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto text-center">
               We scan for patterns that align with your offering — then surface organizations already positioned to benefit 
               from your services. We pair that with decision-maker and influencer data, so your team connects with the right 
               people, not just the right companies.
@@ -99,7 +99,7 @@ export default function Snowflake() {
 
         {/* What You Get */}
         <div className="mb-16">
-          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-8 text-center brand-font">
+          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-8 text-center">
             What You Get
           </h2>
           <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -151,7 +151,7 @@ export default function Snowflake() {
 
         {/* What We Look For */}
         <div className="mb-16">
-          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-8 text-center brand-font">
+          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-8 text-center">
             What We Look For <span className="text-slate-600">(Snowflake Focused)</span>
           </h2>
           <div className="space-y-4">
@@ -165,7 +165,7 @@ export default function Snowflake() {
               <Card key={index} className="metric-card rounded-xl p-6 group card-hover-effect" style={{ animationDelay: `${0.1 * (index + 1)}s` }}>
                 <CardContent className="p-0 flex items-center">
                   <CheckCircle2 className="h-6 w-6 text-emerald-600 mr-4 flex-shrink-0" />
-                  <p className="text-slate-600 leading-relaxed">{item}</p>
+                  <p className="text-slate-600 leading-relaxed text-sm sm:text-base">{item}</p>
                 </CardContent>
               </Card>
             ))}
@@ -174,7 +174,7 @@ export default function Snowflake() {
 
         {/* Example Opportunities */}
         <div className="mb-16">
-          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-8 text-center brand-font">
+          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-8 text-center">
             Example Opportunities
           </h2>
           <div className="space-y-6">
@@ -183,7 +183,7 @@ export default function Snowflake() {
                 <div className="flex items-start mb-4">
                   <Badge className="bg-blue-100 text-blue-700 mr-3 mb-2">Platform Modernization Signal</Badge>
                 </div>
-                <p className="text-slate-600 leading-relaxed">
+                <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
                   A regional healthcare provider still using SQL Server + SSIS. Recently opened 
                   a search for a Data Platform Architect with Snowflake experience.
                 </p>
@@ -195,7 +195,7 @@ export default function Snowflake() {
                 <div className="flex items-start mb-4">
                   <Badge className="bg-emerald-100 text-emerald-700 mr-3 mb-2">Pipeline Optimization Signal</Badge>
                 </div>
-                <p className="text-slate-600 leading-relaxed">
+                <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
                   A retail company using Snowflake for reporting, but still running legacy batch 
                   ingestion pipelines. Hiring data engineers with dbt and Fivetran experience.
                 </p>
@@ -207,7 +207,7 @@ export default function Snowflake() {
                 <div className="flex items-start mb-4">
                   <Badge className="bg-purple-100 text-purple-700 mr-3 mb-2">Modeling & Insights Signal</Badge>
                 </div>
-                <p className="text-slate-600 leading-relaxed">
+                <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
                   A fintech firm running Snowflake + Tableau, but with no modeling layer (no dbt). 
                   Recently posted a 'Head of Data Insights' role focused on decision automation.
                 </p>
@@ -218,7 +218,7 @@ export default function Snowflake() {
 
         {/* Pricing */}
         <div className="mb-16">
-          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-8 text-center brand-font">
+          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-8 text-center">
             Pricing
           </h2>
           <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
@@ -242,14 +242,14 @@ export default function Snowflake() {
               </CardContent>
             </Card>
           </div>
-          <p className="text-center text-slate-600 mt-6 text-lg">
+          <p className="text-center text-slate-600 mt-6 text-base sm:text-lg">
             Every lead includes contact info, tech insights, and tailored messaging guidance.
           </p>
         </div>
 
         {/* Perfect For Teams */}
         <div className="mb-16">
-          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-8 text-center brand-font">
+          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-8 text-center">
             Perfect For Teams That Offer:
           </h2>
           <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -273,7 +273,7 @@ export default function Snowflake() {
 
         {/* Contact Section */}
         <div className="text-center mb-8">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-3 text-slate-900 tracking-tight px-4 brand-font">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-3 text-slate-900 tracking-tight px-4">
             Ready to Transform Your IT Services Sales?
           </h2>
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto px-4">
