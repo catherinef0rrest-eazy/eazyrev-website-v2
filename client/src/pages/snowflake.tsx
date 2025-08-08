@@ -258,12 +258,11 @@ export default function Snowflake() {
               "Semantic & Analytical Data Modeling",
               "Snowflake Implementation & Optimization",
               "DataOps & ML Platform Scaling",
-              "Building High-Functioning Data Teams",
-              "Generating Actionable Business Insights"
+              "Building High-Functioning Data Teams"
             ].map((service, index) => (
               <Card key={index} className="metric-card rounded-xl p-6 group card-hover-effect" style={{ animationDelay: `${0.05 * (index + 1)}s` }}>
                 <CardContent className="p-0 flex items-center">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mr-3 flex-shrink-0"></div>
+                  <CheckCircle2 className="h-5 w-5 text-emerald-600 mr-3 flex-shrink-0" />
                   <p className="text-slate-600 leading-relaxed text-sm">{service}</p>
                 </CardContent>
               </Card>
