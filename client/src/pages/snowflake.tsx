@@ -41,9 +41,6 @@ export default function Snowflake() {
         <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           <Card className="metric-card rounded-xl p-8 group card-hover-effect" style={{ animationDelay: '0.1s' }}>
             <CardContent className="p-0">
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-200 transition-colors icon-hover-rotate">
-                <Target className="h-6 w-6 text-blue-600" />
-              </div>
               <h3 className="text-lg sm:text-xl font-bold mb-4 text-slate-900 tracking-tight">
                 Technology Compatibility = Better Deals, Faster
               </h3>
@@ -57,9 +54,6 @@ export default function Snowflake() {
 
           <Card className="metric-card rounded-xl p-8 group card-hover-effect" style={{ animationDelay: '0.2s' }}>
             <CardContent className="p-0">
-              <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-emerald-200 transition-colors icon-hover-rotate">
-                <Zap className="h-6 w-6 text-emerald-600" />
-              </div>
               <h3 className="text-lg sm:text-xl font-bold mb-4 text-slate-900 tracking-tight">
                 Unlock a New Level of Targeting
               </h3>
