@@ -218,24 +218,32 @@ export default function Snowflake() {
           <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-8 text-center">
             Pricing
           </h2>
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
-            <Card className="metric-card rounded-xl p-8 group card-hover-effect" style={{ animationDelay: '0.1s' }}>
-              <CardContent className="p-0 text-center">
-                <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-6">
-                  <DollarSign className="h-8 w-8 text-blue-600" />
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+            <Card className="metric-card rounded-xl p-6 sm:p-8 group card-hover-effect" style={{ animationDelay: '0.1s' }}>
+              <CardContent className="p-0">
+                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-200 transition-colors icon-hover-rotate">
+                  <DollarSign className="h-6 w-6 text-blue-600" />
                 </div>
-                <div className="text-3xl font-bold text-slate-900 mb-2">$4,500</div>
-                <div className="text-slate-600 mb-4">20 leads for one ICP</div>
+                <h3 className="text-lg sm:text-xl font-bold mb-4 text-slate-900 tracking-tight">
+                  $4,500
+                </h3>
+                <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
+                  20 leads for one ICP
+                </p>
               </CardContent>
             </Card>
 
-            <Card className="metric-card rounded-xl p-8 group card-hover-effect" style={{ animationDelay: '0.2s' }}>
-              <CardContent className="p-0 text-center">
-                <div className="w-16 h-16 bg-emerald-100 rounded-xl flex items-center justify-center mx-auto mb-6">
-                  <DollarSign className="h-8 w-8 text-emerald-600" />
+            <Card className="metric-card rounded-xl p-6 sm:p-8 group card-hover-effect" style={{ animationDelay: '0.2s' }}>
+              <CardContent className="p-0">
+                <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-emerald-200 transition-colors icon-hover-rotate">
+                  <DollarSign className="h-6 w-6 text-emerald-600" />
                 </div>
-                <div className="text-3xl font-bold text-slate-900 mb-2">$7,500</div>
-                <div className="text-slate-600 mb-4">20 leads for two ICPs</div>
+                <h3 className="text-lg sm:text-xl font-bold mb-4 text-slate-900 tracking-tight">
+                  $7,500
+                </h3>
+                <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
+                  20 leads for two ICPs
+                </p>
               </CardContent>
             </Card>
           </div>
