@@ -9,6 +9,7 @@ import Home from "@/pages/home";
 import SampleReport from "@/pages/sample-report";
 import Payment from "@/pages/payment";
 import Contact from "@/pages/contact";
+import Snowflake from "@/pages/snowflake";
 import Sidebar from "@/components/layout/sidebar";
 import MobileNav from "@/components/layout/mobile-nav";
 
@@ -34,6 +35,7 @@ function Router() {
           <Route path="/sample-report" component={SampleReport} />
           <Route path="/payment" component={Payment} />
           <Route path="/contact" component={Contact} />
+          <Route path="/snowflake" component={Snowflake} />
           <Route component={NotFound} />
         </Switch>
       </main>

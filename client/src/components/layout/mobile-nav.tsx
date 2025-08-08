@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { cn } from "@/lib/utils";
-import { Menu, X, ChartLine, CreditCard, Mail, Home } from "lucide-react";
+import { Menu, X, ChartLine, CreditCard, Mail, Home, Database } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import eazyLogoPath from "@assets/eazy logo black.svg";
@@ -9,6 +9,7 @@ import eazyLogoPath from "@assets/eazy logo black.svg";
 const navigation = [
   { name: "Home", href: "/", icon: Home },
   { name: "Sample Report", href: "/sample-report", icon: ChartLine },
+  { name: "Snowflake", href: "/snowflake", icon: Database },
   { name: "Payment", href: "/payment", icon: CreditCard },
   { name: "Contact", href: "/contact", icon: Mail },
 ];

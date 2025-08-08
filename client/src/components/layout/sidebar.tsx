@@ -1,11 +1,12 @@
 import { Link, useLocation } from "wouter";
 import { cn } from "@/lib/utils";
-import { ChartLine, CreditCard, Mail, Home } from "lucide-react";
+import { ChartLine, CreditCard, Mail, Home, Database } from "lucide-react";
 import eazyLogoPath from "@assets/eazy logo black.svg";
 
 const navigation = [
   { name: "Home", href: "/", icon: Home },
   { name: "Sample Report", href: "/sample-report", icon: ChartLine },
+  { name: "Snowflake", href: "/snowflake", icon: Database },
   { name: "Payment", href: "/payment", icon: CreditCard },
   { name: "Contact", href: "/contact", icon: Mail },
 ];
