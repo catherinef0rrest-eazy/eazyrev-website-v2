@@ -216,9 +216,12 @@ export default function Snowflake() {
 
         {/* Pricing */}
         <div className="mb-16">
-          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-8 text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4 text-center">
             Pricing
           </h2>
+          <p className="text-center text-slate-600 mb-8 text-base sm:text-lg">
+            Every lead includes contact info, tech insights, and tailored messaging guidance.
+          </p>
           <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
             <Card className="metric-card rounded-xl p-6 sm:p-8 group card-hover-effect h-full" style={{ animationDelay: '0.1s' }}>
               <CardContent className="p-0 flex flex-col items-center text-center h-full">
@@ -248,9 +251,6 @@ export default function Snowflake() {
               </CardContent>
             </Card>
           </div>
-          <p className="text-center text-slate-600 mt-6 text-base sm:text-lg">
-            Every lead includes contact info, tech insights, and tailored messaging guidance.
-          </p>
         </div>
 
         {/* Perfect For Teams */}
