@@ -152,7 +152,7 @@ export default function Snowflake() {
           <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-8 text-center">
             What We Look - <span className="text-slate-600">Snowflake Opportunity Signals</span>
           </h2>
-          <div className="space-y-4">
+          <div className="max-w-4xl mx-auto space-y-4">
             {[
               "Companies on legacy platforms like SQL Server, Oracle, or Teradata",
               "Organizations with Snowflake deployed, but no orchestration layer",
@@ -161,7 +161,7 @@ export default function Snowflake() {
               "Evidence of modernization, transformation, or cloud momentum"
             ].map((item, index) => (
               <Card key={index} className="metric-card rounded-xl p-6 group card-hover-effect" style={{ animationDelay: `${0.1 * (index + 1)}s` }}>
-                <CardContent className="p-0 flex items-center">
+                <CardContent className="p-0 flex items-center justify-center text-center">
                   <CheckCircle2 className="h-6 w-6 text-emerald-600 mr-4 flex-shrink-0" />
                   <p className="text-slate-600 leading-relaxed text-sm sm:text-base">{item}</p>
                 </CardContent>
