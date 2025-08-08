@@ -30,13 +30,26 @@ export default function Snowflake() {
         {/* Hero Section */}
         <div className="text-center mb-20 slide-up">
           <div className="mb-6 pt-10"></div>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-slate-900 tracking-tight leading-tight lg:leading-[1.15]">
-            Lead Generation Engine for<br />
-            <span className="text-slate-700 flex items-center justify-center gap-3">
-              <img src={snowflakeLogo} alt="Snowflake" className="h-8 sm:h-10 lg:h-12 w-auto" />
-              Snowflake Services
-            </span>
-          </h1>
+          <div className="text-center">
+            {/* Mobile: Logo above text */}
+            <div className="block sm:hidden mb-4">
+              <img src={snowflakeLogo} alt="Snowflake" className="h-12 w-auto mx-auto" />
+            </div>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-slate-900 tracking-tight leading-tight lg:leading-[1.15]">
+              Lead Generation Engine for<br />
+              <span className="text-slate-700">
+                {/* Desktop: Logo inline with text */}
+                <span className="hidden sm:flex items-center justify-center gap-3">
+                  <img src={snowflakeLogo} alt="Snowflake" className="h-8 sm:h-10 lg:h-12 w-auto" />
+                  Snowflake Services
+                </span>
+                {/* Mobile: Text only */}
+                <span className="block sm:hidden">
+                  Snowflake Services
+                </span>
+              </span>
+            </h1>
+          </div>
           <p className="text-lg sm:text-xl text-slate-600 mb-6 max-w-3xl mx-auto leading-relaxed px-2">
             Sell to the right companies, at the right time, with the right message.
           </p>
