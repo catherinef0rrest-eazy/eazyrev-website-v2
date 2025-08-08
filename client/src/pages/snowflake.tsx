@@ -152,7 +152,7 @@ export default function Snowflake() {
           <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-8 text-center">
             What We Look: <span className="text-slate-600">Snowflake Opportunity Signals</span>
           </h2>
-          <div className="max-w-4xl mx-auto space-y-4">
+          <div className="max-w-2xl mx-auto space-y-4">
             {[
               "Companies on legacy platforms like SQL Server, Oracle, or Teradata",
               "Organizations with Snowflake deployed, but no orchestration layer",
