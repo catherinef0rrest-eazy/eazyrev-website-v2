@@ -6,7 +6,6 @@ import eazyLogoPath from "@assets/eazy logo black.svg";
 const navigation = [
   { name: "Home", href: "/", icon: Home },
   { name: "Sample Report", href: "/sample-report", icon: ChartLine },
-  { name: "Snowflake", href: "/snowflake", icon: Database },
   { name: "Payment", href: "/payment", icon: CreditCard },
   { name: "Contact", href: "/contact", icon: Mail },
 ];
